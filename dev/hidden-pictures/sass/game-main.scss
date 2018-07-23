@@ -1,0 +1,45 @@
+.game-container{
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    width: 578px;
+    height: 578px;
+    border: 0px;
+    padding: 21px;
+    background-image: url("assets/hidden_pictures/frame.png");
+    background-size:contain;
+    text-align: center;
+    
+}
+.puzzle-background{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;   
+}
+.puzzle-background.mango{
+    background-image:url("assets/hidden_pictures/variations/mango/background.png");
+}
+@import "fruit-berry";
+@import "fruit-mango";
+
+
+.fruit-container.clicked div{
+    transition: all 0.1s linear;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
+.game-container{
+    @media screen and (max-width: 600px){
+        width: 450px;
+        height: 450px;
+    }
+    @media screen and (max-width: 470px) {
+        width: 315px;
+        height: 315px;
+    }
+}

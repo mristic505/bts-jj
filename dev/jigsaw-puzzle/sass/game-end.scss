@@ -1,0 +1,182 @@
+.game-end-wrapper{
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    background-image: url('assets/jigsaw_puzzle/game_end/game_end_background.png');
+    background-size: cover;
+    z-index: 999991;
+    .you-did-it-title{
+        margin-top: 43px;
+        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+            margin-top: 35px;
+            margin-bottom: 5px;
+            width:50%;
+        }
+        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+            margin-top:8px;
+            width:50%;
+        }
+        
+    }
+    .you-did-it-subtitle{
+        color: #ffffff;
+        font-family: "CabritoNorBol";
+        font-size: 18px;
+        margin-top: 10px;
+        
+        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+            font-size: 10px;
+            margin: 0;
+        }
+        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+            font-size:10px;
+            margin-top: 0;
+            padding: 0 20px;
+        }
+    }
+
+    .end_ctas{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 60px;
+        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+            bottom: 41px;
+            .play_again, .spin_again, .get_coupon_btn {
+                font-size: 12px;
+            }   
+            .get_coupon_btn {
+                line-height: 30px;
+                height: 30px;
+            }
+        }
+        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+            top: auto;
+            bottom: 14px;
+            .play_again, .spin_again, .get_coupon_btn {
+                font-size: 10px;
+            }   
+            .get_coupon_btn {
+                font-size: 10px;
+                margin-top: 15px;
+            }
+        }
+    }
+    // .bottom-cta-container{
+    //     font-family: 'CabritoNorBol';
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     a{
+    //         text-decoration: none;
+    //         color:#ffffff;
+    //         &:visited,&:hover,&:active{
+    //             color:#ffffff;
+    //         }
+    //     }
+    //     .get-coupon-button{
+    //         display: block;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    //         width: 162px;
+    //         padding-top: 10px;
+    //         padding-bottom: 10px;
+    //         background-color: #1a5632;
+    //         margin-bottom: 61px;
+    //         @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+    //             margin-bottom: 24px;
+    //         }
+    //         @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+    //             margin-bottom: 5px;
+    //         }
+    //     }
+    //     .puzzle-cta{
+    //         display:inline-block;
+    //         padding-bottom: 20px;
+    //         padding-right: 10px;
+    //         @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+    //             padding-bottom: 10px;
+    //         }
+    //          @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+    //             padding-bottom:5px;
+    //             font-size: 11px;
+    //         }
+    //         img{
+    //             padding-left: 5px;
+    //             margin-top: -3px;
+    //         }
+    //     }
+    //     .cta:first-child{
+    //         padding-right: 20px;
+    //     }
+    //     .cta-arrow{
+    //         width: 0; 
+    //         height: 0; 
+    //         width: 0; 
+    //         height: 0; 
+    //         border-top: 60px solid transparent;
+    //         border-bottom: 60px solid transparent;
+    //         border-left: 60px solid green;
+    //       }
+    // }
+    .game-end-message-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 49%;
+        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+            width:44%;
+            img{
+                width: 90%;
+            }
+        }            
+        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+            width: 55%;
+            img{
+                width:90%;
+            }
+        }
+        p{
+            font-family: 'CabritoNorExB';
+            font-size: 18px;
+            color:#1a5632;
+            margin-top: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 4px;
+            @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+                width: 78%;
+                font-size:12px;
+                margin-top: 0px;
+                padding: 0;
+                line-height: normal;
+            }                
+            @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+                font-size: 10px;
+                line-height: 12px;                
+            }
+        }
+    }
+    .game-end-image{
+        position: absolute;
+        top: 24%;
+        right: 0%;
+        width: 23%;
+        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+            width:  26%;
+        }
+        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+            width:22%;
+        }
+    }
+}
+.tropical .game-end-wrapper .game-end-message-container img {
+    @media screen and (max-width: 810px){
+        width: 79%;
+    }
+}

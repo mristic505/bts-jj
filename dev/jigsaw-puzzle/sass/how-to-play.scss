@@ -1,0 +1,82 @@
+.how-to-play-wrapper{
+    // display: none;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    background-image: url('assets/jigsaw_puzzle/game_start_background.png');
+    background-size: cover;
+    z-index: 99999;
+    .how-to-play-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+            width: 62%;
+        }
+        .how-to-play-title{
+            @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+                width: 220px;
+            }
+            @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+                width:80%;
+                // padding-top: 50px;
+
+            }
+        }
+        h2{
+            font-family: "CabritoNorExB";
+            font-size: 24px;
+            color: #1a5632;
+            margin-top: 0px;
+            margin-bottom: 16px;
+            @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+                font-size: 14px;
+                margin-top: 20px;
+                margin-bottom: 3px;
+            }
+            @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+                // font-size: 13px;
+                // margin: 0px;
+                margin-top: 10px;
+            }
+        }
+        p{
+            font-family: "CabritoNorExB";
+            font-size: 18px;
+            color: #1a5632;
+            margin: 0;
+            padding: 0 20px;
+            @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+                font-size: 11px;
+            }
+            @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+                // font-size: 14px;
+                // padding: 0 18px;
+                // font-size: 12px;
+           }
+        }
+        .start-game-button{
+            font-family: "CabritoNorExB";
+            margin-top:20px;
+            padding: 10px 53px;
+            color: #ffffff;
+            font-size: 18px;
+            background-color: #1a5632;
+            border: 0;
+            height: auto;
+            width: auto;
+            @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+                font-size: 10px;
+                padding: 8.2px 31.4px;
+            }
+            @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+                // padding: 9px 32px;
+                // font-size: 10px;
+            }
+        }
+    }
+}

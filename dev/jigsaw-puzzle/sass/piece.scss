@@ -1,0 +1,249 @@
+$puzzle_piece_height: 90px;
+$puzzle_piece_width: 90px;
+$puzzle_piece_image_height: 302px;
+$puzzle_piece_image_width: 302px;
+
+.puzzle-bottom-bar{
+}
+
+.puzzle-sidebar,.puzzle-bottom-bar{
+    .puzzle-piece{
+        position:relative;
+        float:left;
+        width: 140px;
+        padding-top: 140px;
+        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint){
+            width: 90px;
+            padding-top: 90px;
+            height: 90px;
+        }
+        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint){
+            // @media screen and (max-width: 470px) {
+            width: 70px;
+            padding-top: 70px;
+            height: 70px;
+        }
+        z-index:10;
+        //piece in sidebar
+        .puzzle-piece-image{
+            display:none;
+        }
+        img{
+            display: block;
+            position: absolute;
+            top: 51%;
+            left: 47%;
+            transform: translate(-50%, -50%);
+            @media screen and (max-width: $puzzle-container-first-responsive-breakpoint){
+                transform: translate(-50%, -50%) scale(0.752);
+            }
+            @media screen and (max-width: $puzzle-container-second-responsive-breakpoint){
+                // @media screen and (max-width: 470px) {
+                transform: translate(-50%, -50%) scale(0.502);
+            }
+        }
+        &.ui-draggable-dragging{
+            z-index:11;
+            img{
+                display: none;//hide placeholder image while dragging
+            }
+            // position: relative;
+            .puzzle-piece-image{
+                display: block;
+                @include vertical-align();
+                // height: $puzzle_piece_image_height;
+                // width: $puzzle_piece_image_width;
+            }
+        
+        }
+    }
+}
+
+//piece everywhere
+.puzzle-piece{
+    height: $puzzle_piece_height;
+    width: $puzzle_piece_width;
+    @media screen and (max-width: $puzzle-container-first-responsive-breakpoint){
+        height: 227px;
+        width: 227px;
+    }
+    // @media screen and (max-width: 470px) {
+    @media screen and (max-width: $puzzle-container-second-responsive-breakpoint){        
+        height: 152px;
+        width: 152px;
+    }
+    img{
+        display: none;
+    }
+    .puzzle-piece-image{
+        height: $puzzle_piece_image_height;
+        width: $puzzle_piece_image_width;
+        
+        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint){
+            height: 227px;
+            width: 227px;
+        }
+        // @media screen and (max-width: 470px) {
+        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint){
+                
+            height: 152px;
+            width: 152px;
+        }
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.puzzle-container{
+    .drop-container{
+        position:relative;
+        .puzzle-piece{
+            @include vertical-align();
+            z-index: 3;
+            .puzzle-piece-image{
+                @include vertical-align();
+                z-index: 1;
+            }
+        }
+    }
+}
+//manually position placeholder images
+.puzzle-sidebar,.puzzle-bottom-bar{
+    .piece-0 img{
+        top: 69.5%;
+        left: 50.5%;
+    }
+    .piece-1 img{
+        top: 50.5%;
+        left: 46.5%;
+    }
+    .piece-2 img {
+        top: 56.5%;
+        left: 60%;
+    }
+    .piece-3 img{
+        top: 44.5%;
+        left: 38.5%;
+    }
+    .piece-4 img {
+        top: 58%;
+        left: 61%;
+    }
+    .piece-5 img{
+        top: 40.5%;
+        left: 43.5%;
+    }
+    .piece-6 img{
+        top: 60.5%;
+        left: 54.5%;
+    }
+    .piece-7 img{
+        top: 38.5%;
+        left: 51.5%;
+    }
+    .piece-8 img{
+        top: 60%;
+        left: 40%;
+    }
+    .piece-9 img{
+        top: 60%;
+        left: 24%;
+    }
+    .piece-10 img{
+        top: 61%;
+        left: 46.5%;
+    }
+    .piece-11 img{
+        top: 74%;
+        left: 41%;
+    }
+    .piece-12 img{
+        top: 52.5%;
+        left: 57.9%;
+    }
+    .piece-13 img{
+        top: 52%;
+        left: 40.5%;
+    }
+    .piece-14 img{
+        top: 42.5%;
+        left: 40.5%;
+    }
+    .piece-15 img{
+        top: 55.5%;
+        left: 43.5%;
+    }
+}
+
+//generate backgrounds
+@for $i from 0 through 15{
+    .cranberry-apple{
+        .piece-#{$i}{
+            .puzzle-piece-image{
+                background-image: url("assets/jigsaw_puzzle/puzzles/cranberry_apple/pieces/#{$i}.png");
+            }
+        }
+    }
+    .peach-apple{
+        .piece-#{$i}{
+            .puzzle-piece-image{
+                background-image: url("assets/jigsaw_puzzle/puzzles/peach_apple/pieces/#{$i}.png");
+            }
+        }
+    }
+    .tropical{
+        .piece-#{$i}{
+            .puzzle-piece-image{
+                background-image: url("assets/jigsaw_puzzle/puzzles/tropical/pieces/#{$i}.png");
+            }
+        }
+    }
+}
+
+//generate pieces for the sidebar
+@for $i from 0 through 15{
+    .cranberry-apple{
+        .puzzle-sidebar,.puzzle-bottom-bar{
+            .piece-#{$i}{
+                .puzzle-piece-image{
+                    background-image: url("assets/jigsaw_puzzle/puzzles/cranberry_apple/pieces/thumbnails/#{$i}.png");
+                }
+                &.ui-draggable-dragging{
+                    .puzzle-piece-image{
+                        background-image: url("assets/jigsaw_puzzle/puzzles/cranberry_apple/pieces/#{$i}.png");
+                    }
+                }
+            }
+        }
+    }
+    .peach-apple{
+        .puzzle-sidebar,.puzzle-bottom-bar{
+            .piece-#{$i}{
+                .puzzle-piece-image{
+                    background-image: url("assets/jigsaw_puzzle/puzzles/peach_apple/pieces/thumbnails/#{$i}.png");
+                }
+                &.ui-draggable-dragging{
+                    .puzzle-piece-image{
+                        background-image: url("assets/jigsaw_puzzle/puzzles/peach_apple/pieces/#{$i}.png");
+                    }
+                }
+            }
+        }
+    }
+    .tropical{
+        .puzzle-sidebar,.puzzle-bottom-bar{
+            .piece-#{$i}{
+                .puzzle-piece-image{
+                    background-image: url("assets/jigsaw_puzzle/puzzles/tropical/pieces/thumbnails/#{$i}.png");
+                }
+                &.ui-draggable-dragging{
+                    .puzzle-piece-image{
+                        background-image: url("assets/jigsaw_puzzle/puzzles/tropical/pieces/#{$i}.png");
+                    }
+                }
+            }
+        }
+    }
+}
+

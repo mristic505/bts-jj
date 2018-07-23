@@ -1,0 +1,60 @@
+$transition_duration : 0.5s;
+.fruit-container{
+        position: relative;
+        top: 130px;
+        width:100%;
+        padding-top: 100%;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: top $transition_duration ease;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    &.fruit-on-top{
+        z-index: 999;
+    }
+    &.show{
+        top: 0px;
+    }
+    &.popped{
+        padding-top: 0px;
+        width: 168px;
+        height: 168px;
+        margin-top: -48px;
+        margin-left: -18px;
+        background-size: contain;
+        @media screen and (max-width: $first-breakpoint){
+            width: 134px;
+            height: 134px;
+            margin-top: -38px;
+            margin-left: -17px;
+        }
+        @media screen and (max-width: $second-breakpoint){
+            width: 90px;
+            height: 90px;
+            margin-top: -23px;
+            margin-left: -11px;
+        }            
+        // width:160%;
+        // height:63%;
+        // margin-left: -30%;
+        // margin-top: - 25%;
+    }
+    &.apple{
+        background-image: url("assets/pop-a-fruit/fruits/apple.png");
+    }
+    &.watermelon{
+        background-image: url("assets/pop-a-fruit/fruits/watermelon.png");
+    }
+    &.grape{
+        background-image: url("assets/pop-a-fruit/fruits/grape.png");
+    }
+    &.apple.popped{
+        background-image: url("assets/pop-a-fruit/fruits/apple_popped.png");
+    }
+    &.watermelon.popped{
+        background-image: url("assets/pop-a-fruit/fruits/watermelon_popped.png");
+    }
+    &.grape.popped{
+        background-image: url("assets/pop-a-fruit/fruits/grape_popped.png");
+    }
+}

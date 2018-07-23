@@ -1,0 +1,73 @@
+.puzzle-container{
+    position: relative;
+    float: left;
+    width: 591px;
+    height: 591px;
+    @media screen and (max-width: $puzzle-container-first-responsive-breakpoint){
+        width: 450px;
+        height: 450px;
+    }
+    // @media screen and (max-width: 470px) {
+    @media screen and (max-width: $puzzle-container-second-responsive-breakpoint){
+        // float: none;
+        // margin-left: auto;
+        // margin-right: auto;
+        width: 315px;
+        height: 315px;
+    }
+    border: 0px;
+    padding: 20px;
+    background-image: url("assets/jigsaw_puzzle/frame.png");
+    background-size:contain;
+    text-align: center;
+    // overflow: hidden;
+    .puzzle-background{
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint){
+            background-position: center -2px;
+        }
+        // @media screen and (max-width: $puzzle-container-second-responsive-breakpoint){
+        //     top: 10px;
+        //     bottom: 10px;
+        //     left: 10px;
+        //     right: 10px;       
+        // }
+        background-size:cover;
+        background-repeat: no-repeat;
+        &>.puzzle-piece-container{
+            float: left;
+            position: relative;
+            width: 25%;
+            height: 25%;
+            // border: 2px solid blue;
+            .drop-container{
+                position: absolute;
+                width: 56px;
+                height: 56px;
+                top: calc(50% - 28px);
+                left: calc(50% - 28px);
+            }
+        }
+    }
+}
+
+// backgrounds
+.cranberry-apple{
+    .puzzle-background{
+        background-image: url("assets/jigsaw_puzzle/puzzles/cranberry_apple/puzzle_background.png");
+    }
+}
+.peach-apple{
+    .puzzle-background{
+        background-image: url("assets/jigsaw_puzzle/puzzles/peach_apple/puzzle_background.png");
+    }
+}
+.tropical{
+    .puzzle-background{
+        background-image: url("assets/jigsaw_puzzle/puzzles/tropical/puzzle_background.png");
+    }
+}

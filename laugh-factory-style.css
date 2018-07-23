@@ -1,0 +1,487 @@
+
+/*FONT FAMILY*/
+
+@font-face {
+    font-family: 'CabritoNorExB';
+    src: url('fonts/CabritoNorExB.eot');
+    src: url('fonts/CabritoNorExB.eot') format('embedded-opentype'),
+    url('fonts/CabritoNorExB.woff2') format('woff2'),
+    url('fonts/CabritoNorExB.woff') format('woff'),
+    url('fonts/CabritoNorExB.ttf') format('truetype'),
+    url('fonts/CabritoNorExB.svg#CabritoNorExB') format('svg');
+}
+@font-face {
+    font-family: 'CabritoNorReg';
+    src: url('fonts/CabritoNorReg.eot');
+    src: url('fonts/CabritoNorReg.eot') format('embedded-opentype'),
+    url('fonts/CabritoNorReg.woff2') format('woff2'),
+    url('fonts/CabritoNorReg.woff') format('woff'),
+    url('fonts/CabritoNorReg.ttf') format('truetype'),
+    url('fonts/CabritoNorReg.svg#CabritoNorReg') format('svg');
+}
+g
+@font-face {
+    font-family: 'CabritoNorBol';
+    src: url('fonts/CabritoNorBol.eot');
+    src: url('fonts/CabritoNorBol.eot') format('embedded-opentype'),
+    url('fonts/CabritoNorBol.woff2') format('woff2'),
+    url('fonts/CabritoNorBol.woff') format('woff'),
+    url('fonts/CabritoNorBol.ttf') format('truetype'),
+    url('fonts/CabritoNorBol.svg#CabritoNorBol') format('svg');
+}
+@font-face {
+    font-family: 'NexaRustScriptL0';
+    src: url('fonts/NexaRustScriptL0.eot');
+    src: url('fonts/NexaRustScriptL0.eot') format('embedded-opentype'),
+         url('fonts/NexaRustScriptL0.woff2') format('woff2'),
+         url('fonts/NexaRustScriptL0.woff') format('woff'),
+         url('fonts/NexaRustScriptL0.ttf') format('truetype'),
+         url('fonts/NexaRustScriptL0.svg#NexaRustScriptL0') format('svg');
+}
+
+
+html {
+
+	font-family: "CabritoNorBol";
+
+}
+
+button {
+  font-family: "CabritoNorBol";
+}
+
+* {box-sizing:border-box}
+
+.green {
+	color: #65a521;
+}
+
+.orange {
+	color: #f18a23;
+}
+
+.yellow {
+	color: #fec53d;
+}
+/* Slideshow container */
+.slideshow-container {
+	width: 588px;
+	height: 588px;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    height: 588px;
+    width: 588px;
+}
+
+.mySlides * {
+    text-align: center;
+}
+
+#introParagraph {
+    font-size: 18px;
+    max-width: 240px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: #1a5632;
+    font-family: "CabritoNorExB";
+}
+
+
+#lastSlideText {
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 244px;
+    padding-bottom: 45px;
+    line-height: 24px;
+    font-family: "CabritoNorBol";
+}
+
+#jokesAgainBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;	
+}
+
+#spinBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: relative;
+}
+
+#slide3-BtnGroup {
+    position: relative;
+    top: 191px;    
+    font-family: 'CabritoNorExB';   
+    font-size: 18px;
+}
+
+
+.slide1 {
+    background-image: url(img/slide1.png);
+}
+
+/*#slide2 {
+	background-image: url(img/slide2.png);
+}*/
+
+.slide3 {
+	background-image: url(img/slide3.png);
+}
+
+.appleBg {
+	background-image: url(img/appleJokeBg-waves.png);
+}
+
+.orangeBg {
+	background-image: url(img/orangeJokeBg-waves.png);
+}
+
+.strawBanBg {
+	background-image: url(img/strawberryBananaJokeBg-waves.png);
+}
+
+.strawBanImg {
+	background-image: url("img/slide3-strawBan.png");
+}
+
+.orangeImg {
+	background-image: url("img/slide3-orange.png");
+}    
+
+.appleImg {
+	background-image: url("img/slide3-apple.png");
+}
+
+.rightArrow {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.slide1TextContainer {
+    position: relative;
+    top: 320px;
+}
+.slide2TextContainer {
+    position: relative;
+    top: 224px;
+}
+.slide3TextContainer {
+    position: relative;
+    top: 140px;
+}
+#startJokesBtn {
+    background-color: #1a5632;
+    height: 44px;
+    width: 159px;
+    color: white;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    letter-spacing: 0.6px;
+}
+.joke {
+    font-size: 26px;
+    margin: 0 auto;
+    color: #1a5632;
+    padding-bottom: 20px;
+    max-width: 331px;
+    font-family: "CabritoNorBol", sans-serif;
+}
+
+.answerBtn {
+    cursor: pointer;
+    color: #65a621;
+    max-width: 200px;
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: "CabritoNorBol", sans-serif;
+}
+
+#answerBtnArrow {
+    font-size: 13px;
+    position: relative;
+    top: -1px;
+}
+
+#getCoupBtn {
+    background-color: #1a5632;
+    height: 44px;
+    width: 159px;
+    color: white;
+    display: block;
+    border: none;
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+#fruitFactTitle {
+    font-family: "NexaRustScriptL0";
+    margin: 0 auto;
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+#fruityFact {
+    font-size: 19px;
+    color: #1a5632;
+    max-width: 195px;
+    margin: 0 auto;
+    height: 81px;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    color: white;
+    font-weight: bold;
+    font-size: 43px;
+    transition: 0.6s ease-in-out;
+    border-radius: 0 3px 3px 0;
+    text-decoration: none !important;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 35px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+	left: 35px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+/*  background-color: rgba(0,0,0,0.8);*/
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slidefade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 600px) { 
+	.mySlides {
+	    display: none;
+	    height: 400px;
+	    width: 400px;
+	    background-size: contain;
+	}
+	.slideshow-container {
+	    width: 400px;
+	    height: 400px;
+	}
+	#startJokesBtn {
+	    height: 30px;
+	    width: 106px;
+	    font-size: 11px;	  
+	}
+	#introParagraph {
+	    font-size: 14px;
+	    max-width: 178px;
+	    padding-bottom: 15px;
+
+	}
+	.slide1TextContainer {
+	    top: 216px;
+	}
+
+	.answerBtn {
+	    max-width: 150px;
+	    font-size: 15px;
+	    margin: 0 auto;
+	}
+
+	.joke {
+	    font-size: 20px;
+	    padding-bottom: 10px;
+	    max-width: 210px;
+	}
+	.slide2TextContainer {
+	    top: 144px;
+	}
+	.next {
+	    right: 20px; 
+
+	}
+
+	.prev {
+	    left: 20px;
+	}
+	.slide3TextContainer {
+	    position: relative;
+	    top: 94px;
+	}
+	#lastSlideText {
+	    font-size: 12px;
+	    max-width: 164px;
+	    padding-bottom: 35px;
+	    line-height: normal;
+	}
+	#fruitFactTitle {
+	    padding-bottom: 5px;
+	    font-size: 25px;
+	}
+
+	#fruityFact {
+	    font-size: 12px;
+	    max-width: 118px;
+	    height: 51px;
+	}
+	#slide3-BtnGroup {
+	    top: 137px;
+	    font-size: 13px;
+	}
+
+	#getCoupBtn {
+	    height: 35px;
+	    width: 145px;
+	    font-size: 15px;
+	    margin: 15px auto;
+
+	}
+
+	
+}
+
+@media screen and (max-width: 400px){
+
+	.slideshow-container {
+	    width: 300px;
+	    height: 300px;
+	}
+	.mySlides {
+	    height: 300px;
+	    width: 300px;
+	}
+	.slide1TextContainer {
+	    top: 157px;
+	}
+	#introParagraph {
+	    padding-bottom: 15px;
+	    font-size: 11px;
+	    max-width: 147px;
+
+	}
+	#startJokesBtn {
+	    height: 26px;
+	    width: 92px;
+	    font-size: 9px;
+	}
+
+.slide2TextContainer {
+    top: 114px;
+}
+
+.joke {
+    font-size: 14px;
+    padding-bottom: 10px;
+    max-width: 190px;
+}
+
+.answerBtn {
+    max-width: 150px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.prev img, .next img {
+    max-width: 75%;     max-width: 75%;
+}
+.prev {
+    left: 11px; 
+}
+
+.next {
+    right: 11px;
+
+}
+.slide3TextContainer {
+    position: relative;
+    top: 70px;
+}
+#lastSlideText {
+    font-size: 10px;
+    max-width: 164px;
+    padding-bottom: 21px;
+    line-height: normal;
+}
+#fruitFactTitle {
+    padding-bottom: 3px;
+    font-size: 20px;
+}
+
+#fruityFact {
+    font-size: 11px;
+    max-width: 118px;
+    height: 45px;
+
+}
+#slide3-BtnGroup {
+    top: 100px;
+    font-size: 10px;
+}
+#getCoupBtn {
+    height: 30px;
+    width: 110px;
+    font-size: 10px;
+    margin: 10px auto;
+}
+
+
+
+}
+
+

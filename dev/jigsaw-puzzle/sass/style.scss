@@ -1,0 +1,44 @@
+
+$puzzle-container-first-responsive-breakpoint: 1200px;
+$puzzle-container-second-responsive-breakpoint: 810px;
+$sidebar-responsive-breakpoint: 600px;      
+$first-responsive-breakpoint: 667px;
+$second-responsive-breakpoint: 667px;
+$third-responsive-breakpoint: 470px;
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+//reset other games css
+.jigsaw-puzzle{
+    img{
+        max-width: none;
+    }
+}
+.main-wrapper{
+    position:relative;
+    width: 100%;
+    max-width:1155px;
+    margin-left:auto;
+    margin-right: auto;
+    @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+        width:830px;
+    }
+    @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+        width:595px;
+    }
+    @media screen and (max-width: $sidebar-responsive-breakpoint) {
+        width: 315px;
+    }
+}
+
+
+// @import "normalize";
+@import "mixins";
+@import "sidebars";
+@import "piece";
+@import "puzzle-main";
+@import "how-to-play";
+@import "game-end";

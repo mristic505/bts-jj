@@ -1,0 +1,81 @@
+.how-to-play-wrapper{
+    // display: none;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    background-image: url('assets/pop-a-fruit/game_start/background.png');
+    background-size: cover;
+    z-index: 99999;
+    .how-to-play-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom: 110px;
+        .how-to-play-title{
+            margin-top: 25px;
+        }
+        .how-to-play-subtitle{
+            font-family: "CabritoNorExB";
+            font-size: 24px;
+            color: #1a5632;
+            margin-top: 0px;
+            margin-bottom: 7px;
+        }
+        p{
+            font-family: "CabritoNorExB";
+            font-size: 18px;
+            color: #1a5632;
+            margin: 0;
+        }
+        .start-game-button{
+            font-family: "CabritoNorExB";
+            margin-top:20px;
+            padding: 10px 53px;
+            color: #ffffff;
+            background-color: #1a5632;
+            border: 0;
+            width: auto;
+            height: auto;
+        }
+    }
+
+
+    @media screen and (max-width: 600px){
+        .how-to-play-container{
+            width: 100%;
+            .how-to-play-title{
+                height: 61px;
+                margin-top: 36px;
+            }
+            .how-to-play-subtitle{
+                font-size: 14px;
+                margin-bottom: 7px;
+            }
+            p{
+                font-size: 11px;
+            }
+            .start-game-button{
+                font-size: 10px;
+                padding: 9px 32px;
+            }
+        }
+    }
+    @media screen and (max-width: 470px) {
+        .how-to-play-container{
+            .how-to-play-title{
+                height: 43px;
+                margin-top: 73px;
+            }
+            .how-to-play-subtitle{
+                margin-bottom: 2px;
+                // font-size: 19px;
+            }
+            p{
+                // font-size: 12px;
+            }
+        }
+    }
+}

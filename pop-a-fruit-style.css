@@ -1,0 +1,790 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1155px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .main-wrapper {
+    overflow: hidden;
+  }
+}
+
+.pop-a-fruit img {
+  max-width: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.game-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 578px;
+  height: 578px;
+  border: 0px;
+  padding: 21px;
+  background-image: url("assets/pop-a-fruit/frame.png");
+  background-size: contain;
+  text-align: center;
+}
+
+.game-container #game-counter {
+  position: absolute;
+  top: 7%;
+  z-index: 2;
+  left: calc(50% - 35px);
+  border: 1px solid #ffffff;
+  padding: 0px 13px;
+  font-family: "CabritoNorExB";
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.game-container #game-counter:before {
+  content: ":";
+}
+
+.game-container #game-counter.hurry {
+  border-color: red;
+  color: red;
+}
+
+.game-container .sections {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.game-container .sections .hole-container {
+  position: absolute;
+  width: 25%;
+  height: 245px;
+  bottom: -140px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container .sections .hole-container {
+    bottom: -160px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .sections .hole-container {
+    bottom: -180px;
+  }
+}
+
+.game-container .sections .hole-container.apple {
+  bottom: -120px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container .sections .hole-container.apple {
+    bottom: -145px !important;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .sections .hole-container.apple {
+    bottom: -174px !important;
+  }
+}
+
+.game-container .sections .hole-container.watermelon {
+  bottom: -128px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container .sections .hole-container.watermelon {
+    bottom: -158px !important;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .sections .hole-container.watermelon {
+    bottom: -180px !important;
+  }
+}
+
+.game-container .two-holes-first {
+  left: 20%;
+}
+
+.game-container .two-holes-second {
+  left: 55%;
+}
+
+.game-container .three-holes-first {
+  left: 5%;
+}
+
+.game-container .three-holes-second {
+  left: 38%;
+}
+
+.game-container .three-holes-third {
+  left: 70%;
+}
+
+.game-container .section-1 {
+  height: 156px;
+  background-image: url("assets/pop-a-fruit/main_sections_backgrounds/1.png");
+}
+
+@media screen and (max-width: 600px) {
+  .game-container .section-1 .hole-container {
+    bottom: -161px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .section-1 .hole-container {
+    bottom: -190px;
+  }
+}
+
+.game-container .section-1 .hole-container.apple {
+  bottom: -120px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container .section-1 .hole-container.apple {
+    bottom: -150px !important;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .section-1 .hole-container.apple {
+    bottom: -181px !important;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .section-1 .hole-container.watermelon {
+    bottom: -186px !important;
+  }
+}
+
+.game-container .section-2 {
+  height: 175px;
+  background-image: url("assets/pop-a-fruit/main_sections_backgrounds/2.png");
+  margin-top: -21px;
+}
+
+.game-container .section-3 {
+  height: 175px;
+  background-image: url("assets/pop-a-fruit/main_sections_backgrounds/3.png");
+  margin-top: -23px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container .section-3 .hole-container.grape {
+    bottom: -161px !important;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .section-3 .hole-container.grape {
+    bottom: -187px !important;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .section-3 .hole-container.apple {
+    bottom: -178px !important;
+  }
+}
+
+.game-container .section-4 {
+  height: 100px;
+  background-image: url("assets/pop-a-fruit/main_sections_backgrounds/4.png");
+  margin-top: -23px;
+}
+
+@media screen and (max-width: 600px) {
+  .responsive.game-container {
+    width: 450px;
+    height: 450px;
+  }
+  .responsive.game-container .section-1 {
+    height: 118px;
+  }
+  .responsive.game-container .section-2 {
+    height: 142px;
+  }
+  .responsive.game-container .section-3 {
+    height: 138px;
+  }
+  .responsive.game-container .section-4 {
+    height: 83px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .responsive.game-container {
+    width: 315px;
+    height: 315px;
+  }
+  .responsive.game-container .section-1 {
+    height: 80px;
+  }
+  .responsive.game-container .section-2 {
+    height: 107px;
+  }
+  .responsive.game-container .section-3 {
+    height: 95px;
+  }
+  .responsive.game-container .section-4 {
+    height: 66px;
+  }
+  .responsive.game-container #game-counter {
+    left: calc(50% - 22px);
+    padding: 0px 7px;
+    font-size: 18px;
+  }
+  .responsive.game-container #game-counter {
+    top: 9%;
+  }
+}
+
+.fruit-container {
+  position: relative;
+  top: 130px;
+  width: 100%;
+  padding-top: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: top 0.5s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fruit-container.fruit-on-top {
+  z-index: 999;
+}
+
+.fruit-container.show {
+  top: 0px;
+}
+
+.fruit-container.popped {
+  padding-top: 0px;
+  width: 168px;
+  height: 168px;
+  margin-top: -48px;
+  margin-left: -18px;
+  background-size: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .fruit-container.popped {
+    width: 134px;
+    height: 134px;
+    margin-top: -38px;
+    margin-left: -17px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .fruit-container.popped {
+    width: 90px;
+    height: 90px;
+    margin-top: -23px;
+    margin-left: -11px;
+  }
+}
+
+.fruit-container.apple {
+  background-image: url("assets/pop-a-fruit/fruits/apple.png");
+}
+
+.fruit-container.watermelon {
+  background-image: url("assets/pop-a-fruit/fruits/watermelon.png");
+}
+
+.fruit-container.grape {
+  background-image: url("assets/pop-a-fruit/fruits/grape.png");
+}
+
+.fruit-container.apple.popped {
+  background-image: url("assets/pop-a-fruit/fruits/apple_popped.png");
+}
+
+.fruit-container.watermelon.popped {
+  background-image: url("assets/pop-a-fruit/fruits/watermelon_popped.png");
+}
+
+.fruit-container.grape.popped {
+  background-image: url("assets/pop-a-fruit/fruits/grape_popped.png");
+}
+
+.how-to-play-wrapper {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  background-image: url("assets/pop-a-fruit/game_start/background.png");
+  background-size: cover;
+  z-index: 99999;
+}
+
+.how-to-play-wrapper .how-to-play-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  padding-bottom: 110px;
+}
+
+.how-to-play-wrapper .how-to-play-container .how-to-play-title {
+  margin-top: 25px;
+}
+
+.how-to-play-wrapper .how-to-play-container .how-to-play-subtitle {
+  font-family: "CabritoNorExB";
+  font-size: 24px;
+  color: #1a5632;
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+
+.how-to-play-wrapper .how-to-play-container p {
+  font-family: "CabritoNorExB";
+  font-size: 18px;
+  color: #1a5632;
+  margin: 0;
+}
+
+.how-to-play-wrapper .how-to-play-container .start-game-button {
+  font-family: "CabritoNorExB";
+  margin-top: 20px;
+  padding: 10px 53px;
+  color: #ffffff;
+  background-color: #1a5632;
+  border: 0;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .how-to-play-wrapper .how-to-play-container {
+    width: 100%;
+  }
+  .how-to-play-wrapper .how-to-play-container .how-to-play-title {
+    height: 61px;
+    margin-top: 36px;
+  }
+  .how-to-play-wrapper .how-to-play-container .how-to-play-subtitle {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .how-to-play-wrapper .how-to-play-container p {
+    font-size: 11px;
+  }
+  .how-to-play-wrapper .how-to-play-container .start-game-button {
+    font-size: 10px;
+    padding: 9px 32px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .how-to-play-wrapper .how-to-play-container .how-to-play-title {
+    height: 43px;
+    margin-top: 73px;
+  }
+  .how-to-play-wrapper .how-to-play-container .how-to-play-subtitle {
+    margin-bottom: 2px;
+  }
+}
+
+.game-end-wrapper {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  background-image: url("assets/pop-a-fruit/game_end/game_end_background.png");
+  background-size: cover;
+  z-index: 999991;
+}
+
+.game-end-wrapper .you-did-it-title, .game-end-wrapper .failed-to-pop-fruits-title {
+  margin-top: 43px;
+}
+
+.game-end-wrapper h2 {
+  color: #ffffff;
+  font-family: "CabritoNorBol";
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.game-end-wrapper h2 span {
+  font-family: "CabritoNorExB";
+}
+
+.game-end-wrapper .end_ctas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-end-wrapper .end_ctas {
+    bottom: 41px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-end-wrapper .end_ctas {
+    top: auto;
+    bottom: 15px;
+    margin-top: 10px;
+  }
+  .game-end-wrapper .end_ctas .play_again {
+    padding-left: 30px;
+  }
+}
+
+.game-end-wrapper .bottom-cta-container {
+  font-family: 'CabritoNorBol';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.game-end-wrapper .bottom-cta-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.game-end-wrapper .bottom-cta-container a:visited, .game-end-wrapper .bottom-cta-container a:hover, .game-end-wrapper .bottom-cta-container a:active {
+  color: #ffffff;
+}
+
+.game-end-wrapper .bottom-cta-container .get-coupon-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 165px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #1a5632;
+  margin-bottom: 61px;
+}
+
+.game-end-wrapper .bottom-cta-container .cta {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.game-end-wrapper .bottom-cta-container .cta img {
+  padding-left: 5px;
+}
+
+.game-end-wrapper .bottom-cta-container .cta:first-child {
+  padding-right: 20px;
+}
+
+.game-end-wrapper .bottom-cta-container .cta-arrow {
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid green;
+}
+
+.game-end-wrapper .game-end-message-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+.game-end-wrapper .game-end-message-container .fruit-fact-info {
+  font-family: 'CabritoNorExB';
+  font-size: 18px;
+  color: #1a5632;
+  margin-top: 4px;
+}
+
+.game-end-wrapper .game-end-image {
+  position: absolute;
+  top: 24%;
+  right: 0%;
+  height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-end-wrapper .you-did-it-title, .game-end-wrapper .failed-to-pop-fruits-title {
+    margin-top: 15px;
+  }
+  .game-end-wrapper h2 {
+    font-size: 13px;
+  }
+  .game-end-wrapper .game-end-message-container img {
+    height: 30px;
+  }
+  .game-end-wrapper .game-end-message-container .fruit-fact-info {
+    font-size: 14px;
+    margin: 0px;
+    padding: 8px;
+  }
+  .game-end-wrapper .game-end-image {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-end-wrapper .you-did-it-title, .game-end-wrapper .failed-to-pop-fruits-title {
+    margin-top: 15px;
+    height: 30px;
+  }
+  .game-end-wrapper h2 {
+    margin-top: 2px;
+    font-size: 10px;
+  }
+  .game-end-wrapper .game-end-message-container img {
+    height: 20px;
+  }
+  .game-end-wrapper .game-end-message-container .fruit-fact-info {
+    font-size: 10px;
+    padding: 0 10px 0 9px;
+  }
+  .game-end-wrapper .game-end-image {
+    height: 100px;
+  }
+}
