@@ -153,11 +153,9 @@ $( document ).ready(function() {
             }
             if(active_step == 5){
                 if($( ".step-5.case-cover div" ).length > 0 && $(".type-your-name").val().length > 0){//disable any more childs
-                    console.log($(".type-your-name").length);
-                    $('.next-button').fadeIn();
-                    console.log("prikazi");
+                    $('.next-button.done-button').fadeIn();
                 }else{
-                    $('.next-button').fadeOut();
+                    $('.next-button.done-button').fadeOut();
                 }
             }
         }

@@ -305,7 +305,7 @@ th {
 }
 
 .ingredients-slider {
-  padding-top: 18px;
+  padding-top: 10px;
 }
 
 .ingredients-slider:after {
@@ -318,17 +318,22 @@ th {
   content: "Drop here to return";
 }
 
+.ingredients-slider.step-5 {
+  padding-top: 23px;
+}
+
 .ingredient-title {
   color: #1a5632;
   font-size: 12px;
   text-transform: capitalize;
   position: absolute;
-  bottom: -18px;
   left: 50%;
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
   font-family: "CabritoNorExB";
   width: 100%;
+  bottom: -21px;
+  line-height: 12px;
 }
 
 .slick-list {
@@ -428,7 +433,7 @@ th {
   }
 }
 
-.next-button {
+.next-button, .done-button {
   position: absolute;
   bottom: 12px;
   left: 50%;
@@ -440,8 +445,7 @@ th {
   color: #fff;
   font-size: 16px;
   line-height: 34px;
-  padding-left: 20px;
-  padding-right: 20px;
+  text-align: center;
   cursor: pointer;
 }
 
