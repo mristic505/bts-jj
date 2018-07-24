@@ -334,8 +334,7 @@ img {
     background-image: url(../img/nav-bg.png);
     background-position: center center;
     background-color: #13230b;
-    background-repeat: no-repeat;
-    /*margin-top: 10px;*/
+    background-repeat: no-repeat;    
 }
 .navbar {
     margin-bottom: 0;
@@ -538,7 +537,7 @@ label[for="age"] {
 
 #register input[type="submit"],
 #prize_form input[type="submit"] {
-    background-color: #65a621;
+    background-color: #1c5733;
     color: #fff;
     border: none;
     outline: none;
@@ -546,7 +545,7 @@ label[for="age"] {
     text-transform: uppercase;
     padding: 12px 35px;
     height: auto;
-
+    font-family: "CabritoNorExB";
 }
 .parn {
     font-size: 10px;
@@ -1109,8 +1108,8 @@ main {
 }
 /************ PRIZE CLAIM ***********/
 .form_holder {
-    max-width: 698px;
-    padding: 0 15px;
+    /*max-width: 698px;
+    padding: 0 15px;*/
     margin: auto;
     position: relative;
 }
@@ -1304,7 +1303,7 @@ main {
     font-family: CabritoNorExB;
 
 }
-.officialRulesContainer {    
+.officialRulesContainer, .faqContainer, .prizesContainer, .page-prize-claim-form .form_holder {    
     max-width: 800px;
     margin: 0 auto;
     font-family: 'GothamMediumRegular';
@@ -1331,7 +1330,7 @@ main {
 
 /************** FAQ *******************/
 .faqContainer {
-    max-width: 700px;
+    /*max-width: 700px;*/
     margin: 0 auto;
     font-family: 'GothamMediumRegular';
 }    
@@ -1353,10 +1352,16 @@ main {
 /*******  end of faq ********/
 /************* Prizes Page **************/
 .prizesContainer {
-    max-width: 450px;
+    /*max-width: 450px;*/
     margin: auto;
     color: #1a5632;
     text-align: center;
+}
+.prizesContainer h2, .prizesContainer p {
+    font-family: CabritoNorExB;
+}
+.prepaidCard {
+    margin: 10px auto;
 }
 /*********** End of Prizes ************/
 
