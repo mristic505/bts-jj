@@ -73,7 +73,7 @@ function startJokes(bgImage, jokesList) {
 
     $("#startJokesBtn").click(function(){
         $(".mySlides").addClass(bgImage);
-        $(".joke").html(jokesList[0]);
+        $(".joke").html(allJokes[jokesList[0]]);
     });   
 }
 
@@ -85,7 +85,16 @@ function nextJoke(color, fruitFact, bgImage, jokesList) {
         if (count < (jokesList.length - 2) ) {
 
             count += 2;
-            $(".joke").html(jokesList[count]);
+            $(".joke").html(allJokes[jokesList[count]]);
+
+
+            $(".answerBtn").click(function(){
+                $(".answerBtn").html(allJokes[jokesList[count] + 1]);
+                
+            });
+            // console.log(jokesList);
+            // console.log(count);
+            // console.log(jokesList[count]);
 
         }else {
 
@@ -95,6 +104,7 @@ function nextJoke(color, fruitFact, bgImage, jokesList) {
             $(".mySlides").addClass(bgImage);
         }
     });
+
 }
 
 function prevJoke(jokesList) {
@@ -102,7 +112,7 @@ function prevJoke(jokesList) {
         if (count > 1) {
             
             count -= 2;
-            $(".joke").html(jokesList[count]);
+            $(".joke").html(allJokes[jokesList[count]]);
         }
     });
 }
@@ -115,7 +125,7 @@ function resetJokes(removeClass, jokesList) {
         $("#fruitFactTitle").removeClass();
         $("#fruityFact").html();
         $(".mySlides").removeClass(removeClass);
-        $(".joke").html(jokesList[count]);
+        $(".joke").html(allJokes[jokesList[count]]);
 
     });
 }
@@ -163,7 +173,7 @@ $(".prev, .next").click(function(){
     $(".answerBtn").html("SEE ANSWER <img id='answerBtnArrow' src='img/seeAnswerBtn.png'/>");
 });
 
-var randomJokesGenerated = randomJokes(5); 
+var randomJokesGenerated = randomJokes(10); 
 console.log(randomJokesGenerated);
 
 // ORANGE SECTION
@@ -177,10 +187,7 @@ if (play == 'orange') {
 
     resetJokes("orangeImg", randomJokesGenerated);
 
-    $(".answerBtn").click(function() {
-        
-        $(".answerBtn").html(randomJokesGenerated[count + 1]);
-    });
+
 }
 
 // APPLE SECTION
