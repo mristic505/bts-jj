@@ -1,0 +1,167 @@
+.puzzle-background.mango{
+    background-image:url("assets/lunchtime_flavorites/variations/mango/background.png");
+}
+.fruit-container.mango{
+    position:absolute;
+    width:4px;
+    height:4px;
+    transition: all 1s linear;    
+    div{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.mango-1-position{
+    .mango-1{
+        height: 30px;
+        width: 38px;
+        @media screen and (max-width: 600px){
+            height: 22.86;
+            width: 28.95px;
+        }
+        @media screen and (max-width: 470px) { 
+            height: 15.5px;
+            width: 20.71px;
+        }
+    }
+    top: 75.2%;
+    left: 42.8%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 9.8%;
+    }
+}
+.mango-2-position{
+    .mango-2{
+        height: 39px;
+        width: 29px;
+        @media screen and (max-width: 600px){
+            height: 29.72px;
+            width: 22.10px;
+        }
+        @media screen and (max-width: 470px) { 
+            height: 21.25px;
+            width:  15.80px;      
+        }
+    }
+    top: 49%;
+    left: 9%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 25.5%;
+    }
+}
+.mango-3-position{ 
+    .mango-3{
+        height: 29px;
+        width: 30px;
+        @media screen and (max-width: 600px){
+            height: 22.10px;
+            width: 22.86px;
+        }
+        @media screen and (max-width: 470px) { 
+            height: 15.80px;
+            width: 15.5px;     
+        }
+    }
+    top: 57.5%;
+    left: 79%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 41.2%
+    }
+}
+.mango-4-position{
+    .mango-4{
+        height: 40px;
+        width: 50px;
+        @media screen and (max-width: 600px){
+            height: 30.48px;
+            width: 30.10px;
+        }
+        @media screen and (max-width: 470px) {  
+            height: 21.8px;
+            width: 27.25px;
+        }
+    }
+    top: 38.6%;
+    left: 63.1%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 57.2%;
+    }
+}
+.mango-5-position{ 
+    .mango-5{
+        height: 38px;
+        width: 51px;
+        @media screen and (max-width: 600px){
+            height: 28.95px;
+            width: 38.86px;
+        }
+        @media screen and (max-width: 470px) {
+            height: 20.71px;
+            width: 27.79px;
+        }
+    }
+    top: 18%;
+    left: 83%;
+    z-index: 2;
+    &.found-home-location{
+        top: 93.2%;
+        left: 73.5%;
+    }
+}
+.mango-6-position{ 
+    .mango-6{
+        height: 47px;
+        width: 45px;
+        @media screen and (max-width: 600px){
+            height: 38.86px;
+            width: 34.29px;
+        }
+        @media screen and (max-width: 470px) {
+            height: 25.61px;
+            width: 24.52px;      
+        }
+    }
+    top: 24%;
+    left: 84.5%;
+    z-index: 1;
+    &.found-home-location{
+        top: 93.2%;
+        left: 89%;
+    }
+}
+@for $i from 1 through 6{
+    .mango-#{$i}{
+        background-image: url('assets/lunchtime_flavorites/variations/mango/fruits/mango-#{$i}.png');
+    }    
+}
+
+.fruit-container.mango.found div{
+    height: 50px;
+    width: 70px;
+    
+    @media screen and (max-width: 600px){
+        height: 30.10px;
+        width: 53.34px;
+    }
+    @media screen and (max-width: 470px) {
+        height: 27.25px;
+        width: 38.15px;      
+    }
+    background-image: url('assets/lunchtime_flavorites/variations/mango/fruits/mango-found.png');
+    transition: all 0.1s linear;
+    // transform:translate(-50%, -50%)scale(1.0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
