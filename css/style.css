@@ -179,7 +179,7 @@ img {
 .spin {
     color: #fff;
     font-family: 'CabritoNorExB';
-    background: #65a621;
+    background: #1a5632;
     border: none;
     font-size: 24px;
     padding: 18px 33px;
@@ -339,6 +339,7 @@ img {
 }
 .navbar {
     margin-bottom: 0;
+    min-height: 0;
 }
 @media screen and (min-width: 769px) {
     .nav div ul li {
@@ -1303,10 +1304,12 @@ main {
     font-family: CabritoNorExB;
 
 }
-.officialRulesContainer {
-    max-width: 700px;
+.officialRulesContainer {    
+    max-width: 800px;
     margin: 0 auto;
     font-family: 'GothamMediumRegular';
+    padding: 0 100px 30px;
+    background: #fff;
 }
 .officialRulesContainer p strong {
     font-family: 'GothamBoldRegular';
