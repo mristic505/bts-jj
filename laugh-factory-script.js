@@ -35,7 +35,9 @@ var orangeFruitFact = "Not all oranges are orange";
 
 var appleFruitFact = "Apples float in water because they are 25% air.";
 
-var strawBanFruitFact = "A strawberry is not an actual berry, but a banana is.";
+var strawBanFruitFact = "A bunch of bananas is called a \"hand,\" and one banana is called a \"finger\".";
+
+var dragonFruitFact = "Dragonfruit blooms overnight—it starts at dusk and is in full bloom around midnight.";
 
 
 
@@ -75,6 +77,9 @@ function startJokes(bgImage, jokesList) {
         $(".mySlides").addClass(bgImage);
         $(".joke").html(allJokes[jokesList[0]]);
     });   
+    $(".answerBtn").click(function() {
+        $(".answerBtn").html(allJokes[jokesList[count] + 1]);
+    });    
 }
 
 
@@ -87,10 +92,8 @@ function nextJoke(color, fruitFact, bgImage, jokesList) {
             count += 2;
             $(".joke").html(allJokes[jokesList[count]]);
 
-
-            $(".answerBtn").click(function(){
+            $(".answerBtn").click(function() {
                 $(".answerBtn").html(allJokes[jokesList[count] + 1]);
-                
             });
             // console.log(jokesList);
             // console.log(count);
@@ -193,33 +196,40 @@ if (play == 'orange') {
 // APPLE SECTION
 if (play == 'apple') {
 
-    startJokes("appleBg", appleJokes);
+    startJokes("appleBg", randomJokesGenerated);
 
-    nextJoke("green", appleFruitFact, "appleImg", appleJokes);
+    nextJoke("green", appleFruitFact, "appleImg", randomJokesGenerated);
 
-    prevJoke(appleJokes);
+    prevJoke(randomJokesGenerated);
 
-    resetJokes("appleImg", appleJokes);
+    resetJokes("appleImg", randomJokesGenerated);
 
-    $(".answerBtn").click(function() {
-        
-        $(".answerBtn").html(appleJokes[count + 1]);
-    });
+
+}// Dragonfruit Section
+if (play == 'dragonFruit') {
+
+    startJokes("appleBg", randomJokesGenerated);
+
+    nextJoke("purple", dragonFruitFact, "dragonFruitImg", randomJokesGenerated);
+
+    prevJoke(randomJokesGenerated);
+
+    resetJokes("dragonFruitImg", randomJokesGenerated);
+
+
 }
 
 // STRAWBERRY BANANA
 if (play == 'strawberryBanana') {
 
-    startJokes("strawBanBg", strawberryBananaJokes);
+    startJokes("strawBanBg", randomJokesGenerated);
 
-    nextJoke("yellow", strawBanFruitFact, "strawBanImg", strawberryBananaJokes);
+    nextJoke("yellow", strawBanFruitFact, "strawBanImg", randomJokesGenerated);
 
-    resetJokes("strawBanImg", strawberryBananaJokes);
+    resetJokes("strawBanImg", randomJokesGenerated);
 
-    $(".answerBtn").click(function() {
-        
-        $(".answerBtn").html(strawberryBananaJokes[count + 1]);
-    });
+    $("#fruityFact").css("max-width", "180px");
+
 
 
 }
