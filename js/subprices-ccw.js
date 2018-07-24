@@ -39,12 +39,12 @@ jQuery(document).ready(function($) {
                 slug: 'cran_apple',
                 url: '?page=juicy-jigsaw&play=cranberry'
             },
-            {
-                name: 'Passion <br>Dragonfruit',
-                bg: '#9c2164',
-                slug: 'pdrfr',
-                url: '?page=fruity-match&play=passion-dragonfruit'
-            },
+            // {
+            //     name: 'Passion <br>Dragonfruit',
+            //     bg: '#9c2164',
+            //     slug: 'pdrfr',
+            //     url: '?page=fruity-match&play=passion-dragonfruit'
+            // },
             {
                 name: 'Grape',
                 bg: '#94398b',

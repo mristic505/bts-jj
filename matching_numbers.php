@@ -15,10 +15,10 @@
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
         var play = getParameterByName('play');
-        if (play == 'passion-dragonfruit') {
-            end_message = 'Dragon fruit grows on a cactus.';
-            end_fruit = 'passion_fruit';
-        }
+        // if (play == 'passion-dragonfruit') {
+        //     end_message = 'Dragon fruit grows on a cactus.';
+        //     end_fruit = 'passion_fruit';
+        // }
         if (play == 'fruit-punch') {
             end_message = 'There is a tree called the Fruit Salad Tree that sprouts 3-7 different fruits in the same tree.';
             end_fruit = 'fruit_punch';
