@@ -1,8 +1,8 @@
   <link rel="stylesheet" href="lunchtime-flavorites-style.css?v=1.0">
-  <script
+  <!-- <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> -->
   <script
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
@@ -102,6 +102,12 @@
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/stickers'), array('..', '.','stacked')) as $value): ?>
                             <div class="draggable stack-area-5-ingredient <?=$value?>"><img src="assets/lunchtime_flavorites/stickers/<?=$value?>"></div>
                         <?php endforeach; ?>
+                    </div>
+                    <div class="case-cover-container">
+                        <div id="case-cover"> 
+                            <div class="front-lf"></div> 
+                            <div class="back-lf"></div> 
+                        </div>
                     </div>
                 </div>
                 <div class="next-button" style="display: none">NEXT</div>

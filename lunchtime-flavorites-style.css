@@ -509,6 +509,37 @@ th {
   display: none;
 }
 
+.case-cover-container {
+  position: absolute;
+  top: -352px;
+  left: 85px;
+  width: 370px;
+  height: 440px;
+  display: none;
+}
+
+#case-cover {
+  height: 100%;
+}
+
+#case-cover .front-lf {
+  background-image: url("assets/lunchtime_flavorites/case-cover.png");
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+}
+
+#case-cover .back-lf {
+  width: 100%;
+  background-image: url("assets/lunchtime_flavorites/case-cover.png");
+  background-size: contain;
+  background-position: top center;
+  height: 50%;
+  background-repeat: no-repeat;
+}
+
 .how-to-play-wrapper {
   position: absolute;
   top: 18px;

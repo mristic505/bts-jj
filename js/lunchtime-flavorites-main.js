@@ -1,7 +1,6 @@
 var solved_fruits = [1,0,0,0,0,0,0];
 var active_step = 1;
 $( document ).ready(function() {
-    
     $('.ingredients-slider').slick({
         dots: true,
         infinite: true,
@@ -182,12 +181,25 @@ $( document ).ready(function() {
             $('.step-4').show();
             active_step = 4;
             $('.ingredients-slider').slick('setPosition');
+            $(".case-cover-container").show();
+            $("#case-cover").flip({
+                axis: 'x',
+                speed: 2000,
+                front: '.front-lf',
+                back: '.back-lf'
+            });
+            setTimeout(function(){
+                $("#case-cover").flip(true);
+             }, 1000);
+
             setTimeout(function(){
                 $('.step-4').hide();
                 $('.step-5').show();
+                $(".case-cover-container").hide();
+
                 active_step = 5;
                 $('.ingredients-slider').slick('setPosition');
-        }, 2000);
+             }, 4000);
         }
         else if(active_step == 5){
             $('.step-5').hide();
