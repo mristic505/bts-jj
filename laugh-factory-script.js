@@ -1,5 +1,64 @@
 // FUNCTIONS
 
+var allJokes = [
+                    "Why did the teacher wear sunglasses?", "Because his class was so bright!",
+                    "What is a snake\’s favorite subject?", "Hiss-tory!",
+                    "What is the world\’s tallest building?", "The library. Because it has the most stories.",
+                    "What school supply is always tired?", "A knapsack.",
+                    "How do bees get to school?", "On the school buzz.",
+                    "Why did the music teacher need a ladder?", "To reach the high notes.",
+                    "What school do you go to if you\’re a giant?", "High school.",
+                    "What did one calculator say to the other?", "You can always count on me.",
+                    "Who is the king of all school supplies?", "The ruler.",
+                    "When is a blue school book not blue?", "When it is read.",
+                    "What did one pencil say to the other?", "You look sharp!",
+                    "What\’s the smartest insect around?", "The spelling bee.",
+                    "What do you get when you cross a pair of pants with a dictionary?", "Smarty pants.",
+                    "What\’s a pirate\’s favorite subject?", "Arrrrrrrrrrrrrrt.",
+                    "Why did the girl wear glasses during math class?", "Because they improve di-vision!",
+                    "Where did the pencil go on vacation?", "To Pennsylvania.",
+                    "Why is 1+1=3 like your left foot?", "It's not right.",
+                    "Why are fish so smart?", "Because they are always in a school.",
+                    "What\’s a spider\’s favorite thing to do on a computer?", "Make websites.",
+                    "What did the students do when their shoelaces got tangled together?", "They went on a class trip.",
+                    "Why was the math book unhappy?", "Because it had lots of problems.",
+                    "What\’s the longest word in the dictionary?", "Smiles. Because there\’s a mile between the first and last letters.",
+                    "Why was the broom late for school?", "Because he overswept.",
+                    "Why did the chicken cross the playground at recess?", "To get to the other slide.",
+                    "What flies around the school at night?", "The alpha-bat.",
+                    "Why did the teacher write the math problem on the window?", "She wanted it to be very clear.",
+                    "Why is glue bad at math?", "It always gets stuck on the problems.",
+                    "What did the paper say to the pencil?", "Write on!"
+]
+
+var orangeFruitFact = "Not all oranges are orange";
+
+var appleFruitFact = "Apples float in water because they are 25% air.";
+
+var strawBanFruitFact = "A bunch of bananas is called a \"hand,\" and one banana is called a \"finger\".";
+
+var dragonFruitFact = "Dragonfruit blooms overnight—it starts at dusk and is in full bloom around midnight.";
+
+
+
+
+function randomJokes(amount) {
+
+    var fiveJokesContainer = [];
+
+    for (var i = 0; i < amount; i++) {
+
+        do {
+            var generateRandomNumber = Math.floor(Math.random() * (allJokes.length - 1));
+        }
+         while ((generateRandomNumber % 2) != 0);
+
+            fiveJokesContainer[i] = generateRandomNumber;
+    }
+    return fiveJokesContainer;
+}
+
+
 //Query String CODE
 function getParameterByName(name, url) {
         if (!url) url = window.location.href;
@@ -16,9 +75,14 @@ function startJokes(bgImage, jokesList) {
 
     $("#startJokesBtn").click(function(){
         $(".mySlides").addClass(bgImage);
-        $(".joke").html(jokesList[0]);
+        $(".joke").html(allJokes[jokesList[0]]);
     });   
+    $(".answerBtn").click(function() {
+        $(".answerBtn").html(allJokes[jokesList[count] + 1]);
+    });    
 }
+
+
 
 function nextJoke(color, fruitFact, bgImage, jokesList) {
     $(".next").click(function(){
@@ -26,7 +90,14 @@ function nextJoke(color, fruitFact, bgImage, jokesList) {
         if (count < (jokesList.length - 2) ) {
 
             count += 2;
-            $(".joke").html(jokesList[count]);
+            $(".joke").html(allJokes[jokesList[count]]);
+
+            $(".answerBtn").click(function() {
+                $(".answerBtn").html(allJokes[jokesList[count] + 1]);
+            });
+            // console.log(jokesList);
+            // console.log(count);
+            // console.log(jokesList[count]);
 
         }else {
 
@@ -36,6 +107,7 @@ function nextJoke(color, fruitFact, bgImage, jokesList) {
             $(".mySlides").addClass(bgImage);
         }
     });
+
 }
 
 function prevJoke(jokesList) {
@@ -43,7 +115,7 @@ function prevJoke(jokesList) {
         if (count > 1) {
             
             count -= 2;
-            $(".joke").html(jokesList[count]);
+            $(".joke").html(allJokes[jokesList[count]]);
         }
     });
 }
@@ -56,57 +128,12 @@ function resetJokes(removeClass, jokesList) {
         $("#fruitFactTitle").removeClass();
         $("#fruityFact").html();
         $(".mySlides").removeClass(removeClass);
-        $(".joke").html(jokesList[count]);
+        $(".joke").html(allJokes[jokesList[count]]);
 
     });
 }
 
-// Jokes are on the even indexes starting at zero
-// Punchlines fall on the odd indexes
 
-
-var orangeJokes = [
-
-                    "Why did the orange stop in the middle of the road?", "Because it ran out of juice!",
-                    "What school subject is the fruitiest?", "History because it's full of dates!",
-                    "What is a vampire\'s favorite fruit?", "A neck-tarine!",
-                    "When do you go on red and stop at green?", "When you\'re eating a watermelon",
-                    "What do you call an orange that plays the trumpet?","A tooty fruity",
-                    "What are twins\' favorite fruit?", "Pears.",
-                    "Why do oranges wear suntan lotion?", "Because they peel.",
-                    "What kind of fruit can fix your sink?", "A PLUM-ber"
-]
-
-var orangeFruitFact = "Not all oranges are orange";
-
-var appleJokes = [
-
-                    "What did the apple tree say to the hungry caterpillar?", "Leaf me alone.",
-                    "What kind of apple isn\'t an apple?", "A pineapple!",
-                    "What did the apple tree say to the farmer?", "Stop picking on me.",
-                    "What can a whole apple do that half an apple can\'t do?", "It can look round!",
-                    "What did the apple skin say to the apple?", "I\'ve got you covered!",
-                    "What\'s red and goes up and down?", "An apple in an elevator!",
-                    "Why did the apple go to the doctor?", "It felt rotten to the core.",
-                    "Why was the apple alone with the orange?", "Because the banana split."
-]
-
-var appleFruitFact = "Apples float in water because they are 25% air.";
-
-var strawberryBananaJokes = [
-
-                    "Why did the banana go to the doctor?", "Because it wasn\'t peeling well.",
-                    "What kind of shoes are made from banana peels?", "Slippers.",
-                    "Why was the baby strawberry sad?", "Because its mom was in a jam.",
-                    "What key opens a banana?", "A mon-key.",
-                    "Why aren\'t bananas ever lonely?", "Because they come in bunches!",
-                    "What do you call a sad strawberry?", "A blueberry.",
-                    "What do you call a banana that likes to dance?", "A banana shake!",
-                    "What is a ghost\'s favorite fruit?", "A Boo-nana."
-
-]
-
-var strawBanFruitFact = "A strawberry is not an actual berry, but a banana is.";
 
 // SLIDE SHOW CODE
 var slideIndex = 1;
@@ -149,54 +176,60 @@ $(".prev, .next").click(function(){
     $(".answerBtn").html("SEE ANSWER <img id='answerBtnArrow' src='img/seeAnswerBtn.png'/>");
 });
 
+var randomJokesGenerated = randomJokes(10); 
+console.log(randomJokesGenerated);
 
 // ORANGE SECTION
 if (play == 'orange') {
 
-    startJokes("orangeBg", orangeJokes);
+    startJokes("orangeBg", randomJokesGenerated);
 
-    nextJoke("orange", orangeFruitFact, "orangeImg", orangeJokes);
+    nextJoke("orange", orangeFruitFact, "orangeImg", randomJokesGenerated);
 
-    prevJoke(orangeJokes);
+    prevJoke(randomJokesGenerated);
 
-    resetJokes("orangeImg", orangeJokes);
+    resetJokes("orangeImg", randomJokesGenerated);
 
-    $(".answerBtn").click(function() {
-        
-        $(".answerBtn").html(orangeJokes[count + 1]);
-    });
+
 }
 
 // APPLE SECTION
 if (play == 'apple') {
 
-    startJokes("appleBg", appleJokes);
+    startJokes("appleBg", randomJokesGenerated);
 
-    nextJoke("green", appleFruitFact, "appleImg", appleJokes);
+    nextJoke("green", appleFruitFact, "appleImg", randomJokesGenerated);
 
-    prevJoke(appleJokes);
+    prevJoke(randomJokesGenerated);
 
-    resetJokes("appleImg", appleJokes);
+    resetJokes("appleImg", randomJokesGenerated);
 
-    $(".answerBtn").click(function() {
-        
-        $(".answerBtn").html(appleJokes[count + 1]);
-    });
+
+}// Dragonfruit Section
+if (play == 'dragonFruit') {
+
+    startJokes("appleBg", randomJokesGenerated);
+
+    nextJoke("purple", dragonFruitFact, "dragonFruitImg", randomJokesGenerated);
+
+    prevJoke(randomJokesGenerated);
+
+    resetJokes("dragonFruitImg", randomJokesGenerated);
+
+
 }
 
 // STRAWBERRY BANANA
 if (play == 'strawberryBanana') {
 
-    startJokes("strawBanBg", strawberryBananaJokes);
+    startJokes("strawBanBg", randomJokesGenerated);
 
-    nextJoke("yellow", strawBanFruitFact, "strawBanImg", strawberryBananaJokes);
+    nextJoke("yellow", strawBanFruitFact, "strawBanImg", randomJokesGenerated);
 
-    resetJokes("strawBanImg", strawberryBananaJokes);
+    resetJokes("strawBanImg", randomJokesGenerated);
 
-    $(".answerBtn").click(function() {
-        
-        $(".answerBtn").html(strawberryBananaJokes[count + 1]);
-    });
+    $("#fruityFact").css("max-width", "180px");
+
 
 
 }

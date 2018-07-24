@@ -56,6 +56,10 @@ button {
 	color: #65a521;
 }
 
+.purple {
+    color: #9c2164;
+}
+
 .orange {
 	color: #f18a23;
 }
@@ -93,40 +97,45 @@ button {
 
 
 #lastSlideText {
-    color: white;
+    color: #1a5632;
     font-size: 18px;
     margin: 0 auto;
     max-width: 244px;
-    padding-bottom: 45px;
+    padding-bottom: 35px;
     line-height: 24px;
     font-family: "CabritoNorBol";
 }
 
 #jokesAgainBtn {
-    background-color: transparent;
+    background-color: #1a5632;
     border: none;
+    height: 44px;
     color: white;
     position: relative;
-    cursor: pointer;	
+    cursor: pointer;
+    width: 151px;
+    margin-right: 15px;
 }
 
 #spinBtn {
-    background-color: transparent;
+    background-color: #1b5632;
     border: none;
     color: white;
+    width: 97px;
     position: relative;
+    height: 44px;
 }
 
 #slide3-BtnGroup {
     position: relative;
-    top: 191px;    
-    font-family: 'CabritoNorExB';   
+    top: 220px;
+    font-family: 'CabritoNorExB';
     font-size: 18px;
 }
 
 
 .slide1 {
-    background-image: url(img/slide1.png);
+    background-image: url(img/bts-juicy-jokes-starting-frame-v2.jpg);
 }
 
 /*#slide2 {
@@ -138,24 +147,28 @@ button {
 }
 
 .appleBg {
-	background-image: url(img/appleJokeBg-waves.png);
+	background-image: url(img/jj-jokes-slide2-v2.jpg);
 }
 
 .orangeBg {
-	background-image: url(img/orangeJokeBg-waves.png);
+	background-image: url(img/jj-jokes-slide2-v2.jpg);
 }
 
 .strawBanBg {
-	background-image: url(img/strawberryBananaJokeBg-waves.png);
+	background-image: url(img/jj-jokes-slide2-v2.jpg);
 }
 
 .strawBanImg {
-	background-image: url("img/slide3-strawBan.png");
+	background-image: url("img/bts-slide3-strawBan.jpg");
 }
 
 .orangeImg {
 	background-image: url("img/slide3-orange.png");
-}    
+} 
+
+.dragonFruitImg {
+    background-image: url("img/bts-slide3-dragon-fruit.jpg");
+}   
 
 .appleImg {
 	background-image: url("img/slide3-apple.png");
@@ -172,7 +185,7 @@ button {
 }
 .slide2TextContainer {
     position: relative;
-    top: 224px;
+    top: 200px;
 }
 .slide3TextContainer {
     position: relative;
@@ -200,7 +213,7 @@ button {
 .answerBtn {
     cursor: pointer;
     color: #65a621;
-    max-width: 200px;
+    max-width: 290px;
     font-size: 20px;
     margin: 0 auto;
     font-family: "CabritoNorBol", sans-serif;
@@ -231,9 +244,9 @@ button {
 }
 
 #fruityFact {
-    font-size: 19px;
+    font-size: 18px;
     color: #1a5632;
-    max-width: 195px;
+    max-width: 223px;
     margin: 0 auto;
     height: 81px;
 }
@@ -377,7 +390,7 @@ button {
 
 	#fruityFact {
 	    font-size: 12px;
-	    max-width: 118px;
+	    max-width: 160px;
 	    height: 51px;
 	}
 	#slide3-BtnGroup {
