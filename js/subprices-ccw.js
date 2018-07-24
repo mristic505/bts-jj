@@ -336,7 +336,7 @@ jQuery(document).ready(function($) {
     }
     if (play == 'cherry') {
         $('.game_holder').css('background', 'url(memory-images/cherry_bg.png)');
-        end_message = 'The world record <br>for cherry pit-spitting <br>is a whopping <br>93 feet 6.5 inches.';
+        end_message = 'A cherry tree<br>can be harvested<br>in seven seconds.';
         end_fruit = 'cherry';
     }
     if (play == 'kiwi-strawberry') {
@@ -351,7 +351,7 @@ jQuery(document).ready(function($) {
     }
 
     function end_action(end_message_holder, end_fruit_holder) {
-        $('.memory_game_board').append($('<div class="completed_holder"> <img class="you_did_it" src="img/you_did_it.png"> <div class="ctext">You’ve completed the Memory Match Game.</div><div class="message_board"> <div class="holder"> <img class="fruit_fact_head" src="img/fruit_fact_head_'+end_fruit_holder+'.png"> <div class="fruit_fact_info">'+end_message_holder+'</div></div><div class="ghost"></div><img class="girl" src="img/girl.png"> <img class="fruit_fact" src="img/fruit_fact_'+end_fruit_holder+'.png"> </div><div class="end_ctas"><a class="play_again" href="javascript:void(0);" onClick="window.location.reload()">PLAY AGAIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a><a class="spin_again" href="?page=spin">SPIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a><br><a class="get_coupon_btn" target="_blank" href="?page=coupon">GET COUPON</a></div></div>').hide().fadeIn(1000));
+        $('.memory_game_board').append($('<div class="completed_holder"> <img class="you_did_it" src="img/you_did_it.png"> <div class="ctext">You’ve completed the Memory Match Game.</div><div class="message_board"> <div class="holder"> <img class="fruit_fact_head" src="img/fruit_fact_head_'+end_fruit_holder+'.png"> <div class="fruit_fact_info">'+end_message_holder+'</div></div><div class="ghost"></div><img class="girl" src="img/boy.png"> <img class="fruit_fact" src="img/fruit_fact_'+end_fruit_holder+'.png"> </div><div class="end_ctas"><a class="play_again" href="javascript:void(0);" onClick="window.location.reload()">PLAY AGAIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a><a class="spin_again" href="?page=spin">SPIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a><br><a class="get_coupon_btn" target="_blank" href="?page=coupon">GET COUPON</a></div></div>').hide().fadeIn(1000));
     }    
 
     $.fn.shuffle = function() {
