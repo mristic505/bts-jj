@@ -3,8 +3,8 @@
 		display: none;
 	}
 </style>
-<img class="logo logo-2" src="img/logo-2.png">
 <div class="form_holder">
+	<img class="logo logo-2" src="img/logo-2.png">
 	<h1 class="h1_title pcf_title">Prize Claim Form</h1>
 	<div class="pfi">
 		Please provide the following information to claim your prize upon winner verification:<br><span>All fields are required unless otherwise indicated.</span>
