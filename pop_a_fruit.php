@@ -72,20 +72,20 @@
                 if($_GET['play'] == 'apple_raspberry'){
                     $game_title = "<img src='assets/pop-a-fruit/game_end/apple_raspberry_title.png'>";
                     $message_box_image = " <img class='game-end-image' src='assets/pop-a-fruit/game_end/apple_raspberry_bg.png'>";
-                    $message_box_message = "Apples and raspberries are both members of the rose family.";
+                    $message_box_message = "There are more than 7,000 different kinds of apples grown all over the world.";
                 }elseif($_GET['play'] == 'straw_watermelon'){
                     $game_title ="<img src='assets/pop-a-fruit/game_end/straw_watermelon_title.png'>";
                     $message_box_image = " <img class='game-end-image' src='assets/pop-a-fruit/game_end/straw_watermelon_bg.png'>";
-                    $message_box_message = "Japanese farmers grow square watermelons because they’re easier to stack and store.";
+                    $message_box_message = "The watermelon is the<br/> official state vegetable of Oklahoma.";
                 }else{
                     $game_title ="<img src='assets/pop-a-fruit/game_end/grape_title.png'>";
                     $message_box_image = " <img class='game-end-image' src='assets/pop-a-fruit/game_end/grape_bg.png'>";
-                    $message_box_message = "The oldest grapevine in America is a 400-year-old Scuppernong vine in North Carolina.";
+                    $message_box_message = "Grapes come in many colors, including green, red, black, yellow, pink and purple.";
                 }
             }else{
                 $game_title ="<img src='assets/pop-a-fruit/game_end/grape_title.png'>";
                 $message_box_image = " <img class='game-end-image' src='assets/pop-a-fruit/game_end/grape_bg.png'>";
-                $message_box_message = "The oldest grapevine in America is a 400-year-old Scuppernong vine in North Carolina.";
+                $message_box_message = "Grapes come in many <br/>colors, including green, red, black, yellow, pink and purple.";
             }
 
             ?>      

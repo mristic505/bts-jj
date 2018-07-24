@@ -1,0 +1,77 @@
+.how-to-play-wrapper{
+    // display: none;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    background-image: url('assets/lunchtime_flavorites/game_start/background.png');
+    background-size: cover;
+    z-index: 99999;
+    
+    .how-to-play-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom: 110px;
+        width: 74%;
+        img{
+            transform: scale(0.9);
+        }
+        .how-to-play-title  {
+            font-family: "CabritoNorExB";
+            font-size: 24px;
+            color: #1a5632;
+            margin-top: 25px;
+            margin-bottom: 0px;
+        }
+        p{
+            font-family: "CabritoNorBol";
+            font-size: 18px;
+            color: #1a5632;
+            margin: 0;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .start-game-button{
+            font-family: "CabritoNorExB";
+            margin-top:20px;
+            padding: 15px 59px;
+            color: #ffffff;
+            background-color: #1a5632;
+            border: 0;
+            
+            @media screen and (max-width: 470px) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 600px){
+        .how-to-play-title{
+            height: 110px;
+            margin-top: 74px;
+        }
+    }
+    @media screen and (max-width: 470px) {
+        .how-to-play-title{
+            height: 76px;
+            margin-top: 115px;
+        }
+        .how-to-play-container h2{
+            font-size: 17px;
+        }
+        .how-to-play-container p{
+            font-size: 12px;
+            display: inline-block;
+            width: 62%;
+        }
+        .how-to-play-container .start-game-button{
+            padding: 7px 17px;
+            font-size:14px;
+        }
+    }
+}

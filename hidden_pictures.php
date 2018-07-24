@@ -21,7 +21,7 @@ if(isset($_GET['play'])){
         $fruit_type = "berry";
         $game_title ="<img class='you-did-it-title' src='assets/hidden_pictures/game_end/berry_title.png'>";
         $message_box_image = " <img class='game-end-image' src='assets/hidden_pictures/game_end/berry_bg.png'>";
-        $message_box_message = "Raspberries are super seedy—an average raspberry has 100 to 120 seeds.";
+        $message_box_message = "People have eaten raspberries since prehistoric times.";
     }
 }else{
     $class = "berry";

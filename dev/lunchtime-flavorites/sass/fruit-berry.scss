@@ -1,0 +1,164 @@
+.puzzle-background.berry{
+    background-image:url("assets/lunchtime_flavorites/variations/berry/background.png");
+}
+.fruit-container.berry{
+    position:absolute;
+    width:4px;
+    height:4px;
+    transition: all 1s linear;    
+    div{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.berry-1-position{
+    top: 76.2%;
+    left: 65.8%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 8.8%;
+    }
+    .berry-1{
+        height: 19px;
+        width: 23px;
+        @media screen and (max-width: 600px){
+            height: 14.79px;
+            width: 17.90px;
+        }
+        @media screen and (max-width: 470px) {
+            height: 10.35px;
+            width: 12.53px;
+            
+        }
+    }
+}
+.berry-2-position{
+    .berry-2{
+        height: 36px;
+        width: 31px;
+        @media screen and (max-width: 600px){
+            height:28.02px;
+            width: 24.13px;
+        }
+        @media screen and (max-width: 470px) {
+            height: 19.62px;
+            width: 16.89px;   
+        }
+    }
+    top: 40.2%;
+    left: 83.8%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 26%;
+    }
+}
+.berry-3-position{ 
+    .berry-3{
+        height: 19px;
+        width: 24px;
+        @media screen and (max-width: 600px){
+            height: 14.79px;
+            width: 18.68px;
+        }
+        @media screen and (max-width: 470px) {
+            height: 10.55px;
+            width: 13.07px;
+        }
+    }
+    top: 39.4%;
+    left: 24.2%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 43.2%
+    }
+}
+.berry-4-position{
+    .berry-4{
+        height: 47px;
+        width: 52px;
+        @media screen and (max-width: 600px){
+            height: 36.58px;
+            width: 40.48px;
+        }
+        @media screen and (max-width: 470px) {            
+            height: 25.61px;
+            width: 28.34px;
+        }
+    }
+    top: 80.4%;
+    left: 95.2%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 59.2%;
+    }
+}
+.berry-5-position{ 
+    .berry-5{
+        height: 32px;
+        width: 37px;
+        @media screen and (max-width: 600px){
+            height: 24.91px;
+            width: 28.89px;
+        }
+        @media screen and (max-width: 470px) {            
+            height: 17.44px;
+            width:  20.16px;
+        }
+    }
+    top: 32.4%;
+    left: 35.2%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 75.5%;
+    }
+}
+.berry-6-position{ 
+    .berry-6{
+        height: 61px;
+        width: 62px;
+        @media screen and (max-width: 600px){
+            height: 47.48px;
+            width: 48.26px;
+        }
+        @media screen and (max-width: 470px) {            
+            height: 33.24px;
+            width: 33.79px;
+        }
+    }
+    top: 42.7%;
+    left: 32.6%;
+    &.found-home-location{
+        top: 93.2%;
+        left: 91%;
+    }
+}
+@for $i from 1 through 6{
+    .berry-#{$i}{
+        background-image: url('assets/lunchtime_flavorites/variations/berry/fruits/berry-#{$i}.png');
+    }    
+}
+
+.fruit-container.berry.found div{
+    height: 59px;
+    width: 66px;
+    @media screen and (max-width: 600px){
+        height: 45.93px;
+        width: 51.38px;
+    }
+    @media screen and (max-width: 470px) {      
+        height: 32.15px;
+        width: 35.97px;
+    }
+    background-image: url('assets/lunchtime_flavorites/variations/berry/fruits/berry-found.png');
+    transition: all 0.1s linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

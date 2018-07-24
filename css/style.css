@@ -86,18 +86,31 @@ html {
     min-height: 100%;
 }
 
-body {
-    background-image:url(../img/spin-bg.jpg);
-    background-color: #c8df97;
-    background-size: cover;
+body.page-spin, body.page-prizes, body.page-official-rules,
+body.page-official-rules, body.page-faq {
+    background-image:url(../img/page-bg.jpg);
     font-family: 'CabritoNorExB';
     min-height: 100vh;
+    background-position: 50% 46px;
+    background-size: auto;
+    background-color: #65a723;
+    background-repeat: repeat-y;
     position: relative;
+}
+body {
+    background-image:url(../img/game-bg.jpg);
+    background-position: 50% 46px;
+    background-size: auto;
+    background-color: #65a723;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'CabritoNorExB';
 }
 .logo {
     margin: auto;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -197,7 +210,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     color:#1a5632;
-    margin-top: 25px;
+    margin-top: 0;
 }
 .intro_lead {
     margin-bottom: 25px;
@@ -317,8 +330,14 @@ img {
     padding: 5px 0;
 }
 .nav {
-    background-color: #1a5632;
-    margin-top: 10px;
+    background-image: url(../img/nav-bg.png);
+    background-position: center center;
+    background-color: #13230b;
+    background-repeat: no-repeat;
+    /*margin-top: 10px;*/
+}
+.navbar {
+    margin-bottom: 0;
 }
 @media screen and (min-width: 769px) {
     .nav div ul li {
@@ -393,7 +412,7 @@ header .navbar-default {
 }
 /************* footer **************/
 footer {
-    background-color: #65a621;
+    background-color: #fff;
     padding: 24px 15px;
 }
 @media screen and (min-width: 768px) {
@@ -405,11 +424,11 @@ footer {
 
 }
 .legal {
-    max-width: 796px;
+    max-width: 1200px;
     margin: auto;
     font-size: 10px;
     line-height: 12px;
-    color: #fff;
+    color: #000;
     text-align: center;
     font-family: 'HelveticaNeueMed';
 }
@@ -417,7 +436,7 @@ footer {
     padding: 0 14px;
     display: inline-block;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
     padding-bottom: 10px;
 }
 @media screen and (min-width: 353px) {
@@ -427,7 +446,7 @@ footer {
     }
 }
 .ll1 {
-    margin-bottom: 12px;
+    margin-bottom: 0px;
 }
 .desktop {
     display: block;

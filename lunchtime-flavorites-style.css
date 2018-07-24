@@ -1,0 +1,764 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main-wrapper {
+  position: relative;
+  /*padding-top: 40px;*/
+  width: 100%;
+  max-width: 1155px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .main-wrapper {
+    overflow: hidden;
+  }
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.game-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 578px;
+  height: 578px;
+  border: 0px;
+  padding: 21px;
+  background-image: url("assets/lunchtime_flavorites/frame.png");
+  background-size: contain;
+  text-align: center;
+}
+
+.puzzle-background {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-position: center 58px;
+  background-repeat: no-repeat;
+  background-color: skyblue;
+  background-image: url("assets/lunchtime_flavorites/lunchbox.png"), url("assets/lunchtime_flavorites/paper.png");
+  background-repeat: no-repeat , repeat;
+  overflow: hidden;
+}
+
+.stack-area {
+  position: absolute;
+  top: 142px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 22px;
+}
+
+#stack-area-1 {
+  width: 151px;
+  left: 100px;
+}
+
+#stack-area-2 {
+  width: 89px;
+  left: 257px;
+}
+
+#stack-area-3 {
+  width: 89px;
+  left: 354px;
+}
+
+.ingredients-slider-container {
+  position: absolute;
+  bottom: 57px;
+  background-color: #fff;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.ingredients-slider-container .ingredients-slider {
+  width: 100%;
+  height: 105px;
+}
+
+.slick-slide img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 63px;
+}
+
+.ingredients-slider {
+  padding-top: 10px;
+}
+
+.ingredients-slider:after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "Drop here to return";
+}
+
+.ingredients-slider.step-5 {
+  padding-top: 23px;
+}
+
+.ingredient-title {
+  color: #1a5632;
+  font-size: 12px;
+  text-transform: capitalize;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  font-family: "CabritoNorExB";
+  width: 100%;
+  bottom: -21px;
+  line-height: 12px;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1;
+  width: 70px;
+  font-size: 80px;
+  color: #1a5632;
+  font-family: Arial;
+  line-height: 94px;
+}
+
+.slick-prev {
+  left: -70px;
+}
+
+.slick-next {
+  right: -70px;
+}
+
+#stack-area-2 .stacked:first-child:not(.ui-draggable-dragging) {
+  top: 20% !important;
+  -ms-transform: translateX(-50%) !important;
+      transform: translateX(-50%) !important;
+}
+
+#stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging) {
+  top: 70% !important;
+}
+
+.step-5 .stacked:first-child:not(.ui-draggable-dragging) {
+  top: 22% !important;
+  left: 8% !important;
+}
+
+.step-5 .stacked:first-child:not(.ui-draggable-dragging) img {
+  width: auto !important;
+}
+
+.step-5 .stacked:nth-child(2):not(.ui-draggable-dragging) {
+  bottom: -5% !important;
+  right: 3% !important;
+  -ms-transform: none !important;
+      transform: none !important;
+  left: initial !important;
+  width: auto !important;
+  top: initial !important;
+}
+
+.step-5 .stacked:nth-child(2):not(.ui-draggable-dragging) img {
+  width: auto !important;
+}
+
+.stacked:not(.ui-draggable-dragging) {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+  width: 100% !important;
+}
+
+.stacked:not(.ui-draggable-dragging) img {
+  width: 81% !important;
+}
+
+.stacked:not(.ui-draggable-dragging) .ingredient-title {
+  display: none;
+}
+
+.stacked.bread img {
+  width: 90% !important;
+}
+
+.ui-draggable-dragging {
+  z-index: 10;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container {
+    width: 315px;
+    height: 315px;
+  }
+}
+
+.next-button, .done-button {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  width: 74px;
+  height: 32px;
+  background-color: #1a5632;
+  color: #fff;
+  font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.case-cover, .case-cover-img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+.case-cover {
+  background-color: #0492a6;
+  width: 66%;
+  height: 38%;
+  border-radius: 20px;
+}
+
+.type-your-name {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 60%;
+}
+
+.type-your-name:focus {
+  outline: none;
+}
+
+.type-your-name::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.type-your-name:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.type-your-name::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.step-title {
+  font-family: "CabritoNorExB";
+  color: #1a5632;
+  font-size: 26px;
+  padding-top: 13px;
+}
+
+.how-to-play-wrapper {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  background-image: url("assets/lunchtime_flavorites/game_start/background.png");
+  background-size: cover;
+  z-index: 99999;
+}
+
+.how-to-play-wrapper .how-to-play-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  padding-bottom: 110px;
+  width: 74%;
+}
+
+.how-to-play-wrapper .how-to-play-container img {
+  -ms-transform: scale(0.9);
+      transform: scale(0.9);
+}
+
+.how-to-play-wrapper .how-to-play-container .how-to-play-title {
+  font-family: "CabritoNorExB";
+  font-size: 24px;
+  color: #1a5632;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.how-to-play-wrapper .how-to-play-container p {
+  font-family: "CabritoNorBol";
+  font-size: 18px;
+  color: #1a5632;
+  margin: 0;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.how-to-play-wrapper .how-to-play-container .start-game-button {
+  font-family: "CabritoNorExB";
+  margin-top: 20px;
+  padding: 15px 59px;
+  color: #ffffff;
+  background-color: #1a5632;
+  border: 0;
+}
+
+@media screen and (max-width: 470px) {
+  .how-to-play-wrapper .how-to-play-container .start-game-button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .how-to-play-wrapper .how-to-play-title {
+    height: 110px;
+    margin-top: 74px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .how-to-play-wrapper .how-to-play-title {
+    height: 76px;
+    margin-top: 115px;
+  }
+  .how-to-play-wrapper .how-to-play-container h2 {
+    font-size: 17px;
+  }
+  .how-to-play-wrapper .how-to-play-container p {
+    font-size: 12px;
+    display: inline-block;
+    width: 62%;
+  }
+  .how-to-play-wrapper .how-to-play-container .start-game-button {
+    padding: 7px 17px;
+    font-size: 14px;
+  }
+}
+
+.game-end-wrapper {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  background-image: url("assets/lunchtime_flavorites/game_end/game_end_background.png");
+  background-size: cover;
+  z-index: 999991;
+}
+
+.game-end-wrapper .you-did-it-title {
+  margin-top: 43px;
+}
+
+.game-end-wrapper .you-did-it-subtitle {
+  color: #1a5632;
+  font-family: "CabritoNorBol";
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-end-wrapper {
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+  }
+  .game-end-wrapper .you-did-it-title {
+    margin-top: 40px;
+    height: 40px;
+  }
+  .game-end-wrapper .you-did-it-subtitle {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-end-wrapper .you-did-it-title {
+    margin-top: 15px;
+    height: 33px;
+  }
+  .game-end-wrapper .you-did-it-subtitle {
+    margin-top: 0px;
+    font-size: 11px;
+    line-height: 11px;
+  }
+}
+
+.game-end-wrapper .game-end-message-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  width: 240px;
+}
+
+.game-end-wrapper .game-end-message-container .fun-fruity-fact-title {
+  font-family: 'NexaRustScriptL0';
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.game-end-wrapper .game-end-message-container p {
+  font-family: 'CabritoNorExB';
+  font-size: 18px;
+  color: #1a5632;
+  margin-top: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-end-wrapper .game-end-message-container .fun-fruity-fact-title {
+    font-size: 27px;
+  }
+  .game-end-wrapper .game-end-message-container p {
+    font-size: 14px;
+    margin: 0px;
+    padding-left: 41px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-end-wrapper .game-end-message-container .fun-fruity-fact-title {
+    font-size: 18px;
+  }
+  .game-end-wrapper .game-end-message-container p {
+    font-size: 11px;
+    padding-left: 61px;
+    padding-right: 61px;
+  }
+}
+
+.game-end-wrapper .end_ctas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 54px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-end-wrapper .end_ctas {
+    bottom: 39px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-end-wrapper .end_ctas {
+    top: auto;
+    bottom: 15px;
+    margin-top: 10px;
+  }
+  .game-end-wrapper .end_ctas .play_again {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .game-end-wrapper .bottom-cta-container .get-coupon-button {
+    margin-bottom: 6px;
+  }
+  .game-end-wrapper .bottom-cta-container .cta {
+    padding-bottom: 5px;
+  }
+  .game-end-wrapper .game-end-image {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-end-wrapper .bottom-cta-container .get-coupon-button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .game-end-wrapper .game-end-image {
+    height: 100px;
+  }
+}
+
+.game-end-image {
+  position: absolute;
+  top: 21%;
+  right: 4%;
+}
+
+.apple .game-end-image {
+  top: 37%;
+  right: 8%;
+}
+
+.orange .game-end-image {
+  top: 30%;
+  right: 4%;
+}
+
+.kiwi-strawberry .fun-fruity-fact-title {
+  color: #f97799;
+}
+
+.apple .fun-fruity-fact-title {
+  color: #65a521;
+}
+
+.orange .fun-fruity-fact-title {
+  color: #f18a23;
+}

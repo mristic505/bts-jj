@@ -262,6 +262,24 @@ th {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 600px) {
+  .puzzle-background {
+    top: 17px;
+    bottom: 17px;
+    left: 17px;
+    right: 17px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .puzzle-background {
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+  }
+}
+
 .puzzle-background.mango {
   background-image: url("assets/hidden_pictures/variations/mango/background.png");
 }
@@ -289,8 +307,8 @@ th {
 }
 
 .berry-1-position {
-  top: 76.2%;
-  left: 65.8%;
+  top: 35.3%;
+  left: 45.7%;
 }
 
 .berry-1-position.found-home-location {
@@ -299,45 +317,45 @@ th {
 }
 
 .berry-1-position .berry-1 {
-  height: 19px;
-  width: 23px;
+  height: 33px;
+  width: 29px;
 }
 
 @media screen and (max-width: 600px) {
   .berry-1-position .berry-1 {
-    height: 14.79px;
-    width: 17.90px;
+    height: 33px;
+    width: 29px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .berry-1-position .berry-1 {
-    height: 10.35px;
-    width: 12.53px;
+    height: 20px;
+    width: 14px;
   }
 }
 
 .berry-2-position {
-  top: 40.2%;
-  left: 83.8%;
+  top: 35.4%;
+  left: 51.9%;
 }
 
 .berry-2-position .berry-2 {
-  height: 36px;
-  width: 31px;
+  height: 33px;
+  width: 29px;
 }
 
 @media screen and (max-width: 600px) {
   .berry-2-position .berry-2 {
-    height: 28.02px;
-    width: 24.13px;
+    height: 33px;
+    width: 29px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .berry-2-position .berry-2 {
-    height: 19.62px;
-    width: 16.89px;
+    height: 20px;
+    width: 14px;
   }
 }
 
@@ -347,26 +365,26 @@ th {
 }
 
 .berry-3-position {
-  top: 39.4%;
-  left: 24.2%;
+  top: 53.6%;
+  left: 94.4%;
 }
 
 .berry-3-position .berry-3 {
-  height: 19px;
-  width: 24px;
+  height: 27px;
+  width: 26px;
 }
 
 @media screen and (max-width: 600px) {
   .berry-3-position .berry-3 {
-    height: 14.79px;
-    width: 18.68px;
+    height: 27px;
+    width: 26px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .berry-3-position .berry-3 {
-    height: 10.55px;
-    width: 13.07px;
+    height: 16px;
+    width: 14px;
   }
 }
 
@@ -376,26 +394,26 @@ th {
 }
 
 .berry-4-position {
-  top: 80.4%;
-  left: 95.2%;
+  top: 59.7%;
+  left: 53.7%;
 }
 
 .berry-4-position .berry-4 {
-  height: 47px;
-  width: 52px;
+  height: 19px;
+  width: 16px;
 }
 
 @media screen and (max-width: 600px) {
   .berry-4-position .berry-4 {
-    height: 36.58px;
-    width: 40.48px;
+    height: 19px;
+    width: 16px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .berry-4-position .berry-4 {
-    height: 25.61px;
-    width: 28.34px;
+    height: 11px;
+    width: 10px;
   }
 }
 
@@ -405,26 +423,26 @@ th {
 }
 
 .berry-5-position {
-  top: 32.4%;
-  left: 35.2%;
+  top: 64.7%;
+  left: 73.7%;
 }
 
 .berry-5-position .berry-5 {
-  height: 32px;
-  width: 37px;
+  height: 22px;
+  width: 18px;
 }
 
 @media screen and (max-width: 600px) {
   .berry-5-position .berry-5 {
-    height: 24.91px;
-    width: 28.89px;
+    height: 22px;
+    width: 18px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .berry-5-position .berry-5 {
-    height: 17.44px;
-    width: 20.16px;
+    height: 11px;
+    width: 10px;
   }
 }
 
@@ -434,26 +452,26 @@ th {
 }
 
 .berry-6-position {
-  top: 42.7%;
-  left: 32.6%;
+  top: 71.7%;
+  left: 1.6%;
 }
 
 .berry-6-position .berry-6 {
-  height: 61px;
-  width: 62px;
+  height: 27px;
+  width: 25px;
 }
 
 @media screen and (max-width: 600px) {
   .berry-6-position .berry-6 {
-    height: 47.48px;
-    width: 48.26px;
+    height: 27px;
+    width: 25px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .berry-6-position .berry-6 {
-    height: 33.24px;
-    width: 33.79px;
+    height: 16px;
+    width: 14px;
   }
 }
 
@@ -487,8 +505,8 @@ th {
 }
 
 .fruit-container.berry.found div {
-  height: 59px;
-  width: 66px;
+  height: 66px;
+  width: 59px;
   background-image: url("assets/hidden_pictures/variations/berry/fruits/berry-found.png");
   transition: all 0.1s linear;
   position: absolute;
@@ -535,8 +553,8 @@ th {
 }
 
 .mango-1-position {
-  top: 75.2%;
-  left: 42.8%;
+  top: 15.6%;
+  left: 5.3%;
 }
 
 .mango-1-position .mango-1 {
@@ -546,15 +564,15 @@ th {
 
 @media screen and (max-width: 600px) {
   .mango-1-position .mango-1 {
-    height: 22.86;
-    width: 28.95px;
+    height: 22px;
+    width: 28px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .mango-1-position .mango-1 {
-    height: 15.5px;
-    width: 20.71px;
+    height: 16px;
+    width: 20px;
   }
 }
 
@@ -564,26 +582,26 @@ th {
 }
 
 .mango-2-position {
-  top: 49%;
-  left: 9%;
+  top: 18%;
+  left: 57%;
 }
 
 .mango-2-position .mango-2 {
-  height: 39px;
-  width: 29px;
+  height: 20px;
+  width: 19px;
 }
 
 @media screen and (max-width: 600px) {
   .mango-2-position .mango-2 {
-    height: 29.72px;
-    width: 22.10px;
+    height: 16px;
+    width: 14px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .mango-2-position .mango-2 {
-    height: 21.25px;
-    width: 15.80px;
+    height: 12px;
+    width: 8px;
   }
 }
 
@@ -593,26 +611,26 @@ th {
 }
 
 .mango-3-position {
-  top: 57.5%;
-  left: 79%;
+  top: 26.4%;
+  left: 34%;
 }
 
 .mango-3-position .mango-3 {
-  height: 29px;
-  width: 30px;
+  height: 19px;
+  width: 27px;
 }
 
 @media screen and (max-width: 600px) {
   .mango-3-position .mango-3 {
-    height: 22.10px;
-    width: 22.86px;
+    height: 14px;
+    width: 20px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .mango-3-position .mango-3 {
-    height: 15.80px;
-    width: 15.5px;
+    height: 10px;
+    width: 13px;
   }
 }
 
@@ -622,26 +640,26 @@ th {
 }
 
 .mango-4-position {
-  top: 38.6%;
-  left: 63.1%;
+  top: 36.6%;
+  left: 28.3%;
 }
 
 .mango-4-position .mango-4 {
-  height: 40px;
-  width: 50px;
+  height: 21px;
+  width: 26px;
 }
 
 @media screen and (max-width: 600px) {
   .mango-4-position .mango-4 {
-    height: 30.48px;
-    width: 30.10px;
+    height: 16px;
+    width: 20px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .mango-4-position .mango-4 {
-    height: 21.8px;
-    width: 27.25px;
+    height: 10px;
+    width: 13px;
   }
 }
 
@@ -651,27 +669,27 @@ th {
 }
 
 .mango-5-position {
-  top: 18%;
-  left: 83%;
+  top: 54.6%;
+  left: 91.4%;
   z-index: 2;
 }
 
 .mango-5-position .mango-5 {
-  height: 38px;
-  width: 51px;
+  height: 18px;
+  width: 14px;
 }
 
 @media screen and (max-width: 600px) {
   .mango-5-position .mango-5 {
-    height: 28.95px;
-    width: 38.86px;
+    height: 15px;
+    width: 10px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .mango-5-position .mango-5 {
-    height: 20.71px;
-    width: 27.79px;
+    height: 10px;
+    width: 8px;
   }
 }
 
@@ -681,27 +699,27 @@ th {
 }
 
 .mango-6-position {
-  top: 24%;
-  left: 84.5%;
+  top: 59%;
+  left: 70.7%;
   z-index: 1;
 }
 
 .mango-6-position .mango-6 {
-  height: 47px;
-  width: 45px;
+  height: 27px;
+  width: 34px;
 }
 
 @media screen and (max-width: 600px) {
   .mango-6-position .mango-6 {
-    height: 38.86px;
-    width: 34.29px;
+    height: 19px;
+    width: 24px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .mango-6-position .mango-6 {
-    height: 25.61px;
-    width: 24.52px;
+    height: 13px;
+    width: 17px;
   }
 }
 
@@ -789,6 +807,24 @@ th {
   background-image: url("assets/hidden_pictures/game_start/background.png");
   background-size: cover;
   z-index: 99999;
+}
+
+@media screen and (max-width: 600px) {
+  .how-to-play-wrapper {
+    top: 17px;
+    bottom: 17px;
+    left: 17px;
+    right: 17px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .how-to-play-wrapper {
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+  }
 }
 
 .how-to-play-wrapper .how-to-play-container {
@@ -885,7 +921,7 @@ th {
 }
 
 .game-end-wrapper .you-did-it-subtitle {
-  color: #ffffff;
+  color: #1a5632;
   font-family: "CabritoNorBol";
   font-size: 18px;
   margin-top: 3px;
@@ -993,7 +1029,7 @@ th {
 .game-end-wrapper .game-end-image {
   position: absolute;
   top: 28%;
-  right: 0%;
+  right: 6%;
 }
 
 @media screen and (max-width: 600px) {

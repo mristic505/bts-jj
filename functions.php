@@ -65,6 +65,10 @@ if (strpos($url_string, 'page') !== false) {
         $page_title = 'Juicy Jokes';
         $inlcude    = 'laugh-factory.php';
     }
+    if ($page == 'lunchtime-flavorites') {
+        $page_title = 'Lunchtime Flavorites';
+        $inlcude    = 'lunchtime_flavorites.php';
+    }
     if ($page == 'prize-claim-form') {
         $page_title = 'Prize Claim Form';
         $inlcude    = 'prize_claim_form.php';

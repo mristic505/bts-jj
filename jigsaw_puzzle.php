@@ -49,11 +49,11 @@
                 <?php
                     if(isset($_GET['play'])){
                         if($_GET['play']=='cranberry'){
-                            echo "Cranberries bounce! Because they have a tiny pouch of air, when you drop one, it might jump right back at you.";
+                            echo "Cranberries are approximately 90% water.";
                         }elseif($_GET['play'] == 'peach'){
-                            echo "Georgia is known as the Peach State but California grows more peaches than any other state.";
+                            echo "Peaches are known as “Stone Fruits” because of their hard pits.";
                         }else{
-                            echo "Stand a pineapple upside down to make it ripen more quickly.";
+                            echo "Grow your own pineapple plant by planting the top of the pineapple. Unfortunately, a giant pineapple won’t grow underneath it!";
                         }
                     }else{
                         echo "Stand a pineapple upside down to make it ripen more quickly. ";

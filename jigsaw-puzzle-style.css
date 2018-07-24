@@ -1072,7 +1072,7 @@
 }
 
 .game-end-wrapper .you-did-it-subtitle {
-  color: #ffffff;
+  color: #1a5632;
   font-family: "CabritoNorBol";
   font-size: 18px;
   margin-top: 10px;
@@ -1161,12 +1161,12 @@
   margin-top: 3px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 @media screen and (max-width: 1200px) {
   .game-end-wrapper .game-end-message-container p {
-    width: 78%;
+    width: 85%;
     font-size: 12px;
     margin-top: 0px;
     padding: 0;
@@ -1181,7 +1181,7 @@
   }
 }
 
-.game-end-wrapper .game-end-image {
+.game-end-image {
   position: absolute;
   top: 24%;
   right: 0%;
@@ -1189,15 +1189,24 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .game-end-wrapper .game-end-image {
+  .game-end-image {
     width: 26%;
   }
 }
 
 @media screen and (max-width: 810px) {
-  .game-end-wrapper .game-end-image {
+  .game-end-image {
     width: 22%;
   }
+}
+
+.cranberry-apple .game-end-image {
+  right: 6%;
+  max-width: 100px;
+}
+
+.peach-apple .game-end-image {
+  right: 3%;
 }
 
 @media screen and (max-width: 810px) {
