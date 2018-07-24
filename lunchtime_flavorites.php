@@ -21,13 +21,21 @@
             $game_subtitle = "You did a great job packing your lunch for school.";
             $message_box_image = " <img class='game-end-image' src='assets/lunchtime_flavorites/game_end/apple_bg.png'>";
             $message_box_message = "An apple tree can produce up to 400 apples a year.";
-        }else{
+        }
+        else if($_GET['play'] == 'orange'){
             $class = "orange";
             $fruit_type = "orange";
             $game_title ="<img class='you-did-it-title' src='assets/lunchtime_flavorites/game_end/orange_title.png'>";
             $game_subtitle = "Enjoy a fun and flavorful lunch.";
             $message_box_image = " <img class='game-end-image' src='assets/lunchtime_flavorites/game_end/orange_bg.png'>";
             $message_box_message = "An orange is a type of berry. Hesperidia to be exact!";
+        }else{
+            $class = "kiwi-strawberry";
+            $fruit_type = "kiwi-strawberry";
+            $game_title ="<img class='you-did-it-title' src='assets/lunchtime_flavorites/game_end/kiwi_strawberry_title.png'>";
+            $game_subtitle = "Have fun when you open<br/>your lunch box!";
+            $message_box_image = " <img class='game-end-image' src='assets/lunchtime_flavorites/game_end/kiwi_strawberry_bg.png'>";
+            $message_box_message = "Kiwifruit was first discovered in China and was originally called “Chinese gooseberry.”.";               
         }
     }else{
         $class = "kiwi-strawberry";

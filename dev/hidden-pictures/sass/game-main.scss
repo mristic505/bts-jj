@@ -20,6 +20,18 @@
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;   
+    @media screen and (max-width: 600px){
+        top: 17px;
+        bottom: 17px;
+        left: 17px;
+        right: 17px;
+    }
+    @media screen and (max-width: 470px) {
+        top: 12px;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+    }
 }
 .puzzle-background.mango{
     background-image:url("assets/hidden_pictures/variations/mango/background.png");

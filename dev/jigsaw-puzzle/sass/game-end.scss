@@ -22,7 +22,7 @@
         
     }
     .you-did-it-subtitle{
-        color: #ffffff;
+        color: #1a5632;
         font-family: "CabritoNorBol";
         font-size: 18px;
         margin-top: 10px;
@@ -148,9 +148,9 @@
             margin-top: 3px;
             margin-left: auto;
             margin-right: auto;
-            padding: 0 4px;
+            padding: 0 2px;
             @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
-                width: 78%;
+                width: 85%;
                 font-size:12px;
                 margin-top: 0px;
                 padding: 0;
@@ -162,18 +162,25 @@
             }
         }
     }
-    .game-end-image{
-        position: absolute;
-        top: 24%;
-        right: 0%;
-        width: 23%;
-        @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
-            width:  26%;
-        }
-        @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
-            width:22%;
-        }
+}
+.game-end-image{
+    position: absolute;
+    top: 24%;
+    right: 0%;
+    width: 23%;
+    @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
+        width:  26%;
     }
+    @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
+        width:22%;
+    }
+}
+.cranberry-apple .game-end-image{
+    right: 6%;
+    max-width: 100px;
+}
+.peach-apple .game-end-image{
+    right: 3%;
 }
 .tropical .game-end-wrapper .game-end-message-container img {
     @media screen and (max-width: 810px){

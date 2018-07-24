@@ -641,7 +641,7 @@ th {
 }
 
 .game-end-wrapper h2 {
-  color: #ffffff;
+  color: #1a5632;
   font-family: "CabritoNorBol";
   font-size: 18px;
   margin-top: 10px;
@@ -743,8 +743,8 @@ th {
 
 .game-end-wrapper .game-end-image {
   position: absolute;
-  top: 24%;
-  right: 0%;
+  top: 27%;
+  right: 7%;
   height: 200px;
 }
 
