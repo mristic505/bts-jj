@@ -109,43 +109,42 @@ $( document ).ready(function() {
                 top: Math.floor(ui.helper.height() / 2)
             }; 
                 console.log($( "#stack-area-2 div" ).length );
-            if($( "#stack-area-2 div" ).length == 4){//disable any more childs
+            if($( "#stack-area-2>div" ).length == 2){//disable any more childs
                 $("#stack-area-2").droppable('option', 'accept', 'nothing');                
-                console.log("nemore2");
+                // console.log("nemore2");
             }else{
                 $("#stack-area-2").droppable('option', 'accept', '.stack-area-2-ingredient');            
-                console.log("more2");
+                // console.log("more2");
             }
-            if($( "#stack-area-3 div" ).length == 2){//disable any more childs
+            if($( "#stack-area-3>div" ).length == 1){//disable any more childs
                 $("#stack-area-3").droppable('option', 'accept', 'nothing');                
             }else{
                 $("#stack-area-3").droppable('option', 'accept', '.stack-area-3-ingredient');            
             }
-            if($( ".step-5.case-cover div" ).length == 4){//disable any more childs
-                console.log("more5");
+            console.log($( ".step-5.case-cover>div" ).length );
+            if($( ".step-5.case-cover>div" ).length == 2){//disable any more childs
                 $(".step-5.case-cover").droppable('option', 'accept', 'nothing');                
             }else{
-                console.log("nemore5");
                 $(".step-5.case-cover").droppable('option', 'accept', '.stack-area-5-ingredient');            
             }
         },
         stop: function( event, ui ) {
             if(active_step == 1){
-                if($( "#stack-area-1 div" ).length > 1){//disable any more childs
+                if($( "#stack-area-1>div" ).length > 1){//disable any more childs
                     $('.next-button').fadeIn();
                 }else{
                     $('.next-button').fadeOut();
                 }
             }
             if(active_step == 2){
-                if($( "#stack-area-2 div" ).length == 4){//disable any more childs
+                if($( "#stack-area-2>div" ).length == 2){//disable any more childs
                     $('.next-button').fadeIn();
                 }else{
                     $('.next-button').fadeOut();
                 }
             }
             if(active_step == 3){
-                if($( "#stack-area-3 div" ).length > 0){//disable any more childs
+                if($( "#stack-area-3>div" ).length > 0){//disable any more childs
                     $('.next-button').fadeIn();
                 }else{
                     $('.next-button').fadeOut();

@@ -10,7 +10,6 @@
 
 .main-wrapper {
   position: relative;
-  /*padding-top: 40px;*/
   width: 100%;
   max-width: 1155px;
   margin-left: auto;
@@ -504,6 +503,10 @@ th {
   color: #1a5632;
   font-size: 26px;
   padding-top: 13px;
+}
+
+.ui-draggable-dragging .ingredient-title {
+  display: none;
 }
 
 .how-to-play-wrapper {
