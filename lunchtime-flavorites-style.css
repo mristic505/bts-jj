@@ -409,6 +409,9 @@ th {
 .stacked:not(.ui-draggable-dragging) img {
   width: 81% !important;
 }
+#stack-area-3 .stacked:not(.ui-draggable-dragging) img {
+  width: auto !important;
+}
 
 .stacked:not(.ui-draggable-dragging) .ingredient-title {
   display: none;

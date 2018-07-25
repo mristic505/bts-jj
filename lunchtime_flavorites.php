@@ -1,4 +1,4 @@
-  <link rel="stylesheet" href="lunchtime-flavorites-style.css?v=1.0">
+  <link rel="stylesheet" href="lunchtime-flavorites-style.css?v=1.1">
   <!-- <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -7,7 +7,7 @@
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script> 
-  <script src="js/lunchtime-flavorites-main.js?v=4.0"></script>
+  <script src="js/lunchtime-flavorites-main.js?v=4.1"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

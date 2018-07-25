@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/style.css?ver=1.3.3"></link>
+<link type="text/css" rel="stylesheet" media="all" href="css/style.css?ver=2.3.4"></link>
 <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
 <![endif]-->
@@ -15,7 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/jquery.fortune.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/subprices-ccw.js?ver=1.0.9"></script>
+<script src="js/subprices-ccw.js?ver=2.1.0"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- Global site tag (gtag.js) - Google AdWords: 837587168 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-837587168"></script>
