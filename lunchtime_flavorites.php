@@ -71,8 +71,10 @@
                 <div class="stack-area" id="stack-area-2"></div>
                 <div class="stack-area" id="stack-area-3"></div>
                 <img src="assets/lunchtime_flavorites/case-cover.png" class="case-cover-img step-4" style="display:none">
-                <div class="step-5 case-cover" style="display:none"></div>
-                <input type="text" class="step-5 type-your-name" placeholder="TYPE YOUR NAME" style="display:none">
+                <div class="step-5 case-cover" style="display:none">
+                 <input type="text" class="step-5 type-your-name" placeholder="TYPE YOUR NAME" style="display:none">
+
+                </div>
                 <div class="ingredients-slider-container">
                     <div class="step-1 ingredients-slider">
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/ingredients'), array('..', '.')) as $value): ?>
