@@ -65,31 +65,31 @@ $( document ).ready(function() {
         }
     });
     
-    $( ".step-2.ingredients-slider" ).droppable({
+    $( ".step-2.ingredients-slider .slick-slide" ).droppable({
         accept: ".stack-area-2-ingredient.stacked",
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").removeClass("stacked");
+            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn);
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
-    $( ".step-3.ingredients-slider" ).droppable({
+    $( ".step-3.ingredients-slider .slick-slide" ).droppable({
         accept: ".stack-area-3-ingredient.stacked",
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").removeClass("stacked");
             dropped.find('img').attr('src',"assets/lunchtime_flavorites/juices/"+dropped.find('img').attr('fruit-filename'));
+            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn);
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
-    $( ".step-5.ingredients-slider" ).droppable({
+    $( ".step-5.ingredients-slider .slick-slide" ).droppable({
         accept: ".stack-area-5-ingredient.stacked",
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").removeClass("stacked");
+            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn);
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
@@ -179,7 +179,7 @@ $( document ).ready(function() {
     });
     
 
-    $('.next-button').click(function(){
+    $('.next-button,.done-button').click(function(){
             $(this).fadeOut();
             if(active_step == 1){
             $('.step-1').hide();
