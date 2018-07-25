@@ -39,7 +39,18 @@ var strawBanFruitFact = "A bunch of bananas is called a \"hand,\" and one banana
 
 var dragonFruitFact = "Dragonfruit blooms overnight—it starts at dusk and is in full bloom around midnight.";
 
+var sampleArray = ['b', 'b', 'c'];
 
+function checkIfDuplicates(a) {
+    for(var i = 0; i <= a.length; i++) {
+        for(var j = i; j <= a.length; j++) {
+            if(i != j && a[i] == a[j]) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
 
 
 function randomJokes(amount) {
@@ -50,10 +61,14 @@ function randomJokes(amount) {
 
         do {
             var generateRandomNumber = Math.floor(Math.random() * (allJokes.length - 1));
-        }
-         while ((generateRandomNumber % 2) != 0);
 
             fiveJokesContainer[i] = generateRandomNumber;
+
+            var duplicateFound = checkIfDuplicates(fiveJokesContainer);
+        }
+         while ( ((generateRandomNumber % 2) != 0) || (duplicateFound == true));
+
+            
     }
     return fiveJokesContainer;
 }
