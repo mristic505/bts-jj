@@ -128,6 +128,7 @@
     .stacked:first-child:not(.ui-draggable-dragging){
         top: 22% !important;
         left: 8%!important;
+        width: 60px!important;  
         img{
             width: auto!important;
         }
@@ -139,7 +140,7 @@
         left: initial!important;
         width: auto!important;
         top: initial!important;
-  
+        width: 60px!important;  
         img{
             width: auto!important;
         }

@@ -375,6 +375,7 @@ th {
 .step-5 .stacked:first-child:not(.ui-draggable-dragging) {
   top: 22% !important;
   left: 8% !important;
+  width: 60px !important;
 }
 
 .step-5 .stacked:first-child:not(.ui-draggable-dragging) img {
@@ -389,6 +390,7 @@ th {
   left: initial !important;
   width: auto !important;
   top: initial !important;
+  width: 60px !important;
 }
 
 .step-5 .stacked:nth-child(2):not(.ui-draggable-dragging) img {
