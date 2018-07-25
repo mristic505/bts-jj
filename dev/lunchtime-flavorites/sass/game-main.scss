@@ -125,7 +125,7 @@
     }
 }
 .step-5{
-    .stacked:first-child:not(.ui-draggable-dragging){
+    .stacked:nth-child(2):not(.ui-draggable-dragging){
         top: 22% !important;
         left: 8%!important;
         width: 60px!important;  
@@ -133,7 +133,7 @@
             width: auto!important;
         }
     }
-    .stacked:nth-child(2):not(.ui-draggable-dragging){
+    .stacked:nth-child(3):not(.ui-draggable-dragging){
         bottom: -5% !important;
         right: 3% !important;
         transform: none !important;
@@ -221,7 +221,7 @@
         color: #fff;
         opacity: 0.6;
     }
-    width: 60%;
+    width: 100%;
 }
 .step-title{
     font-family: "CabritoNorExB";
@@ -262,4 +262,7 @@
         height: 50%;
         background-repeat: no-repeat;
     }
+}
+.stacked.ui-draggable-dragging{
+    z-index: 99;
 }

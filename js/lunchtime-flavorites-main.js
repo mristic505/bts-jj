@@ -111,7 +111,11 @@ $( document ).ready(function() {
         },
         start: function(event, ui){
             $(".ingredients-slider").addClass("show-overlay");
-                
+            if($(this).hasClass('stacked')){
+                $(".step-5.case-cover").css("z-index",9);
+                $(".step-5.type-your-name").css("z-index",9);
+
+            }
             $(this).draggable('instance').offset.click = {
                 left: Math.floor(ui.helper.width() / 2),
                 top: Math.floor(ui.helper.height() / 2)
@@ -161,7 +165,9 @@ $( document ).ready(function() {
             }
             if(active_step == 5){
                 console.log("checking");
-                if($( ".step-5.case-cover div" ).length > 0 && $(".type-your-name").val().length > 0){//disable any more childs
+                $(".step-5.case-cover").css("z-index",'s');
+                $(".step-5.type-your-name").css("z-index",'s');
+                if($( ".step-5.case-cover>div" ).length > 1 && $(".type-your-name").val().length > 0){//disable any more childs
                     console.log("show");
                     $('.done-button').fadeIn();
                 }else{
