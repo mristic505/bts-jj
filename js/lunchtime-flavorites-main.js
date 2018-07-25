@@ -55,18 +55,18 @@ $( document ).ready(function() {
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
-    $( ".step-1.ingredients-slider" ).droppable({
-        accept: ".stack-area-1-ingredient",
+    $( ".step-1.ingredients-slider .slick-slide" ).droppable({
+        accept: ".stack-area-1-ingredient.stacked",
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").removeClass("stacked");
+            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn);
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
     
     $( ".step-2.ingredients-slider" ).droppable({
-        accept: ".stack-area-2-ingredient",
+        accept: ".stack-area-2-ingredient.stacked",
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
@@ -75,7 +75,7 @@ $( document ).ready(function() {
         }
     });
     $( ".step-3.ingredients-slider" ).droppable({
-        accept: ".stack-area-3-ingredient",
+        accept: ".stack-area-3-ingredient.stacked",
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
@@ -85,7 +85,7 @@ $( document ).ready(function() {
         }
     });
     $( ".step-5.ingredients-slider" ).droppable({
-        accept: ".stack-area-5-ingredient",
+        accept: ".stack-area-5-ingredient.stacked",
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
@@ -93,6 +93,15 @@ $( document ).ready(function() {
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
+    // $( ".slick-slide" ).droppable({
+    //     accept: ".stack-area-1-ingredient",
+    //     drop: function( event, ui ) {
+    //         var droppedOn = $(this);
+    //         var dropped = ui.draggable;
+    //         $(dropped).detach().removeClass("stacked").addClass("slick-active").removeClass("stacked");
+    //         $('.ingredients-slider').slick('setPosition'); 
+    //     }
+    // });
      //draggables
      $( ".draggable" ).draggable({ 
         revert: "invalid",
@@ -107,25 +116,26 @@ $( document ).ready(function() {
                 left: Math.floor(ui.helper.width() / 2),
                 top: Math.floor(ui.helper.height() / 2)
             }; 
-                console.log($( "#stack-area-2 div" ).length );
             if($( "#stack-area-2>div" ).length == 2){//disable any more childs
                 $("#stack-area-2").droppable('option', 'accept', 'nothing');                
-                // console.log("nemore2");
             }else{
                 $("#stack-area-2").droppable('option', 'accept', '.stack-area-2-ingredient');            
-                // console.log("more2");
             }
             if($( "#stack-area-3>div" ).length == 1){//disable any more childs
                 $("#stack-area-3").droppable('option', 'accept', 'nothing');                
             }else{
                 $("#stack-area-3").droppable('option', 'accept', '.stack-area-3-ingredient');            
             }
-            console.log($( ".step-5.case-cover>div" ).length );
             if($( ".step-5.case-cover>div" ).length == 2){//disable any more childs
                 $(".step-5.case-cover").droppable('option', 'accept', 'nothing');                
             }else{
                 $(".step-5.case-cover").droppable('option', 'accept', '.stack-area-5-ingredient');            
             }
+            console.log('ingredients added: '+$( "#stack-area-1>div" ).length);
+            console.log('snacks added: '+$( "#stack-area-2>div" ).length);
+            console.log('juices added: '+$( "#stack-area-3>div" ).length);
+            console.log('stickers added: '+$( ".step-5.case-cover>div" ).length);
+            console.log('-------------');
         },
         stop: function( event, ui ) {
             if(active_step == 1){
@@ -150,12 +160,21 @@ $( document ).ready(function() {
                 }
             }
             if(active_step == 5){
+                console.log("checking");
                 if($( ".step-5.case-cover div" ).length > 0 && $(".type-your-name").val().length > 0){//disable any more childs
-                    $('.next-button.done-button').fadeIn();
+                    console.log("show");
+                    $('.done-button').fadeIn();
                 }else{
-                    $('.next-button.done-button').fadeOut();
+                    console.log("hide");
+                    $('.done-button').fadeOut();
                 }
             }
+            console.log('ingredients added: '+$( "#stack-area-1>div" ).length);
+            console.log('snacks added: '+$( "#stack-area-2>div" ).length);
+            console.log('juices added: '+$( "#stack-area-3>div" ).length);
+            console.log('stickers added: '+$( ".step-5.case-cover>div" ).length);
+            console.log('characters typed in name field: '+$(".type-your-name").val().length);
+            console.log('-------------');
         }
     });
     
@@ -177,9 +196,9 @@ $( document ).ready(function() {
             $('.ingredients-slider').slick('setPosition');
         }
         else if(active_step == 3){
-            $('.step-3').hide();
-            $('.step-4').show();
-            active_step = 4;
+            
+            $(".slick-list").css("z-index", 99);
+            $(".slick-arrow").css("z-index", 100);
             $('.ingredients-slider').slick('setPosition');
             $(".case-cover-container").show();
             $("#case-cover").flip({
@@ -193,13 +212,16 @@ $( document ).ready(function() {
              }, 1000);
 
             setTimeout(function(){
+                $(".slick-list").css("z-index", "initial");
+                $(".slick-arrow").css("z-index", 1);
+                $('.step-3').hide();
                 $('.step-4').hide();
                 $('.step-5').show();
                 $(".case-cover-container").hide();
 
                 active_step = 5;
                 $('.ingredients-slider').slick('setPosition');
-             }, 4000);
+             }, 3300);
         }
         else if(active_step == 5){
             $('.step-5').hide();
@@ -239,6 +261,11 @@ $( document ).ready(function() {
             next();
         });
     })
+    // $( "#sortable1, #sortable2" ).sortable({
+    //     connectWith: ".connectedSortable"
+    //   }).disableSelection();
+    $( "slick-track" ).sortable();
+
 });
 
 

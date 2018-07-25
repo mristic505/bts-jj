@@ -303,10 +303,6 @@ th {
   height: 63px;
 }
 
-.ingredients-slider {
-  padding-top: 10px;
-}
-
 .ingredients-slider:after {
   display: none;
   position: absolute;
@@ -315,10 +311,6 @@ th {
   right: 0;
   bottom: 0;
   content: "Drop here to return";
-}
-
-.ingredients-slider.step-5 {
-  padding-top: 23px;
 }
 
 .ingredient-title {
@@ -337,6 +329,16 @@ th {
 
 .slick-list {
   overflow: visible !important;
+  background-color: #fff;
+  height: 100%;
+}
+
+.slick-list .slick-track {
+  padding-top: 10px;
+}
+
+.step-5 .slick-track {
+  padding-top: 23px;
 }
 
 .slick-arrow {
@@ -439,11 +441,10 @@ th {
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
   width: 74px;
-  height: 32px;
   background-color: #1a5632;
   color: #fff;
   font-size: 16px;
-  line-height: 34px;
+  line-height: 32px;
   text-align: center;
   cursor: pointer;
 }
@@ -511,7 +512,7 @@ th {
 
 .case-cover-container {
   position: absolute;
-  top: -352px;
+  top: -248px;
   left: 85px;
   width: 370px;
   height: 440px;
