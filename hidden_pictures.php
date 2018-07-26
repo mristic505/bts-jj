@@ -15,7 +15,7 @@ if(isset($_GET['play'])){
         $fruit_type = "mango";
         $game_title = "<img class='you-did-it-title' src='assets/hidden_pictures/game_end/mango_title.png'>";
         $message_box_image = " <img class='game-end-image' src='assets/hidden_pictures/game_end/mango_bg.png'>";
-        $message_box_message = "Orangutans love mangoes.";
+        $message_box_message = "Can you find the 6 fruits hiding in the picture? When you spot one, click it.";
     }else{
         $class = "berry";
         $fruit_type = "berry";
