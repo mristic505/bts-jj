@@ -198,9 +198,12 @@ function hide_solved_pieces(piece_number){
 }
 function check_if_puzzle_completed(){
     if(solved_pieces.indexOf(0) == -1){
-        $('.puzzle-bottom-bar').removeClass('game-started');        
-        $(".puzzle-bottom-bar").hide();
-        $(".game-end-wrapper").show();
+        
+        setTimeout(function(){
+            $('.puzzle-bottom-bar').removeClass('game-started');        
+            $(".puzzle-bottom-bar").fadeOut();
+            $(".game-end-wrapper").fadeIn();
+        }, 800);
     }
 }
 
