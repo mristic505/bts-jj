@@ -72,7 +72,7 @@
                 <div class="stack-area" id="stack-area-3"></div>
                 <img src="assets/lunchtime_flavorites/case-cover.png" class="case-cover-img step-4" style="display:none">
                 <div class="step-5 case-cover" style="display:none">
-                 <input type="text" class="step-5 type-your-name" placeholder="TYPE YOUR NAME" style="display:none">
+                 <input type="text" class="step-5 type-your-name" placeholder="TYPE YOUR NAME" maxlength="12" style="display:none">
 
                 </div>
                 <div class="ingredients-slider-container">
