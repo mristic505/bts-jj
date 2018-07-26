@@ -1664,6 +1664,13 @@ main {
     .jj_products {
         max-width: 200px;
      }
+     .officialRulesContainer, .faqContainer, .prizesContainer, .page-prize-claim-form .form_holder {    
+        max-width: 800px;
+        margin: 0 auto;
+        font-family: 'GothamMediumRegular';
+        padding: 0 30px 30px;
+        background: #fff;
+    }
 }
 @media (max-width: 600px) and (-ms-high-contrast:none) {
      .mn_bottles { 
@@ -1704,8 +1711,6 @@ main {
         top: auto;
         bottom: 0;
      }
-
-
      
 }
 @media screen and (max-width: 470px) {

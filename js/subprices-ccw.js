@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
                 name: 'Passion <br>Dragonfruit',
                 bg: '#9c2164',
                 slug: 'pdrfr',
-                url: '?page=juicy-jokes&play=passion-dragonfruit'
+                url: '?page=juicy-jokes&play=dragonFruit'
             },
             {
                 name: 'Grape',
