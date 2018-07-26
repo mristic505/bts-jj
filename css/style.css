@@ -966,8 +966,9 @@ main {
 }
 .number_holder .ui-droppable {
     border: 1px solid #459206;
-    background: #78b340;
-    margin:auto;
+    background: #c2eaf2;
+    margin: auto;
+    border: 1px solid #8dccd2 !important;
 }
 .draggable_number_holder .ui-draggable {
     border: 1px solid #347a17;
@@ -1036,7 +1037,7 @@ main {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: #4b9a00;
+    background: url(../memory-images/completed_bg.jpg);
 }
 .mathching_numbers_htp {
     background: url(../img/fruit_match_bg.png);
