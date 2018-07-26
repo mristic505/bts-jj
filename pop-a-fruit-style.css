@@ -739,6 +739,7 @@ th {
   font-size: 18px;
   color: #1a5632;
   margin-top: 4px;
+  max-width: 240px;
 }
 
 .game-end-wrapper .game-end-image {

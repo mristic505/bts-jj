@@ -35,7 +35,7 @@
             $game_title ="<img class='you-did-it-title' src='assets/lunchtime_flavorites/game_end/kiwi_strawberry_title.png'>";
             $game_subtitle = "Have fun when you open<br/>your lunch box!";
             $message_box_image = " <img class='game-end-image' src='assets/lunchtime_flavorites/game_end/kiwi_strawberry_bg.png'>";
-            $message_box_message = "Kiwifruit was first discovered in China and was originally called “Chinese gooseberry.”.";               
+            $message_box_message = "Kiwifruit was first discovered in China and was originally called “Chinese gooseberry.";               
         }
     }else{
         $class = "kiwi-strawberry";
