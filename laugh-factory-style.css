@@ -80,6 +80,11 @@ button {
     display: none;
     height: 588px;
     width: 588px;
+
+}
+
+.default-bg {
+    background-image: url(img/bts-jj-bg-color.jpg);
 }
 
 .mySlides * {

@@ -5,17 +5,17 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <body>
     <!-- Slide show container -->
-<div class="slideshow-container">
+<div class="slideshow-container default-bg">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides slidefade slide1">
+  <div class="mySlides slidefade slide1 default-bg">
     <div class="slide1TextContainer">
 	<h1 id="introParagraph">Experience lots of laughs as you click through<br>this fruity fun.</h1>
     	<button id="startJokesBtn" onclick="plusSlides(1)">GET STARTED</button>
     </div>
   </div>
 
-  <div class="mySlides slidefade">
+  <div class="mySlides slidefade default-bg">
     <div class="slide2TextContainer">
 	    <h1 class="joke"></h1>
 	    <h2 class="answerBtn">SEE ANSWER <img id="answerBtnArrow" src="img/seeAnswerBtn.png"/></h2>
@@ -24,7 +24,7 @@
     <a class="next"><img src="img/right-arrow.png"></a>
   </div>
 
-  <div class="mySlides slidefade slide3">
+  <div class="mySlides slidefade slide3 default-bg">
     <div class="slide3TextContainer">
 <h1 id="lastSlideText">Share these jokes with your friends and family</h1>
     <h2 id="fruitFactTitle">Fun Fruity Fact</h2>
