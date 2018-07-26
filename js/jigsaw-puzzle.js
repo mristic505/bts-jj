@@ -203,7 +203,7 @@ function check_if_puzzle_completed(){
             $('.puzzle-bottom-bar').removeClass('game-started');        
             $(".puzzle-bottom-bar").fadeOut();
             $(".game-end-wrapper").fadeIn();
-        }, 800);
+        }, 2000);
     }
 }
 
