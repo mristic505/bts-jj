@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/style.css?ver=2.3.6"></link>
+<link type="text/css" rel="stylesheet" media="all" href="css/style.css?ver=2.3.7"></link>
 <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
 <![endif]-->
