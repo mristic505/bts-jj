@@ -85,6 +85,7 @@ button {
 
 .default-bg {
     background-image: url(img/bts-jj-bg-color.jpg);
+    background-size: contain;
 }
 
 .mySlides * {
@@ -363,12 +364,12 @@ button {
 	}
 
 	.joke {
-	    font-size: 20px;
-	    padding-bottom: 10px;
-	    max-width: 210px;
+        font-size: 20px;
+        padding-bottom: 10px;
+        max-width: 250px;
 	}
 	.slide2TextContainer {
-	    top: 144px;
+	    top: 136px;
 	}
 	.next {
 	    right: 20px; 
@@ -411,10 +412,20 @@ button {
 
 	}
 
+    #jokesAgainBtn {
+        height: 33px;
+        width: 108px;
+    }
+
+    #spinBtn {
+        height: 33px;
+        width: 62px;
+    }
+
 	
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 375px){
 
 	.slideshow-container {
 	    width: 300px;
@@ -439,65 +450,74 @@ button {
 	    font-size: 9px;
 	}
 
-.slide2TextContainer {
-    top: 114px;
-}
+    .slide2TextContainer {
+        top: 104px;
+    }
 
-.joke {
-    font-size: 14px;
-    padding-bottom: 10px;
-    max-width: 190px;
-}
+    .joke {
+        font-size: 14px;
+        padding-bottom: 10px;
+        max-width: 190px;
+    }
 
-.answerBtn {
-    max-width: 150px;
-    font-size: 12px;
-    margin: 0 auto;
-}
+    .answerBtn {
+        max-width: 150px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
 
-.prev img, .next img {
-    max-width: 75%;     max-width: 75%;
-}
-.prev {
-    left: 11px; 
-}
+    .prev img, .next img {
+        max-width: 75%;
+    }
+    .prev {
+        left: 11px; 
+    }
 
-.next {
-    right: 11px;
+    .next {
+        right: 11px;
 
-}
-.slide3TextContainer {
-    position: relative;
-    top: 70px;
-}
-#lastSlideText {
-    font-size: 10px;
-    max-width: 164px;
-    padding-bottom: 21px;
-    line-height: normal;
-}
-#fruitFactTitle {
-    padding-bottom: 3px;
-    font-size: 20px;
-}
+    }
+    .slide3TextContainer {
+        position: relative;
+        top: 70px;
+    }
+    #lastSlideText {
+        font-size: 10px;
+        max-width: 164px;
+        padding-bottom: 21px;
+        line-height: normal;
+    }
+    #fruitFactTitle {
+        padding-bottom: 3px;
+        font-size: 20px;
+    }
 
-#fruityFact {
-    font-size: 11px;
-    max-width: 118px;
-    height: 45px;
+    #fruityFact {
+        font-size: 9px;
+        max-width: 118px;
+        height: 45px;
 
-}
-#slide3-BtnGroup {
-    top: 100px;
-    font-size: 10px;
-}
-#getCoupBtn {
-    height: 30px;
-    width: 110px;
-    font-size: 10px;
-    margin: 10px auto;
-}
+    }
+    #slide3-BtnGroup {
+        top: 100px;
+        font-size: 10px;
+    }
+    #getCoupBtn {
+        height: 30px;
+        width: 110px;
+        font-size: 10px;
+        margin: 10px auto;
+    }
 
+    #jokesAgainBtn {
+        height: 26px;
+        width: 96px;
+    }
+
+    #spinBtn {
+        height: 26px;
+        width: 59px;
+    }
 
 
 }
