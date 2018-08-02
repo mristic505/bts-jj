@@ -202,7 +202,7 @@ $( document ).ready(function() {
             $('.ingredients-slider').slick('setPosition');
         }
         else if(active_step == 3){
-            
+            $('.step-3.ingredients-slider').hide();            
             $(".slick-list").css("z-index", 99);
             $(".slick-arrow").css("z-index", 100);
             $('.ingredients-slider').slick('setPosition');
@@ -233,6 +233,7 @@ $( document ).ready(function() {
             $('.step-5').hide();
             $(".game-end-wrapper").show();
             active_step = 6;
+            $('.game-spin-restart-buttons-container').hide();
         }
     })
     $(".type-your-name").on('input',function(){
@@ -245,7 +246,9 @@ $( document ).ready(function() {
 
 
     $('.start-game-button').click(function(){
-        $('.how-to-play-wrapper').fadeOut(600, function() { });
+        $('.how-to-play-wrapper').fadeOut(600, function() {
+            $('.game-spin-restart-buttons-container').show();
+         });
     })
     $('.fruit-container').on( "mousedown touchstart", function(){
         $(this).addClass("clicked")

@@ -766,8 +766,8 @@ th {
 
 @media screen and (max-width: 600px) {
   .fruit-container.mango.found div {
-    height: 30.10px;
-    width: 53.34px;
+    height: 41.10px;
+    width: 57.34px;
   }
 }
 
@@ -829,11 +829,12 @@ th {
 
 .how-to-play-wrapper .how-to-play-container {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
   padding-bottom: 110px;
+  width: 64%;
 }
 
 .how-to-play-wrapper .how-to-play-container .how-to-play-title {

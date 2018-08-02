@@ -1,4 +1,12 @@
 <?php ?>
+<div class='game-spin-restart-buttons-container clearfix' style="display:none">
+	<div class="inner-container-50">
+		<a href="javascript:void(0);" onclick="window.location.reload()">PLAY AGAIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a>
+	</div>
+	<div class="inner-container-50">
+		<a href="?page=spin">SPIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a>
+	</div>
+</div>
 </main>
 <footer>
 	<p class="legal ll1"><a target="_blank" href="http://juicyjuice.com/privacy/">Privacy Policy</a>   <a target="_blank" href="http://juicyjuice.com/terms/">Terms and Conditions</a></p>

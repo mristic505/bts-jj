@@ -35,7 +35,7 @@
             $game_title ="<img class='you-did-it-title' src='assets/lunchtime_flavorites/game_end/kiwi_strawberry_title.png'>";
             $game_subtitle = "Have fun when you open<br/>your lunch box!";
             $message_box_image = " <img class='game-end-image' src='assets/lunchtime_flavorites/game_end/kiwi_strawberry_bg.png'>";
-            $message_box_message = "Kiwifruit was first discovered in China and was originally called “Chinese gooseberry.";               
+            $message_box_message = "Kiwifruit was first discovered in China and was originally called “Chinese gooseberry”.";               
         }
     }else{
         $class = "kiwi-strawberry";
@@ -63,7 +63,7 @@
             <div class="puzzle-background clearfix <?=$class?>">
                 <div class="step-1 step-title" >Stack Your Sandwich</div>
                 <div class="step-2 step-title" style="display:none">Pick 2 Snacks</div>
-                <div class="step-3 step-title" style="display:none">Choose Your Juicy Juice® Flavor</div>
+                <div class="step-3 step-title" style="display:none">Choose Your Juicy Juice<sup>®</sup> Flavor</div>
                 <div class="step-5 step-title" style="display:none">Decorate Your Lunch Box</div>
                 <div class="stack-area" id="stack-area-1">
                     <div class="stacked bread"><img src="assets\lunchtime_flavorites\bread.png"></div>
@@ -78,7 +78,7 @@
                 <div class="ingredients-slider-container">
                     <div class="step-1 ingredients-slider">
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/ingredients'), array('..', '.')) as $value): ?>
-                            <div class="draggable stack-area-1-ingredient <?=$value?>">
+                            <div class="draggable stack-area-1-ingredient <?=str_replace("&","",str_replace(".png", "", $value));?>">
                                 <img src="assets/lunchtime_flavorites/ingredients/<?=$value?>">
                                 <div class="ingredient-title"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
                             </div>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="step-2 ingredients-slider" style="display:none">
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/snacks'), array('..', '.')) as $value): ?>
-                            <div class="draggable stack-area-2-ingredient <?=$value?>">
+                            <div class="draggable stack-area-2-ingredient  <?=str_replace("&","",str_replace(".png", "", $value));?>">
                                 <img src="assets/lunchtime_flavorites/snacks/<?=$value?>">
                                 <div class="ingredient-title"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
                             </div>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="step-3 ingredients-slider" style="display:none">
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/juices'), array('..', '.','stacked')) as $value): ?>
-                            <div class="draggable stack-area-3-ingredient <?=$value?>">
+                            <div class="draggable stack-area-3-ingredient  <?=str_replace("&","",str_replace(".png", "", $value));?>">
                                 <img fruit-filename="<?=$value?>" src="assets/lunchtime_flavorites/juices/<?=$value?>">
                                 <div class="ingredient-title"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
                             </div>

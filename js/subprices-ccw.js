@@ -409,7 +409,8 @@ jQuery(document).ready(function($) {
                             }); 
                             if($('.clickme').length === 2) {
                                 setTimeout(function() {
-                                    end_action(end_message, end_fruit);
+                                $('.game-spin-restart-buttons-container').hide();
+                                end_action(end_message, end_fruit);
                                 }, 3000);                
                             }
                         }                        
@@ -425,9 +426,10 @@ jQuery(document).ready(function($) {
 
     $('.start-game-button').click(function(){
         $('.completed_holder').fadeOut(function(){
+            $('.game-spin-restart-buttons-container').show();
             setTimeout(function() {
-                     $('.completed_holder').remove();
-            }, 1000);
+                $('.completed_holder').remove();
+        }, 1000);
         });
     });
 

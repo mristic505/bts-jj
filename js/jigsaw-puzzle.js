@@ -20,6 +20,7 @@ $( document ).ready(function() {
         $('.how-to-play-wrapper').fadeOut(600, function() {
             move_pieces_at_game_start();
         })
+        $('.game-spin-restart-buttons-container').show();
     })
     
     $( ".puzzle-background" ).droppable({revert: "valid"});
@@ -203,7 +204,8 @@ function check_if_puzzle_completed(){
             $('.puzzle-bottom-bar').removeClass('game-started');        
             $(".puzzle-bottom-bar").fadeOut();
             $(".game-end-wrapper").fadeIn();
-        }, 2000);
+            $('.game-spin-restart-buttons-container').hide();
+    }, 2000);
     }
 }
 

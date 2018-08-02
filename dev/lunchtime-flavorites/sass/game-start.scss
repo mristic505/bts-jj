@@ -11,13 +11,13 @@
     
     .how-to-play-container{
         position: absolute;
-        top: 50%;
+        top: 53%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding-bottom: 110px;
-        width: 74%;
+        width: 80%;
         img{
-            transform: scale(0.9);
+            // transform: scale(0.9);
         }
         .how-to-play-title  {
             font-family: "CabritoNorExB";

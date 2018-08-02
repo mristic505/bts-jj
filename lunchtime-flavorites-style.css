@@ -327,6 +327,14 @@ th {
   line-height: 12px;
 }
 
+.ingredients-title.cheese--crackers {
+  bottom: -26px;
+}
+
+.ingredients-title.strawberry-watermelon {
+  bottom: -26px;
+}
+
 .slick-list {
   overflow: visible !important;
   background-color: #fff;
@@ -366,6 +374,14 @@ th {
   top: 20% !important;
   -ms-transform: translateX(-50%) !important;
       transform: translateX(-50%) !important;
+}
+
+#stack-area-2 .apple.stacked:first-child:not(.ui-draggable-dragging) {
+  top: 4% !important;
+}
+
+#stack-area-2 .peppers.stacked:first-child:not(.ui-draggable-dragging) {
+  top: 4% !important;
 }
 
 #stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging) {
@@ -515,7 +531,7 @@ th {
 
 .case-cover-container {
   position: absolute;
-  top: -248px;
+  top: -347px;
   left: 85px;
   width: 370px;
   height: 440px;
@@ -561,17 +577,12 @@ th {
 
 .how-to-play-wrapper .how-to-play-container {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
   padding-bottom: 110px;
-  width: 74%;
-}
-
-.how-to-play-wrapper .how-to-play-container img {
-  -ms-transform: scale(0.9);
-      transform: scale(0.9);
+  width: 80%;
 }
 
 .how-to-play-wrapper .how-to-play-container .how-to-play-title {

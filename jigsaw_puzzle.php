@@ -51,7 +51,7 @@
                         if($_GET['play']=='cranberry'){
                             echo "Cranberries are approximately 90% water.";
                         }elseif($_GET['play'] == 'peach'){
-                            echo "Peaches are known as “Stone Fruits” because of their hard pits.";
+                            echo "Peaches are known <br> as “Stone Fruits”<br/> because of their hard pits.";
                         }else{
                             echo "Grow your own pineapple plant by planting the top of the pineapple. Unfortunately, a giant pineapple won’t grow underneath it!";
                         }

@@ -102,6 +102,7 @@ $( document ).ready(function() {
 
 function game_start(){    
     $('.how-to-play-wrapper').fadeOut(600, function() {
+    $('.game-spin-restart-buttons-container').show();
 
     //add new pieces interval
     var set_positions_interval = setInterval(function(){ show_positions();},500);
@@ -133,6 +134,7 @@ function game_start(){
 
 function game_end(){
     setTimeout(function(){
+        $('.game-spin-restart-buttons-container').hide();
         if(fruits_popped == 0){
             $(".you-did-it-title").hide();            
             $(".popped-fruits").hide();            
