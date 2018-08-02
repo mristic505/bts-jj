@@ -80,7 +80,7 @@
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/ingredients'), array('..', '.')) as $value): ?>
                             <div class="draggable stack-area-1-ingredient <?=str_replace("&","",str_replace(".png", "", $value));?>">
                                 <img src="assets/lunchtime_flavorites/ingredients/<?=$value?>">
-                                <div class="ingredient-title"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
+                                <div class="ingredient-title <?=str_replace("&","",str_replace(".png", "", $value));?>"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -88,7 +88,7 @@
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/snacks'), array('..', '.')) as $value): ?>
                             <div class="draggable stack-area-2-ingredient  <?=str_replace("&","",str_replace(".png", "", $value));?>">
                                 <img src="assets/lunchtime_flavorites/snacks/<?=$value?>">
-                                <div class="ingredient-title"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
+                                <div class="ingredient-title <?=str_replace("&","",str_replace(".png", "", $value));?>"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -96,7 +96,7 @@
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/juices'), array('..', '.','stacked')) as $value): ?>
                             <div class="draggable stack-area-3-ingredient  <?=str_replace("&","",str_replace(".png", "", $value));?>">
                                 <img fruit-filename="<?=$value?>" src="assets/lunchtime_flavorites/juices/<?=$value?>">
-                                <div class="ingredient-title"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
+                                <div class="ingredient-title <?=str_replace("&","",str_replace(".png", "", $value));?>"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
                             </div>
                         <?php endforeach; ?>
                     </div>

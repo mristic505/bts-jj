@@ -23,6 +23,23 @@
     background-image: url("assets/lunchtime_flavorites/lunchbox.png"),url("assets/lunchtime_flavorites/paper.png");
     background-repeat: no-repeat , repeat;
     overflow: hidden;
+    
+    @media screen and (max-width: 600px){
+        top: 17px;
+        bottom: 17px;
+        left: 17px;
+        right: 17px;
+        background-size: 320px;
+        background-position: center 48px;
+    }
+    @media screen and (max-width: 470px) {
+        top: 12px;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        background-size: 225px;
+        background-position: center 25px;
+    }
 }
 .stack-area{
     position: absolute;
@@ -30,18 +47,50 @@
     height:200px;
     background-color: #fff;
     border-radius: 22px;
+    @media screen and (max-width: 600px){
+        top: 116px;
+        height: 163px;
+    }
+    @media screen and (max-width: 470px) {
+        top: 70px;
+        height: 120px;
+    }
 }
 #stack-area-1{
     width: 151px;
     left: 100px;
+    @media screen and (max-width: 600px){
+        width: 108px;
+      left: 64px;
+    }
+    @media screen and (max-width: 470px) {   
+        width: 85px;
+        left: 44px;
+    }
 }
 #stack-area-2{
     width: 89px;
     left: 257px;
+    @media screen and (max-width: 600px){
+        width: 81px;
+        left: 179px;
+    }
+    @media screen and (max-width: 470px) {
+        width: 55px;
+      left: 133px;
+    }
 }
 #stack-area-3{
     width: 89px;
     left: 354px;
+    @media screen and (max-width: 600px){
+        width: 81px;
+        left: 267px;
+    }
+    @media screen and (max-width: 470px) {
+        width: 55px;
+        left: 192px;
+    }
 }
 .ingredients-slider-container{
     position: absolute;
@@ -50,15 +99,52 @@
     width: 100%;
     padding-left: 70px;
     padding-right: 70px;
+    @media screen and (max-width: 600px){
+        height: 70px;
+        bottom: 34px;
+        padding-left: 60px;
+        padding-right: 60px
+    }
+    @media screen and (max-width: 470px){
+        height: 60px;
+        bottom: 25px;
+        padding-left: 36px;
+       padding-right: 36px;
+    }
     .ingredients-slider{
         width: 100%;
         height: 105px;    
+    
+        @media screen and (max-width: 600px){
+            height: 70px;
+        }
+        @media screen and (max-width: 470px){
+            height: 60px;
+        }
     }
 }
 .slick-slide img{
     margin-left: auto;
     margin-right: auto;
-    height: 63px
+    height: 63px;
+    @media screen and (max-width: 600px){
+        height: 38px;
+    }
+    @media screen and (max-width: 470px){
+
+    }
+}
+.step-5 .slick-slide img{
+    
+    // height: 63px;
+    
+    height: 80px;
+    @media screen and (max-width: 600px){
+        height: 55px;
+    }
+    @media screen and (max-width: 470px){
+
+    }
 }
 .ingredients-slider{
     &:after{
@@ -85,12 +171,38 @@
     width: 100%;
     bottom: -21px;
     line-height: 12px;
+    @media screen and (max-width: 600px){
+        bottom: -14px;
+    }
+    @media screen and (max-width: 470px){
+        font-size: 9px;
+    }
 }
 .ingredients-title.cheese--crackers{
     bottom: -26px;
+    @media screen and (max-width: 600px){
+    }
+    @media screen and (max-width: 470px){
+
+    }
 }
 .ingredients-title.strawberry-watermelon{
     bottom: -26px;
+    @media screen and (max-width: 600px){
+    }
+    @media screen and (max-width: 470px){
+
+    }
+}
+
+.ingredient-title.fruit-punch, .ingredient-title.strawberry-kiwi, .ingredient-title.peach-apple, .ingredient-title.strawberry-watermelon, .ingredient-title.peanut-butter, .ingredient-title.cheese--crackers, .ingredient-title.granola-bar {
+    @media screen and (max-width: 600px){
+        bottom: -22px;
+    }
+    @media screen and (max-width: 470px){
+        bottom: -14px;
+        line-height: 8px;
+    }
 }
 .slick-list{
     overflow: visible!important;
@@ -98,10 +210,22 @@
     height: 100%;
     .slick-track{
         padding-top: 10px;
+    @media screen and (max-width: 600px){
+        padding-top: 6px;
+    }
+    @media screen and (max-width: 470px){
+        padding-top: 5px;
+    }
     }
 }
 .step-5 .slick-track{
-    padding-top: 23px;
+    padding-top: 12px;  
+    @media screen and (max-width: 600px){
+        padding-top: 9px;
+    }
+    @media screen and (max-width: 470px){
+        padding-top: 3px;
+    }
 }
 .slick-arrow{
     position: absolute;
@@ -114,12 +238,27 @@
     color: #1a5632;
     font-family: Arial;
     line-height: 94px;
+    @media screen and (max-width: 600px){
+        font-size: 67px;
+        line-height: 64px;
+        width: 75px;
+    }
+    @media screen and (max-width: 470px){
+        line-height: 55px;
+        width: 46px;
+    }
 }
 .slick-prev{
     left: -70px;
+    @media screen and (max-width: 470px){
+        left: -40px;
+    }
 }
 .slick-next{
     right: -70px;
+    @media screen and (max-width: 470px){
+        right: -40px;
+    }
 }
 #stack-area-2{
     .stacked:first-child:not(.ui-draggable-dragging){
@@ -136,11 +275,32 @@
         top: 70%!important;
     }
 }
+#stack-area-3{
+    .stacked:not(.ui-draggable-dragging){
+        width: 96% !important;
+    }
+    img{
+        @media screen and (max-width: 600px){
+            width: 71% !important;
+        }
+        @media screen and (max-width: 470px) {
+        }
+    }
+}
 .step-5{
+    .stacked:not(.ui-draggable-dragging){
+        width: 60px!important;
+    }
     .stacked:nth-child(2):not(.ui-draggable-dragging){
         top: 22% !important;
         left: 8%!important;
-        width: 60px!important;  
+        @media screen and (max-width: 600px){
+            width: 46px!important;
+        }
+        @media screen and (max-width: 470px) {
+            left: 17% !important;
+            width: 38px!important;
+        }
         img{
             width: auto!important;
         }
@@ -153,6 +313,120 @@
         width: auto!important;
         top: initial!important;
         width: 60px!important;  
+        @media screen and (max-width: 600px){
+            width: 46px!important;
+            bottom: 0% !important;
+        }
+        @media screen and (max-width: 470px) {
+            width: 38px!important;
+        }
+        img{
+            width: auto!important;
+        }
+    }
+    .stacked:nth-child(6):not(.ui-draggable-dragging){
+        bottom: -1% !important;
+        right: 27% !important;
+        transform: none !important;
+        left: initial!important;
+        width: auto!important;
+        top: initial!important;
+        width: 60px!important;  
+        @media screen and (max-width: 600px){
+            width: 46px!important;
+        }
+        @media screen and (max-width: 470px) {
+            width: 38px!important;
+        }
+        img{
+            width: auto!important;
+        }
+    }
+    .stacked:nth-child(8):not(.ui-draggable-dragging){
+        bottom: 5% !important;
+        right: 52% !important;
+        transform: none !important;
+        left: initial!important;
+        width: auto!important;
+        top: initial!important;
+        width: 60px!important;  
+        @media screen and (max-width: 600px){
+            width: 46px!important;
+        }
+        @media screen and (max-width: 470px) {
+            width: 38px!important;
+        }
+        img{
+            width: auto!important;
+        }
+    }
+    .stacked:nth-child(4):not(.ui-draggable-dragging){
+        bottom: -2% !important;
+        left: 6% !important;
+        transform: none !important;
+        width: auto!important;
+        top: initial!important;
+        width: 60px!important;  
+        @media screen and (max-width: 600px){
+            width: 46px!important;
+        }
+        @media screen and (max-width: 470px) {
+            width: 38px!important;
+        }
+        img{
+            width: auto!important;
+        }
+    }
+    .stacked:nth-child(7):not(.ui-draggable-dragging){
+        top: -5% !important;
+      right: 3% !important;
+        transform: none !important;
+        left: initial!important;
+        width: auto!important;
+        top: initial!important;
+        width: 60px!important;  
+        @media screen and (max-width: 600px){
+            width: 46px!important;
+        }
+        @media screen and (max-width: 470px) {
+            width: 38px!important;
+        }
+        img{
+            width: auto!important;
+        }
+    }
+    .stacked:nth-child(5):not(.ui-draggable-dragging){
+        top: -5% !important;
+        right: 24% !important;
+    
+        transform: none !important;
+        left: initial!important;
+        width: auto!important;
+        top: initial!important;
+        width: 60px!important; 
+        @media screen and (max-width: 600px){
+            width: 46px!important;
+        } 
+        @media screen and (max-width: 470px) {
+            width: 38px!important;
+        }
+        img{
+            width: auto!important;
+        }
+    }
+    .stacked:nth-child(9):not(.ui-draggable-dragging){
+        top: -5% !important;
+      left: 29% !important;
+        transform: none !important;
+        width: auto!important;
+        top: initial!important;
+        width: 60px!important;  
+        @media screen and (max-width: 600px){
+            width: 46px!important;
+        }
+        @media screen and (max-width: 470px) {
+            width: 38px!important;
+        }
         img{
             width: auto!important;
         }
@@ -199,21 +473,19 @@
     line-height: 32px;
     text-align: center;
     cursor: pointer;
+    
+    @media screen and (max-width: 600px){
+        font-size: 10px;
+        line-height: 27px;
+        bottom: 2px;
+    }
+    @media screen and (max-width: 470px) {
+        font-size: 9px;
+        line-height: 20px;
+    }
 }
 
 
-.case-cover, .case-cover-img{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.case-cover{
-    background-color: #0492a6;
-    width: 66%;
-    height: 38%;
-    border-radius: 20px;
-}
 .type-your-name{
     position: absolute;
     top: 46%;
@@ -235,15 +507,51 @@
         opacity: 0.6;
     }
     width: 100%;
+    @media screen and (max-width: 470px) {
+        font-size: 15px;
+    }
 }
 .step-title{
     font-family: "CabritoNorExB";
     color: #1a5632;
     font-size: 26px;
     padding-top: 13px;
+    @media screen and (max-width: 600px){
+       font-size: 22px;
+    }
+    @media screen and (max-width: 470px){
+        font-size: 13px;
+        padding-top: 0;
+    }
 }
 .ui-draggable-dragging .ingredient-title{
     display: none;
+}
+.case-cover, .case-cover-img{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 600px){
+        top: 47.5%;
+    }
+    @media screen and (max-width: 470px){
+        top: 45%;
+    }
+}
+.case-cover{
+    background-color: #0492a6;
+    width: 66%;
+    height: 38%;
+    border-radius: 20px;
+    
+    @media screen and (max-width: 600px){
+        width: 71%;
+        height: 43%;
+    }
+    @media screen and (max-width: 470px){
+
+    }
 }
 
 .case-cover-container{
@@ -253,6 +561,18 @@
     width: 370px;
     height: 440px;
     display: none;
+    @media screen and (max-width: 600px){
+        top: -205px;
+        left: 57px;
+        width: 304px;
+        height: 366px;
+    }
+    @media screen and (max-width: 470px){
+        top: -141px;
+        left: 39px;
+        width: 212px;
+        height: 257px;
+    }
 }
 #case-cover{
     height: 100%;

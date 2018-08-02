@@ -1964,6 +1964,12 @@ main {
     font-family: 'CabritoNorExB';
     color: #1a5632;
     font-size: 16px;
+   
+} 
+@media screen and (max-width: 470px) {
+    .game-spin-restart-buttons-container a{
+        font-size: 12px;
+    }
 }
 .game-spin-restart-buttons-container a:hover{
     text-decoration: none;

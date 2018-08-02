@@ -8,7 +8,18 @@
     background-image: url('assets/lunchtime_flavorites/game_start/background.png');
     background-size: cover;
     z-index: 99999;
-    
+    @media screen and (max-width: 600px){
+        top: 17px;
+        bottom: 17px;
+        left: 17px;
+        right: 17px;
+    }
+    @media screen and (max-width: 470px) {
+        top: 12px;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+    }
     .how-to-play-container{
         position: absolute;
         top: 53%;
@@ -38,7 +49,9 @@
         .start-game-button{
             font-family: "CabritoNorExB";
             margin-top:20px;
-            padding: 15px 59px;
+            @media screen and (min-width: 600px){
+                padding: 15px 59px;
+            }
             color: #ffffff;
             background-color: #1a5632;
             border: 0;
@@ -51,18 +64,22 @@
 
 
     @media screen and (max-width: 600px){
-        .how-to-play-title{
+        img{
             height: 110px;
-            margin-top: 74px;
+            margin-top: 20px;
+        }
+        .how-to-play-container h2{
+            margin-top: 15px!important;
         }
     }
     @media screen and (max-width: 470px) {
-        .how-to-play-title{
+        img{
             height: 76px;
-            margin-top: 115px;
+            margin-top: 37px;
         }
         .how-to-play-container h2{
-            font-size: 17px;
+            font-size: 17px!important;
+            margin-top: 3px!important;
         }
         .how-to-play-container p{
             font-size: 12px;

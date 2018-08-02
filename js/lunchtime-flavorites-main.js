@@ -10,6 +10,7 @@ $( document ).ready(function() {
         dots: false,
         arrows: true,
         draggable: false,
+        swipe: false,
         speed: 1300,
         prevArrow: '<div class="slick-prev">&#8249;</div>',
         nextArrow: '<div class="slick-next">&#8250;</div>'
@@ -22,7 +23,7 @@ $( document ).ready(function() {
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
+            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").removeClass("ui-droppable").appendTo(droppedOn).addClass("stacked");
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
@@ -130,7 +131,7 @@ $( document ).ready(function() {
             }else{
                 $("#stack-area-3").droppable('option', 'accept', '.stack-area-3-ingredient');            
             }
-            if($( ".step-5.case-cover>div" ).length == 2){//disable any more childs
+            if($( ".step-5.case-cover>div" ).length == 8){//disable any more childs
                 $(".step-5.case-cover").droppable('option', 'accept', 'nothing');                
             }else{
                 $(".step-5.case-cover").droppable('option', 'accept', '.stack-area-5-ingredient');            
