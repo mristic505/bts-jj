@@ -1,5 +1,6 @@
 var solved_fruits = [1,0,0,0,0,0,0];
 var active_step = 1;
+
 $( document ).ready(function() {
     $('.ingredients-slider').slick({
         dots: true,
@@ -24,7 +25,7 @@ $( document ).ready(function() {
             var droppedOn = $(this);
             var dropped = ui.draggable;
             $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").removeClass("ui-droppable").appendTo(droppedOn).addClass("stacked");
-            $('.ingredients-slider').slick('setPosition'); 
+            $('.step-1.ingredients-slider').slick('slickRemove',dropped);
         }
     });
     $( "#stack-area-2" ).droppable({
@@ -34,6 +35,7 @@ $( document ).ready(function() {
             var dropped = ui.draggable;
             $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
             $('.ingredients-slider').slick('setPosition'); 
+            $('.step-2.ingredients-slider').slick('slickRemove',dropped);
             
         }
     });
@@ -45,6 +47,7 @@ $( document ).ready(function() {
             $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
             dropped.find('img').attr('src',"assets/lunchtime_flavorites/juices/stacked/"+dropped.find('img').attr('fruit-filename'));
             $('.ingredients-slider').slick('setPosition'); 
+            $('.step-3.ingredients-slider').slick('slickRemove',dropped);
         }
     });
     $( ".case-cover" ).droppable({
@@ -54,6 +57,7 @@ $( document ).ready(function() {
             var dropped = ui.draggable;
             $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
             $('.ingredients-slider').slick('setPosition'); 
+            $('.step-5.ingredients-slider').slick('slickRemove',dropped);
         }
     });
     $( ".step-1.ingredients-slider .slick-slide" ).droppable({
@@ -149,6 +153,8 @@ $( document ).ready(function() {
                 }else{
                     $('.next-button').fadeOut();
                 }
+                $('.ingredients-slider').slick('setPosition'); 
+
             }
             if(active_step == 2){
                 if($( "#stack-area-2>div" ).length == 2){//disable any more childs
@@ -168,7 +174,7 @@ $( document ).ready(function() {
                 console.log("checking");
                 $(".step-5.case-cover").css("z-index",'s');
                 $(".step-5.type-your-name").css("z-index",'s');
-                if($( ".step-5.case-cover>div" ).length > 1 && $(".type-your-name").val().length > 0){//disable any more childs
+                if($( ".step-5.case-cover>div" ).length > 0 && $(".type-your-name").val().length > 0){//disable any more childs
                     console.log("show");
                     $('.done-button').fadeIn();
                 }else{

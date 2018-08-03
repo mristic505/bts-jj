@@ -78,9 +78,9 @@
                 <div class="ingredients-slider-container">
                     <div class="step-1 ingredients-slider">
                         <?php foreach(array_diff(scandir (getcwd().'/assets/lunchtime_flavorites/ingredients'), array('..', '.')) as $value): ?>
-                            <div class="draggable stack-area-1-ingredient <?=str_replace("&","",str_replace(".png", "", $value));?>">
+                            <div class="draggable stack-area-1-ingredient <?=str_replace("&","",str_replace(".png", "", substr($value, 2)));?>">
                                 <img src="assets/lunchtime_flavorites/ingredients/<?=$value?>">
-                                <div class="ingredient-title <?=str_replace("&","",str_replace(".png", "", $value));?>"><?=str_replace("-", " ", str_replace(".png", "", $value));?></div>                       
+                                <div class="ingredient-title <?=str_replace("&","",str_replace(".png", "", substr($value, 2)));?>"><?=str_replace("-", " ", str_replace(".png", "", substr($value, 2)));?></div>                       
                             </div>
                         <?php endforeach; ?>
                     </div>
