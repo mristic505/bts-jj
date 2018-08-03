@@ -66,6 +66,7 @@
                      solved++;
                      if (solved == 4) {
                         setTimeout(function() {
+                            $('.game-spin-restart-buttons-container').hide();
                             end_action(end_message, end_fruit);
                         }, 800);  
                      }

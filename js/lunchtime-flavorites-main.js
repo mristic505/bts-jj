@@ -10,6 +10,7 @@ $( document ).ready(function() {
         dots: false,
         arrows: true,
         draggable: false,
+        swipe: false,
         speed: 1300,
         prevArrow: '<div class="slick-prev">&#8249;</div>',
         nextArrow: '<div class="slick-next">&#8250;</div>'
@@ -22,7 +23,7 @@ $( document ).ready(function() {
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
+            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").removeClass("ui-droppable").appendTo(droppedOn).addClass("stacked");
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
@@ -130,7 +131,7 @@ $( document ).ready(function() {
             }else{
                 $("#stack-area-3").droppable('option', 'accept', '.stack-area-3-ingredient');            
             }
-            if($( ".step-5.case-cover>div" ).length == 2){//disable any more childs
+            if($( ".step-5.case-cover>div" ).length == 8){//disable any more childs
                 $(".step-5.case-cover").droppable('option', 'accept', 'nothing');                
             }else{
                 $(".step-5.case-cover").droppable('option', 'accept', '.stack-area-5-ingredient');            
@@ -202,7 +203,7 @@ $( document ).ready(function() {
             $('.ingredients-slider').slick('setPosition');
         }
         else if(active_step == 3){
-            
+            $('.step-3.ingredients-slider').hide();            
             $(".slick-list").css("z-index", 99);
             $(".slick-arrow").css("z-index", 100);
             $('.ingredients-slider').slick('setPosition');
@@ -233,6 +234,7 @@ $( document ).ready(function() {
             $('.step-5').hide();
             $(".game-end-wrapper").show();
             active_step = 6;
+            $('.game-spin-restart-buttons-container').hide();
         }
     })
     $(".type-your-name").on('input',function(){
@@ -245,7 +247,9 @@ $( document ).ready(function() {
 
 
     $('.start-game-button').click(function(){
-        $('.how-to-play-wrapper').fadeOut(600, function() { });
+        $('.how-to-play-wrapper').fadeOut(600, function() {
+            $('.game-spin-restart-buttons-container').show();
+         });
     })
     $('.fruit-container').on( "mousedown touchstart", function(){
         $(this).addClass("clicked")

@@ -15,7 +15,7 @@ if(isset($_GET['play'])){
         $fruit_type = "mango";
         $game_title = "<img class='you-did-it-title' src='assets/hidden_pictures/game_end/mango_title.png'>";
         $message_box_image = " <img class='game-end-image' src='assets/hidden_pictures/game_end/mango_bg.png'>";
-        $message_box_message = "Can you find the 6 fruits hiding in the picture? When you spot one, click it.";
+        $message_box_message = "Giving someone<br/>a basket of mangoes<br/>is considered a<br/>sign of friendship.";
     }else{
         $class = "berry";
         $fruit_type = "berry";
@@ -39,7 +39,7 @@ if(isset($_GET['play'])){
             <div class="how-to-play-container">
                 <img class="how-to-play-title" src="assets/hidden_pictures/game_start/game_title.png">
                 <h2 class="how-to-play-subtitle">HOW TO PLAY</h2>
-                <p>Can you find the 6 fruits hiding in the picture? When you spot one, click it.</p>
+                <p>Can you find the 6 fruits<br/> hiding in the picture?<br/> When you spot one, click it.</p>
                 <button class="start-game-button">PLAY</button>
             </div>
         </div>

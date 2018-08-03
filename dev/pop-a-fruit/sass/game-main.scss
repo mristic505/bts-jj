@@ -137,6 +137,19 @@
         background-image: url("assets/pop-a-fruit/main_sections_backgrounds/4.png");
         margin-top: -23px;
     }
+    .game-main-bottle{
+      position: absolute;
+      bottom: 19px;
+      right: 28px;
+      
+    @media screen and (max-width: 600px){
+        height: 120px;
+    }
+    @media screen and (max-width: 470px) {
+        height: 82px;
+        bottom: 21px;
+    }
+    }
 }
 .grape{
     .game-container{

@@ -426,6 +426,25 @@ th {
   margin-top: -23px;
 }
 
+.game-container .game-main-bottle {
+  position: absolute;
+  bottom: 19px;
+  right: 28px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container .game-main-bottle {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-container .game-main-bottle {
+    height: 82px;
+    bottom: 21px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .responsive.game-container {
     width: 450px;
@@ -739,7 +758,6 @@ th {
   font-size: 18px;
   color: #1a5632;
   margin-top: 4px;
-  max-width: 240px;
 }
 
 .game-end-wrapper .game-end-image {
@@ -788,4 +806,8 @@ th {
   .game-end-wrapper .game-end-image {
     height: 100px;
   }
+}
+
+.watermelon .game-end-wrapper .game-end-image {
+  right: 3%;
 }

@@ -3,6 +3,7 @@ var solved_fruits = [1,0,0,0,0,0,0];
 $( document ).ready(function() {
     $('.start-game-button').click(function(){
         $('.how-to-play-wrapper').fadeOut(600, function() { });
+        $('.game-spin-restart-buttons-container').show();        
     })
     $('.fruit-container').on( "mousedown touchstart", function(){
         $(this).addClass("clicked")
@@ -35,6 +36,7 @@ function game_start(){
 function check_if_all_fruits_are_found(){
     if(solved_fruits.indexOf(0) == -1){
         $(".game-end-wrapper").show();
+        $('.game-spin-restart-buttons-container').hide();
     }
 }
 

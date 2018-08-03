@@ -21,6 +21,7 @@
     }else{
         $class = "grape";
         $fruit_type = "grape";
+        $_GET['play'] = "grape";
     }
     ?>
 
@@ -56,6 +57,7 @@
                     </div>
                 </div>
                 <div class="section-4 sections"></div>
+                <img class='game-main-bottle' src="assets/pop-a-fruit/<?=$_GET['play']?>_bottle.png">
             </div>
             
             <div class="how-to-play-wrapper">
