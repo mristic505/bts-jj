@@ -151,28 +151,28 @@ if (strpos($url_string, 'page') !== false) {
         'juicy-jokes'
     );
     // If on one of restricted pages ======================================
-    foreach ($restricted_pages as $restricted_page) {
-        if ($page == $restricted_page) {  
-            // Look for session ID in the DB ==============================         
-            $result = DB::query("SELECT * FROM flavors_games_registered_users WHERE session_id=%s", session_id());
-            if (empty($result)) { 
-                header("Location: ?page=register"); // If session ID not found redirect to registration page ==============
-            } else { 
-                $times_played = $result[0]['times_played'];
-                if($restricted_page == 'spin') { 
-                    // if on spin page and already played 10 times redirect to registration page ===============
-                    if ($times_played > 9) header("Location: ?page=register");
-                } else {                    
-                    if ($times_played < 11) {
+    // foreach ($restricted_pages as $restricted_page) {
+    //     if ($page == $restricted_page) {  
+    //         // Look for session ID in the DB ==============================         
+    //         $result = DB::query("SELECT * FROM flavors_games_registered_users WHERE session_id=%s", session_id());
+    //         if (empty($result)) { 
+    //             header("Location: ?page=register"); // If session ID not found redirect to registration page ==============
+    //         } else { 
+    //             $times_played = $result[0]['times_played'];
+    //             if($restricted_page == 'spin') { 
+    //                 // if on spin page and already played 10 times redirect to registration page ===============
+    //                 if ($times_played > 9) header("Location: ?page=register");
+    //             } else {                    
+    //                 if ($times_played < 11) {
 
-                    } else {
-                        // if on any other restricted page and already played 10 times redirect to registration page ===============
-                        header("Location: ?page=register");
-                    }
-                }                    
-            }
-        }
-    }
+    //                 } else {
+    //                     // if on any other restricted page and already played 10 times redirect to registration page ===============
+    //                     header("Location: ?page=register");
+    //                 }
+    //             }                    
+    //         }
+    //     }
+    // }
 }
 
 // IF no query strings in the URL ===========================

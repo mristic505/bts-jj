@@ -837,6 +837,12 @@ th {
   width: 64%;
 }
 
+@media screen and (max-width: 470px) {
+  .how-to-play-wrapper .how-to-play-container {
+    top: 47%;
+  }
+}
+
 .how-to-play-wrapper .how-to-play-container .how-to-play-title {
   padding-bottom: 20px;
 }
@@ -900,8 +906,8 @@ th {
     margin-top: 90px;
   }
   .how-to-play-wrapper .how-to-play-container p {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 23px;
+    padding-right: 21px;
   }
 }
 

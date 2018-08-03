@@ -1296,6 +1296,20 @@ th {
   right: 8%;
 }
 
+@media screen and (max-width: 600px) {
+  .apple .game-end-image {
+    top: 27%;
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .apple .game-end-image {
+    top: 28%;
+    height: 85px;
+  }
+}
+
 .orange .game-end-image {
   top: 30%;
   right: 4%;

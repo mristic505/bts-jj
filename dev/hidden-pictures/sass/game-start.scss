@@ -27,6 +27,10 @@
         transform: translate(-50%, -50%);
         padding-bottom: 110px;
         width: 64%;
+        
+        @media screen and (max-width: 470px) {
+            top: 47%;
+        }
         .how-to-play-title{
             padding-bottom: 20px;
         }
@@ -95,8 +99,11 @@
             }
             p{
                 
-                padding-left: 15px;
-                padding-right: 15px;
+                // padding-left: 15px;
+                // padding-right: 15px;
+                
+                padding-left: 23px;
+                padding-right: 21px;
                 // font-size: 11px;
                 // padding: 0 3px;
             }
