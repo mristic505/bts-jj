@@ -91,17 +91,22 @@ function startJokes(bgImage, jokesList) {
     $("#startJokesBtn").click(function(){
         $(".mySlides").addClass(bgImage);
         $(".joke").html(allJokes[jokesList[0]]);
+        $('.game-spin-restart-buttons-container').show();
+        $('.game-spin-restart-buttons-container').css("margin-top", "-20px");
     });   
     $(".answerBtn").click(function() {
         $(".answerBtn").html(allJokes[jokesList[count] + 1]);
-    });    
+    });  
+
+
+
 }
 
 
 
 function nextJoke(color, fruitFact, bgImage, jokesList) {
     $(".next").click(function(){
-        
+
         if (count < (jokesList.length - 2) ) {
 
             count += 2;
@@ -120,6 +125,7 @@ function nextJoke(color, fruitFact, bgImage, jokesList) {
             $("#fruitFactTitle").addClass(color);
             $("#fruityFact").html(fruitFact);
             $(".mySlides").addClass(bgImage);
+
         }
     });
 
