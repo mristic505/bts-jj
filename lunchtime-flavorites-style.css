@@ -598,7 +598,7 @@ th {
   }
 }
 
-.step-5 .stacked:not(.ui-draggable-dragging) {
+.step-5 .stacked, .step-5 .stacked, .step-5 .stacked:not(.whatever) {
   width: 60px !important;
 }
 
