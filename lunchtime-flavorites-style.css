@@ -576,6 +576,14 @@ th {
       transform: translateX(-50%) !important;
 }
 
+#stack-area-2 .stacked:first-child:not(.ui-draggable-dragging).granola-bar img, #stack-area-2 .stacked:first-child:not(.ui-draggable-dragging).celery img {
+  width: 100% !important;
+}
+
+#stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging).granola-bar img, #stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging).celery img {
+  width: 100% !important;
+}
+
 #stack-area-2 .apple.stacked:first-child:not(.ui-draggable-dragging) {
   top: 4% !important;
 }

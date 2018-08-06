@@ -81,9 +81,9 @@ document.write('<iframe src="https://8096545.fls.doubleclick.net/activityi;src=8
 					<div>
 						<ul>
 							<li><a href="<?php echo strtok($_SERVER["REQUEST_URI"],'?').'?page=spin'; ?>">HOME</a></li>
-							<li><a href="?page=prizes">PRIZES</a></li>
-							<li><a href="?page=official-rules">RULES</a></li>
-							<li><a href="?page=faq">FAQS</a></li>
+							<li><a class="<?php if($_GET['page']== 'prizes'){ echo 'active' ;}?>" href="?page=prizes">PRIZES</a></li>
+							<li><a class="<?php if($_GET['page']== 'official-rules'){ echo 'active' ;}?>" href="?page=official-rules">RULES</a></li>
+							<li><a class="<?php if($_GET['page']== 'faq'){ echo 'active' ;}?>" href="?page=faq">FAQS</a></li>
 						</ul>
 					</div>
 				</nav>
