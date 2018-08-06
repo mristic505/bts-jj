@@ -15,7 +15,7 @@ var allJokes = [
                     "What\’s the smartest insect around?", "The spelling bee.",
                     "What do you get when you cross a pair of pants with a dictionary?", "Smarty pants.",
                     "What\’s a pirate\’s favorite subject?", "Arrrrrrrrrrrrrrt.",
-                    "Why did the girl wear glasses during math class?", "Because they improve di-vision!",
+                    "Why did the girl wear glasses during math class?", "Because they<br>improve di-vision!",
                     "Where did the pencil go on vacation?", "To Pennsylvania.",
                     "Why is 1+1=3 like your left foot?", "It's not right.",
                     "Why are fish so smart?", "Because they are always in a school.",
