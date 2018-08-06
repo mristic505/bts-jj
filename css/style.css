@@ -1998,3 +1998,10 @@ main {
         width: 308px;
     }   
 }
+
+.faq-title {
+    font-family: CabritoNorExB;
+    font-size: 30px;
+    color: #1a5632;
+    text-align: center;
+}
