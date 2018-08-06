@@ -877,7 +877,7 @@ main {
 }
 .girl {
     position: absolute;
-    left: -40px;
+    left: -25px;
     bottom: -30px;
 }
 .fruit_fact {
@@ -1623,7 +1623,7 @@ main {
     .girl {
         left: 0;
         bottom: 0;
-        height: 90px;
+        height: 130px;
     }
     .fruit_fact_info {
         font-size: 14px;
