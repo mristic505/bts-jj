@@ -63,7 +63,7 @@ document.write('<iframe src="https://8096545.fls.doubleclick.net/activityi;src=8
 	<!-- nav -->
 	<div class="nav-holder">
 		<nav class="navbar navbar-default">
-			  <div class="container-fluid">			  	
+			  <div class="container-fluid min-height-40">			  	
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">	
 			    </div>
