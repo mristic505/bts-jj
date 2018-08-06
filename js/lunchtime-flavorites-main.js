@@ -24,8 +24,9 @@ $( document ).ready(function() {
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").removeClass("ui-droppable").appendTo(droppedOn).addClass("stacked");
+            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked").droppable('disable');
             $('.step-1.ingredients-slider').slick('slickRemove',dropped);
+            console.log("dropped at #stack-area-1");
         }
     });
     $( "#stack-area-2" ).droppable({
@@ -53,9 +54,28 @@ $( document ).ready(function() {
     $( ".case-cover" ).droppable({
         accept: ".stack-area-5-ingredient",
         drop: function( event, ui ) {
+            var parentOffset = $('.case-cover').offset();
             var droppedOn = $(this);
             var dropped = ui.draggable;
+
             $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
+            // .css({
+            //     'position': 'absolute',
+            //     'left': (ui.offset.left - parentOffset.left + 15) + 'px',
+            //     'top': (ui.offset.top - parentOffset.top + 5) + 'px'
+            // })
+            console.log(parentOffset);
+            console.log(ui.position);
+            console.log(ui.offset);
+            // var off = $(ui.draggable).clone().offset();
+            // $(this).append($(ui.draggable).clone().addClass("dropped").draggable().css({
+            //     'position': 'absolute',
+            //     'left': (ui.position.left - parentOffset.left) + 'px',
+            //     'top': (ui.position.top - parentOffset.top) + 'px'})
+            // );
+    
+    
+    
             $('.ingredients-slider').slick('setPosition'); 
             $('.step-5.ingredients-slider').slick('slickRemove',dropped);
         }
@@ -65,7 +85,7 @@ $( document ).ready(function() {
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn);
+            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn).droppable( "option", "disabled", false );;
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
@@ -140,35 +160,39 @@ $( document ).ready(function() {
             }else{
                 $(".step-5.case-cover").droppable('option', 'accept', '.stack-area-5-ingredient');            
             }
+            if(active_step == 5){
+                $(this).css("position","relative");
+            }
             console.log('ingredients added: '+$( "#stack-area-1>div" ).length);
             console.log('snacks added: '+$( "#stack-area-2>div" ).length);
             console.log('juices added: '+$( "#stack-area-3>div" ).length);
             console.log('stickers added: '+$( ".step-5.case-cover>div" ).length);
+            console.log('characters typed in name field: '+$(".type-your-name").val().length);
             console.log('-------------');
         },
         stop: function( event, ui ) {
             if(active_step == 1){
-                if($( "#stack-area-1>div" ).length > 1){//disable any more childs
-                    $('.next-button').fadeIn();
-                }else{
-                    $('.next-button').fadeOut();
-                }
+                // if($( "#stack-area-1>div" ).length > 1){//disable any more childs
+                //     $('.next-button').fadeIn();
+                // }else{
+                //     $('.next-button').fadeOut();
+                // }
                 $('.ingredients-slider').slick('setPosition'); 
 
             }
             if(active_step == 2){
-                if($( "#stack-area-2>div" ).length == 2){//disable any more childs
-                    $('.next-button').fadeIn();
-                }else{
-                    $('.next-button').fadeOut();
-                }
+                // if($( "#stack-area-2>div" ).length == 2){//disable any more childs
+                //     $('.next-button').fadeIn();
+                // }else{
+                //     $('.next-button').fadeOut();
+                // }
             }
             if(active_step == 3){
-                if($( "#stack-area-3>div" ).length > 0){//disable any more childs
-                    $('.next-button').fadeIn();
-                }else{
-                    $('.next-button').fadeOut();
-                }
+                // if($( "#stack-area-3>div" ).length > 0){//disable any more childs
+                //     $('.next-button').fadeIn();
+                // }else{
+                //     $('.next-button').fadeOut();
+                // }
             }
             if(active_step == 5){
                 console.log("checking");
@@ -176,10 +200,10 @@ $( document ).ready(function() {
                 $(".step-5.type-your-name").css("z-index",'s');
                 if($( ".step-5.case-cover>div" ).length > 0 && $(".type-your-name").val().length > 0){//disable any more childs
                     console.log("show");
-                    $('.done-button').fadeIn();
+                    // $('.done-button').fadeIn();
                 }else{
                     console.log("hide");
-                    $('.done-button').fadeOut();
+                    // $('.done-button').fadeOut();
                 }
             }
             console.log('ingredients added: '+$( "#stack-area-1>div" ).length);
@@ -193,7 +217,7 @@ $( document ).ready(function() {
     
 
     $('.next-button,.done-button').click(function(){
-            $(this).fadeOut();
+            // $(this).fadeOut();
             if(active_step == 1){
             $('.step-1').hide();
             $('.step-2').show();
@@ -209,6 +233,8 @@ $( document ).ready(function() {
             $('.ingredients-slider').slick('setPosition');
         }
         else if(active_step == 3){
+            $(this).fadeOut();
+
             $('.step-3.ingredients-slider').hide();            
             $(".slick-list").css("z-index", 99);
             $(".slick-arrow").css("z-index", 100);
@@ -231,6 +257,7 @@ $( document ).ready(function() {
                 $('.step-4').hide();
                 $('.step-5').show();
                 $(".case-cover-container").hide();
+                $('.done-button').fadeIn();
 
                 active_step = 5;
                 $('.ingredients-slider').slick('setPosition');
@@ -245,9 +272,9 @@ $( document ).ready(function() {
     })
     $(".type-your-name").on('input',function(){
         if($( ".step-5.case-cover div" ).length > 0 && $(".type-your-name").val().length > 0){//disable any more childs
-            $('.next-button').fadeIn();
+            // $('.next-button').fadeIn();
         }else{
-            $('.next-button').fadeOut();
+            // $('.next-button').fadeOut();
         }
     });
 
