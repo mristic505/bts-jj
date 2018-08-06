@@ -352,6 +352,12 @@ img {
     display: block;
     color: #fff;
 }
+.nav div ul li a.active {
+    color: #64a723;
+}
+
+
+
 .nav div ul li:last-child {
     margin-right: 0;
 }
