@@ -89,7 +89,7 @@ html {
 body.page-spin, body.page-prizes, body.page-official-rules,
 body.page-official-rules, body.page-faq, body.page-prize-claim-form,
 body.page-register {
-    background-image:url(../img/page-bg.jpg);
+    background-image:url(../img/page-bg-v2.jpg);
     font-family: 'CabritoNorExB';
     min-height: 100vh;
     background-position: 50% 46px;
