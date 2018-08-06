@@ -14,7 +14,7 @@
 			<h2 class="heading">Take a Spin with Your Kids</h2>
 			<div class="intro_lead">Enjoy flavor-filled fun with games, puzzles and activities your kids will love.</div>
 			<div class="intro_lead">Plus, you could win a juicy prize!</div>
-			<button  id="spin_btn_1" class="spin"><span style="font-size: 50%;">CLICK TO</span><br>SPIN</button>
+			<button  id="spin_btn_1" class="spin"><span>CLICK TO SPIN</span></button>
 			<div class="intro_lead_small">Explore more about our 16 fun flavors here <span style="font-size: 12px;" class="glyphicon glyphicon-play" aria-hidden="true"></span></div>
 		</div>
 	</div>
@@ -58,9 +58,9 @@
 	        </div>
 	    </div>
 	</div>
-	<button  id="spin_btn_1" class="spin"><span style="font-size: 50%;">CLICK TO</span><br>SPIN</button>
+	<button  id="spin_btn_1" class="spin"><span>CLICK TO SPIN</span></button>
 	<div class="mobile">
-		<button  id="spin_btn_1" class="spin"><span style="font-size: 50%;">CLICK TO</span><br>SPIN</button>
+		<button  id="spin_btn_1" class="spin"><span>CLICK TO SPIN</span></button>
 		<h2 class="heading">Take a Spin with Your Kids</h2>		
 		<div class="intro_lead">Enjoy flavor-filled fun with games, puzzles and activities your kids will love.</div>
 		<div class="intro_lead">Plus, you could win a juicy prize!</div>

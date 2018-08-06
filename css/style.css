@@ -112,6 +112,7 @@ body {
     margin: auto;
     display: block;
     margin-bottom: 10px;
+    padding-top: 10px;
 }
 
 .container {
@@ -502,9 +503,6 @@ footer {
     border-color: #185663;
     border-radius: 0;
     border-width: 2px;
-}
-#spin_btn_1 {
-    padding: 11px 33px 18px;
 }
 
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default,
