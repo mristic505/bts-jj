@@ -1047,7 +1047,7 @@ main {
 }
 .mn_bottles {
     width: 45%;
-    top: 10px;
+    top: 11px;
     position: relative;
 }
 @media all and (-ms-high-contrast:none) {
