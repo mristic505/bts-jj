@@ -112,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="next-button" style="display: none">NEXT</div>
+                <div class="next-button" style="">NEXT</div>
                 <div class="done-button" style="display: none">DONE</div>
             </div>
 
