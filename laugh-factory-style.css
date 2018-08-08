@@ -96,7 +96,7 @@ button {
     font-size: 18px;
     max-width: 240px;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     color: #1a5632;
     font-family: "CabritoNorBol";
 }
@@ -352,10 +352,9 @@ button {
 	    font-size: 11px;	  
 	}
 	#introParagraph {
-	    font-size: 14px;
-	    max-width: 178px;
-	    padding-bottom: 15px;
-
+        font-size: 12px;
+        max-width: 162px;
+        padding-bottom: 15px;
 	}
 	.slide1TextContainer {
 	    top: 216px;
@@ -446,15 +445,14 @@ button {
 	    top: 157px;
 	}
 	#introParagraph {
-	    padding-bottom: 15px;
-	    font-size: 11px;
-	    max-width: 147px;
-
+        padding-bottom: 9px;
+        font-size: 11px;
+        max-width: 137px;
 	}
 	#startJokesBtn {
-	    height: 26px;
-	    width: 92px;
-	    font-size: 9px;
+        height: 23px;
+        width: 88px;
+        font-size: 9px;
 	}
 
     .slide2TextContainer {
@@ -528,6 +526,10 @@ button {
 
     .strawBan-text-wrap {
         max-width: 92px !important;
+    }
+
+    .rwd-line {
+        display: block;
     }
 
 
