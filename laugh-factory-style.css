@@ -98,7 +98,7 @@ button {
     margin: 0 auto;
     padding-bottom: 30px;
     color: #1a5632;
-    font-family: "CabritoNorExB";
+    font-family: "CabritoNorBol";
 }
 
 
@@ -120,7 +120,7 @@ button {
     position: relative;
     cursor: pointer;
     width: 151px;
-    margin-right: 15px;
+    margin-right: 6px;
 }
 
 #spinBtn {
@@ -255,6 +255,10 @@ button {
     max-width: 223px;
     margin: 0 auto;
     height: 81px;
+}
+
+.strawBan-text-wrap {
+    max-width: 191px !important;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -399,6 +403,9 @@ button {
 	    max-width: 160px;
 	    height: 51px;
 	}
+    .strawBan-text-wrap {
+        max-width: 125px !important;
+    }
 	#slide3-BtnGroup {
 	    top: 137px;
 	    font-size: 13px;
@@ -499,7 +506,7 @@ button {
 
     }
     #slide3-BtnGroup {
-        top: 100px;
+        top: 108px;
         font-size: 10px;
     }
     #getCoupBtn {
@@ -511,13 +518,18 @@ button {
 
     #jokesAgainBtn {
         height: 26px;
-        width: 96px;
+        width: 90px;
     }
 
     #spinBtn {
         height: 26px;
-        width: 59px;
+        width: 53px;
     }
+
+    .strawBan-text-wrap {
+        max-width: 92px !important;
+    }
+
 
 
 }

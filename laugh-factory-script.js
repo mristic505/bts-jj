@@ -249,7 +249,7 @@ if (play == 'strawberryBanana') {
 
     resetJokes("strawBanImg", randomJokesGenerated);
 
-    $("#fruityFact").css("max-width", "190px");
+    $("#fruityFact").addClass("strawBan-text-wrap");
 
 
 
