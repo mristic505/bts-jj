@@ -96,9 +96,9 @@ button {
     font-size: 18px;
     max-width: 240px;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     color: #1a5632;
-    font-family: "CabritoNorExB";
+    font-family: "CabritoNorBol";
 }
 
 
@@ -120,7 +120,7 @@ button {
     position: relative;
     cursor: pointer;
     width: 151px;
-    margin-right: 15px;
+    margin-right: 6px;
 }
 
 #spinBtn {
@@ -256,6 +256,10 @@ button {
     margin: 0 auto;
     height: 81px;
 }
+
+.strawBan-text-wrap {
+    max-width: 191px !important;
+}
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -348,10 +352,9 @@ button {
 	    font-size: 11px;	  
 	}
 	#introParagraph {
-	    font-size: 14px;
-	    max-width: 178px;
-	    padding-bottom: 15px;
-
+        font-size: 12px;
+        max-width: 162px;
+        padding-bottom: 15px;
 	}
 	.slide1TextContainer {
 	    top: 216px;
@@ -399,6 +402,9 @@ button {
 	    max-width: 160px;
 	    height: 51px;
 	}
+    .strawBan-text-wrap {
+        max-width: 125px !important;
+    }
 	#slide3-BtnGroup {
 	    top: 137px;
 	    font-size: 13px;
@@ -439,15 +445,14 @@ button {
 	    top: 157px;
 	}
 	#introParagraph {
-	    padding-bottom: 15px;
-	    font-size: 11px;
-	    max-width: 147px;
-
+        padding-bottom: 9px;
+        font-size: 11px;
+        max-width: 137px;
 	}
 	#startJokesBtn {
-	    height: 26px;
-	    width: 92px;
-	    font-size: 9px;
+        height: 23px;
+        width: 88px;
+        font-size: 9px;
 	}
 
     .slide2TextContainer {
@@ -499,7 +504,7 @@ button {
 
     }
     #slide3-BtnGroup {
-        top: 100px;
+        top: 108px;
         font-size: 10px;
     }
     #getCoupBtn {
@@ -511,13 +516,22 @@ button {
 
     #jokesAgainBtn {
         height: 26px;
-        width: 96px;
+        width: 90px;
     }
 
     #spinBtn {
         height: 26px;
-        width: 59px;
+        width: 53px;
     }
+
+    .strawBan-text-wrap {
+        max-width: 92px !important;
+    }
+
+    .rwd-line {
+        display: block;
+    }
+
 
 
 }
