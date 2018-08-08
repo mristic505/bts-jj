@@ -5,7 +5,7 @@
                     <img src="img/memory-match-game-title.png">
                     <h3>HOW TO PLAY</h3>
                     <div class="instructions">
-                        Click on the cards to flip them over and find the matching pairs. There’s a total of 8. How many can you find?
+                        <span class="mobile_action">Click</span> on the cards to flip them over and find the matching pairs.<br> There’s a total of 8. <br>How many can you find?
                     </div>
                     <button class="start-game-button">PLAY</button>
                 </div>

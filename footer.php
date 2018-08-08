@@ -1,10 +1,10 @@
 <?php ?>
 <div class='game-spin-restart-buttons-container clearfix' style="display:none">
 	<div class="inner-container-50">
-		<a href="javascript:void(0);" onclick="window.location.reload()">PLAY AGAIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a>
+		<a href="javascript:void(0);" onclick="window.location.reload()">START OVER <span class="glyphicon glyphicon-play reset_btn" aria-hidden="true"></span></a>
 	</div>
 	<div class="inner-container-50">
-		<a href="?page=spin">SPIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a>
+		<a href="?page=spin">SPIN AGAIN <span class="glyphicon glyphicon-play reset_btn" aria-hidden="true"></span></a>
 	</div>
 </div>
 </main>

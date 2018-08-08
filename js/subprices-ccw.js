@@ -406,14 +406,15 @@ jQuery(document).ready(function($) {
                                 $(this).removeClass('clickme').removeClass('selected').addClass('solved');
                                 i = 0;
                                 selected_values = [];
-                            }); 
-                            if($('.clickme').length === 2) {
+                            });                             
+                            if($('.clickme').length === 0) {
                                 setTimeout(function() {
                                 $('.game-spin-restart-buttons-container').hide();
                                 end_action(end_message, end_fruit);
-                                }, 3000);                
+                                }, 2000);                
                             }
-                        }                        
+                        } 
+                        console.log($('.clickme').length);                       
                     }, 700); 
 
                 }
@@ -445,6 +446,10 @@ jQuery(document).ready(function($) {
                      $('main').css('padding-bottom', 50 + footer_height +'px');
             }, 0);
         }
+        if($(window).width() < 769) {
+            $('.mobile_action').text('Tap');
+        }
+        
     });
 
     // Fade In MAIN div
