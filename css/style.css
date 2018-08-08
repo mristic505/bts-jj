@@ -89,7 +89,7 @@ html {
 body.page-spin, body.page-prizes, body.page-official-rules,
 body.page-official-rules, body.page-faq, body.page-prize-claim-form,
 body.page-register {
-    background-image:url(../img/page-bg.jpg);
+    background-image:url(../img/page-bg-v2.jpg);
     font-family: 'CabritoNorExB';
     min-height: 100vh;
     background-position: 50% 46px;
@@ -112,6 +112,7 @@ body {
     margin: auto;
     display: block;
     margin-bottom: 10px;
+    padding-top: 10px;
 }
 
 .container {
@@ -351,6 +352,17 @@ img {
     display: block;
     color: #fff;
 }
+.nav div ul li a.active {
+    color: #64a723;
+}
+@media screen and (max-width: 768px){
+    .min-height-40{
+        min-height: 40px;
+    }
+}
+
+
+
 .nav div ul li:last-child {
     margin-right: 0;
 }
@@ -503,9 +515,6 @@ footer {
     border-radius: 0;
     border-width: 2px;
 }
-#spin_btn_1 {
-    padding: 11px 33px 18px;
-}
 
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default,
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover,
@@ -537,7 +546,7 @@ label[for="age"] {
 
 #register input[type="submit"],
 #prize_form input[type="submit"] {
-    background-color: #1c5733;
+    background-color: #65a621;
     color: #fff;
     border: none;
     outline: none;
@@ -868,7 +877,7 @@ main {
 }
 .girl {
     position: absolute;
-    left: -40px;
+    left: -25px;
     bottom: -30px;
 }
 .fruit_fact {
@@ -1049,7 +1058,7 @@ main {
 }
 .mn_bottles {
     width: 45%;
-    top: 10px;
+    top: 11px;
     position: relative;
 }
 @media all and (-ms-high-contrast:none) {
@@ -1614,7 +1623,7 @@ main {
     .girl {
         left: 0;
         bottom: 0;
-        height: 90px;
+        height: 130px;
     }
     .fruit_fact_info {
         font-size: 14px;
@@ -1654,7 +1663,7 @@ main {
         font-size: 55px;
     }  
     .mn_bottles  {
-        top: 22px;
+        top: 23px;
     }     
     .mathching_numbers_board .ctext {
         font-size: 10px;
@@ -1798,7 +1807,7 @@ main {
         height: 70px;
     }
     .mn_bottles  {
-        top: 4px;
+        top: 5px;
     }
     .mathching_numbers_board .fruit_fact_info {
         max-width: 130px;
@@ -1988,4 +1997,11 @@ main {
     .game-spin-restart-buttons-container{
         width: 308px;
     }   
+}
+
+.faq-title {
+    font-family: CabritoNorExB;
+    font-size: 30px;
+    color: #1a5632;
+    text-align: center;
 }

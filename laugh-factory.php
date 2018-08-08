@@ -10,7 +10,7 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides slidefade slide1 default-bg">
     <div class="slide1TextContainer">
-	<h1 id="introParagraph">Experience lots of laughs as you click through<br>this fruity fun.</h1>
+	<h1 id="introParagraph">Experience lots of laughs as you click through this fun joke book.</h1>
     	<button id="startJokesBtn" onclick="plusSlides(1)">GET STARTED</button>
     </div>
   </div>

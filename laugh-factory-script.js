@@ -15,7 +15,7 @@ var allJokes = [
                     "What\’s the smartest insect around?", "The spelling bee.",
                     "What do you get when you cross a pair of pants with a dictionary?", "Smarty pants.",
                     "What\’s a pirate\’s favorite subject?", "Arrrrrrrrrrrrrrt.",
-                    "Why did the girl wear glasses during math class?", "Because they improve di-vision!",
+                    "Why did the girl wear glasses during math class?", "Because they<br>improve di-vision!",
                     "Where did the pencil go on vacation?", "To Pennsylvania.",
                     "Why is 1+1=3 like your left foot?", "It's not right.",
                     "Why are fish so smart?", "Because they are always in a school.",
@@ -91,17 +91,22 @@ function startJokes(bgImage, jokesList) {
     $("#startJokesBtn").click(function(){
         $(".mySlides").addClass(bgImage);
         $(".joke").html(allJokes[jokesList[0]]);
+        $('.game-spin-restart-buttons-container').show();
+        $('.game-spin-restart-buttons-container').css("margin-top", "-20px");
     });   
     $(".answerBtn").click(function() {
         $(".answerBtn").html(allJokes[jokesList[count] + 1]);
-    });    
+    });  
+
+
+
 }
 
 
 
 function nextJoke(color, fruitFact, bgImage, jokesList) {
     $(".next").click(function(){
-        
+
         if (count < (jokesList.length - 2) ) {
 
             count += 2;
@@ -120,6 +125,7 @@ function nextJoke(color, fruitFact, bgImage, jokesList) {
             $("#fruitFactTitle").addClass(color);
             $("#fruityFact").html(fruitFact);
             $(".mySlides").addClass(bgImage);
+
         }
     });
 
@@ -243,7 +249,7 @@ if (play == 'strawberryBanana') {
 
     resetJokes("strawBanImg", randomJokesGenerated);
 
-    $("#fruityFact").css("max-width", "90px");
+    $("#fruityFact").css("max-width", "190px");
 
 
 

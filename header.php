@@ -63,17 +63,17 @@ document.write('<iframe src="https://8096545.fls.doubleclick.net/activityi;src=8
 	<!-- nav -->
 	<div class="nav-holder">
 		<nav class="navbar navbar-default">
-			  <div class="container-fluid">			  	
+			  <div class="container-fluid min-height-40">			  	
 			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">			      
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			    <div class="navbar-header">	
+			    </div>
+		      
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
-			      </button>
-			    </div>
-
+					</button>
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    <img class="logo menu-logo" src="img/mobile-menu-logo.png">
@@ -81,9 +81,9 @@ document.write('<iframe src="https://8096545.fls.doubleclick.net/activityi;src=8
 					<div>
 						<ul>
 							<li><a href="<?php echo strtok($_SERVER["REQUEST_URI"],'?').'?page=spin'; ?>">HOME</a></li>
-							<li><a href="?page=prizes">PRIZES</a></li>
-							<li><a href="?page=official-rules">RULES</a></li>
-							<li><a href="?page=faq">FAQS</a></li>
+							<li><a class="<?php if($_GET['page']== 'prizes'){ echo 'active' ;}?>" href="?page=prizes">PRIZES</a></li>
+							<li><a class="<?php if($_GET['page']== 'official-rules'){ echo 'active' ;}?>" href="?page=official-rules">RULES</a></li>
+							<li><a class="<?php if($_GET['page']== 'faq'){ echo 'active' ;}?>" href="?page=faq">FAQS</a></li>
 						</ul>
 					</div>
 				</nav>

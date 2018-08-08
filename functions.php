@@ -77,6 +77,10 @@ if (strpos($url_string, 'page') !== false) {
         $page_title = 'Official Rules';
         $inlcude    = 'official_rules.php';
     }
+    if ($page == 'lunchtime-flavorites') {
+        $page_title = 'Lunchtime Flavorites';
+        $inlcude    = 'lunchtime_flavorites.php';
+    }
     if ($page == 'faq') {
         $page_title = 'FAQ';
         $inlcude    = 'faq.php';

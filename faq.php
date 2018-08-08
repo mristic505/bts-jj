@@ -8,6 +8,7 @@
 	<div class="flavorLogoImg">
 		<img src="img/jj-flavor-logo.png">
 	</div>
+		<h2 class="faq-title">FAQ</h2>
 	
 <div class="faq-body">
 	<h3>Who is eligible to play the Juicy Juice Flavor Discovery Instant Win Game?</h3>

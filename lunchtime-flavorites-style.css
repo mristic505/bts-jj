@@ -463,7 +463,7 @@ th {
   }
 }
 
-.ingredients-title.cheese--crackers {
+.ingredient-title.cheese--crackers {
   bottom: -26px;
 }
 
@@ -576,6 +576,14 @@ th {
       transform: translateX(-50%) !important;
 }
 
+#stack-area-2 .stacked:first-child:not(.ui-draggable-dragging).granola-bar img, #stack-area-2 .stacked:first-child:not(.ui-draggable-dragging).celery img {
+  width: 100% !important;
+}
+
+#stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging).granola-bar img, #stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging).celery img {
+  width: 100% !important;
+}
+
 #stack-area-2 .apple.stacked:first-child:not(.ui-draggable-dragging) {
   top: 4% !important;
 }
@@ -598,7 +606,7 @@ th {
   }
 }
 
-.step-5 .stacked:not(.ui-draggable-dragging) {
+.step-5 .stacked, .step-5 .stacked, .step-5 .stacked:not(.whatever) {
   width: 60px !important;
 }
 
@@ -1294,6 +1302,20 @@ th {
 .apple .game-end-image {
   top: 37%;
   right: 8%;
+}
+
+@media screen and (max-width: 600px) {
+  .apple .game-end-image {
+    top: 27%;
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .apple .game-end-image {
+    top: 28%;
+    height: 85px;
+  }
 }
 
 .orange .game-end-image {

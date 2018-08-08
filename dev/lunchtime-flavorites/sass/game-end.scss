@@ -183,6 +183,16 @@
 .apple .game-end-image{
     top: 37%;
     right: 8%;
+    
+
+    @media screen and (max-width: 600px){
+        top: 27%;  
+        right: 2%;
+    }
+    @media screen and (max-width: 470px){
+        top: 28%;
+        height: 85px;
+    }
 }
 .orange .game-end-image{
     top: 30%;

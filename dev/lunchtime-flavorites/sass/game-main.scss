@@ -178,7 +178,7 @@
         font-size: 9px;
     }
 }
-.ingredients-title.cheese--crackers{
+.ingredient-title.cheese--crackers{
     bottom: -26px;
     @media screen and (max-width: 600px){
     }
@@ -264,6 +264,15 @@
     .stacked:first-child:not(.ui-draggable-dragging){
         top: 20%!important;
         transform: translateX(-50%)!important;
+        &.granola-bar img,&.celery img{
+            width: 100%!important;
+        }
+    }
+    .stacked:nth-child(2):not(.ui-draggable-dragging){
+        
+        &.granola-bar img,&.celery img{
+            width: 100%!important;
+        }
     }
     .apple.stacked:first-child:not(.ui-draggable-dragging){
         top: 4%!important;
@@ -288,7 +297,7 @@
     }
 }
 .step-5{
-    .stacked:not(.ui-draggable-dragging){
+    .stacked,.stacked,.stacked:not(.whatever){
         width: 60px!important;
     }
     .stacked:nth-child(2):not(.ui-draggable-dragging){
