@@ -5,6 +5,19 @@
     left: 18px;
     right: 18px;
     bottom: 18px;
+    
+    @media screen and (max-width: 600px) {
+        top: 17px;
+        bottom: 17px;
+        left: 17px;
+        right: 17px;
+    }
+    @media screen and (max-width: 470px) {
+        top: 12px;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+    }
     background-image: url('assets/pop-a-fruit/game_end/game_end_background.png');
     background-size: cover;
     z-index: 999991;
@@ -26,17 +39,16 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 60px;
+        bottom: 70px;
         
         @media screen and (max-width: 600px) {
-            bottom: 41px;
+            bottom: 70px;
         }
         @media screen and (max-width: 470px) {
             top: auto;
-            bottom: 15px;
+            bottom: 35px;
             margin-top: 10px;
             .play_again{
-                padding-left: 30px;
             }
         }
     }
@@ -89,7 +101,7 @@
     }
     .game-end-message-container{
         position: absolute;
-        top: 50%;
+        top: 46%;
         left: 50%;
         transform: translate(-50%, -50%);
         .fruit-fact-info{
@@ -108,7 +120,7 @@
 
     @media screen and (max-width: 600px) {
         .you-did-it-title,.failed-to-pop-fruits-title{
-            margin-top: 15px;
+            margin-top: 28px;
         }
         h2{
             // margin: 0;

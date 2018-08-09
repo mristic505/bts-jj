@@ -573,6 +573,24 @@ th {
   z-index: 99999;
 }
 
+@media screen and (max-width: 600px) {
+  .how-to-play-wrapper {
+    top: 17px;
+    bottom: 17px;
+    left: 17px;
+    right: 17px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .how-to-play-wrapper {
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+  }
+}
+
 .how-to-play-wrapper .how-to-play-container {
   position: absolute;
   top: 50%;
@@ -655,6 +673,24 @@ th {
   z-index: 999991;
 }
 
+@media screen and (max-width: 600px) {
+  .game-end-wrapper {
+    top: 17px;
+    bottom: 17px;
+    left: 17px;
+    right: 17px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .game-end-wrapper {
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+  }
+}
+
 .game-end-wrapper .you-did-it-title, .game-end-wrapper .failed-to-pop-fruits-title {
   margin-top: 43px;
 }
@@ -674,23 +710,20 @@ th {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 60px;
+  bottom: 70px;
 }
 
 @media screen and (max-width: 600px) {
   .game-end-wrapper .end_ctas {
-    bottom: 41px;
+    bottom: 70px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .game-end-wrapper .end_ctas {
     top: auto;
-    bottom: 15px;
+    bottom: 35px;
     margin-top: 10px;
-  }
-  .game-end-wrapper .end_ctas .play_again {
-    padding-left: 30px;
   }
 }
 
@@ -747,7 +780,7 @@ th {
 
 .game-end-wrapper .game-end-message-container {
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
@@ -769,7 +802,7 @@ th {
 
 @media screen and (max-width: 600px) {
   .game-end-wrapper .you-did-it-title, .game-end-wrapper .failed-to-pop-fruits-title {
-    margin-top: 15px;
+    margin-top: 28px;
   }
   .game-end-wrapper h2 {
     font-size: 13px;
