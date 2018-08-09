@@ -45,6 +45,11 @@
         $message_box_image = " <img class='game-end-image' src='assets/lunchtime_flavorites/game_end/kiwi_strawberry_bg.png'>";
         $message_box_message = "Kiwifruit was first discovered in China and was originally called “Chinese gooseberry.”.";
     }
+    
+    if(isset($_GET['debug'])){
+        $class .= " debug";
+    }
+
     ?>
 
     <div class="main-wrapper clearfix <?=$class?>">
