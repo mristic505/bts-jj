@@ -65,19 +65,19 @@
     @media screen and (max-width: 600px){
         .how-to-play-container{
             .how-to-play-title{
-                height: 104px;
+                height: 114px;
                 margin-top: 74px;
                 padding-bottom: 0px;
             }
             .how-to-play-subtitle{
-                font-size: 14px;
+                font-size: 16px;
                 margin-top: 20px;
                 margin-bottom: 0px;
             }
             p{
                 padding-left: 25px;
                 padding-right: 25px;
-                font-size: 11px;
+                font-size: 13px;
             }
             .start-game-button{
                 padding: 9px 32px;
@@ -89,13 +89,15 @@
     @media screen and (max-width: 470px) {
         .how-to-play-container{
             .how-to-play-title{
-                height: 76px;
-                margin-top: 90px;
+                height: 82px;
+                margin-top: 99px;
+
                 // padding-bottom: 5px;            
             }
             .how-to-play-subtitle{
                 // font-size: 14px;
                 // margin-bottom: 6px;
+                margin-top: 7px;
             }
             p{
                 
@@ -104,7 +106,7 @@
                 
                 padding-left: 23px;
                 padding-right: 21px;
-                // font-size: 11px;
+                font-size: 10.8px;
                 // padding: 0 3px;
             }
         }

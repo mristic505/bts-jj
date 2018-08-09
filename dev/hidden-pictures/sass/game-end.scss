@@ -34,11 +34,11 @@
     }
     @media screen and (max-width: 470px) {
         .you-did-it-title{
-            margin-top: 15px;
-            height: 33px;
+            margin-top: 30px;
+            height: 28px;
         }
         .you-did-it-subtitle{
-            margin-top: 0px;
+            margin-top: 5px;
             font-size: 11px;
             line-height: 11px;
         }
@@ -80,7 +80,7 @@
                 font-size: 18px;
             }
             p{
-                font-size: 11px;
+                font-size: 10px;
                 padding-left: 61px;
                 padding-right: 61px
             }
@@ -92,19 +92,15 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 54px;
+        bottom: 91px;
             
         @media screen and (max-width: 600px) {
-            bottom: 39px;
+            bottom: 75px;
         }        
         @media screen and (max-width: 470px) {
             top: auto;
-            bottom: 15px;
+            bottom: 32px;
             margin-top: 10px;
-            
-            .play_again{
-                padding-left: 30px;
-            }
         }
     }
     // .bottom-cta-container{
