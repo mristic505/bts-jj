@@ -340,10 +340,21 @@
     .stacked,.stacked,.stacked:not(.whatever){
         height: 65px!important;
     }
-    .sticked{
-        float:left;
+    .sticked{    
+        display: block;
+        left: 0;
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
     }
-    .sticked,.ui-draggable-dragging{
+    .ui-draggable-dragging{
         img{
             height: 65px!important;
             
@@ -559,7 +570,7 @@
 
 .type-your-name{
     position: absolute;
-    top: 46%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -696,4 +707,15 @@
 
 .debug .stack-area-5-ingredient{
     border: 1px solid red;
+}
+.debug .stick-container{
+    border: 1px solid red;
+}
+.stick-container{
+    height:42%;
+    width: 33.3%;
+    float: left;
+}
+.margin-top-10-percent{
+    margin-top: 10%;
 }

@@ -49,36 +49,47 @@ $( document ).ready(function() {
             $('.step-3.ingredients-slider').slick('slickRemove',dropped);
         }
     });
-    $( ".case-cover" ).droppable({
+    
+    $( ".stick-container" ).droppable({
         accept: ".stack-area-5-ingredient",
-        tolerance: "fit",
-        greedy: true,
+        tolerance: "intersect",
         drop: function( event, ui ) {
-            var parentOffset = $('.case-cover').offset();
             var droppedOn = $(this);
             var dropped = ui.draggable;
-
-            $(dropped)
-            .detach()
-            .removeClass("slick-slide").removeClass("slick-active")
-            .appendTo(droppedOn)
-            .css({
-                'position': 'absolute',
-                'left': (ui.offset.left - parentOffset.left + 15) + 'px',
-                'top': (ui.offset.top - parentOffset.top + 5) + 'px'
-            })
-            if($(dropped).hasClass('sticked')){
-                console.log("dropping sticked");
-                $(dropped).css({
-                    'left' : ui.position.left,
-                    'top' : ui.position.top
-                });
-            }
-            $(dropped).addClass("sticked");
-            $('.ingredients-slider').slick('setPosition'); 
-            $('.step-5.ingredients-slider').slick('slickRemove',dropped);
+            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).css({"top":0,"left":0}).addClass("sticked");
         }
-    });
+
+    })
+    // $( ".case-cover" ).droppable({
+    //     accept: ".stack-area-5-ingredient",
+    //     tolerance: "fit",
+    //     greedy: true,
+    //     drop: function( event, ui ) {
+    //         var parentOffset = $('.case-cover').offset();
+    //         var droppedOn = $(this);
+    //         var dropped = ui.draggable;
+
+    //         $(dropped)
+    //         .detach()
+    //         .removeClass("slick-slide").removeClass("slick-active")
+    //         .appendTo(droppedOn)
+    //         .css({
+    //             'position': 'absolute',
+    //             'left': (ui.offset.left - parentOffset.left + 15) + 'px',
+    //             'top': (ui.offset.top - parentOffset.top + 5) + 'px'
+    //         })
+    //         if($(dropped).hasClass('sticked')){
+    //             console.log("dropping sticked");
+    //             $(dropped).css({
+    //                 'left' : ui.position.left,
+    //                 'top' : ui.position.top
+    //             });
+    //         }
+    //         $(dropped).addClass("sticked");
+    //         $('.ingredients-slider').slick('setPosition'); 
+    //         $('.step-5.ingredients-slider').slick('slickRemove',dropped);
+    //     }
+    // });
     $( ".step-1.ingredients-slider .slick-slide" ).droppable({
         accept: ".stack-area-1-ingredient.stacked",
         drop: function( event, ui ) {
@@ -108,38 +119,38 @@ $( document ).ready(function() {
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
-    $( ".stack-area-5-ingredient" ).droppable({
-        accept: ".stack-area-5-ingredient",
-        tolerance: "touch",
-        greedy: "true",
-        drop: function( event, ui ) {
-            var droppedOn = $(this);
-            var dropped = ui.draggable;
-            if($(this).hasClass('sticked')){
-                console.log('dropped on sticked');
-                ui.draggable.draggable( 'option', 'revert', true );
-            }else{
-                console.log("returning to slider");
-                $(dropped)
-                .detach()
-                .removeClass("sticked")
-                .addClass("slick-active")
-                .addClass("slick-slide")
-                .css("top",0)
-                .css("left",0)
-                .insertAfter(droppedOn);
-                $('.ingredients-slider').slick('setPosition'); 
-            }
-        }
-    });
-    $(".type-your-name").droppable({
-        accept: ".stack-area-5-ingredient",
-        tolerance: "touch",
-        greedy: "true",
-        drop: function( event, ui ) {
-            ui.draggable.draggable( 'option', 'revert', true );
-        }
-    })
+    // $( ".stack-area-5-ingredient" ).droppable({
+    //     accept: ".stack-area-5-ingredient",
+    //     tolerance: "touch",
+    //     greedy: "true",
+    //     drop: function( event, ui ) {
+    //         var droppedOn = $(this);
+    //         var dropped = ui.draggable;
+    //         if($(this).hasClass('sticked')){
+    //             console.log('dropped on sticked');
+    //             ui.draggable.draggable( 'option', 'revert', true );
+    //         }else{
+    //             console.log("returning to slider");
+    //             $(dropped)
+    //             .detach()
+    //             .removeClass("sticked")
+    //             .addClass("slick-active")
+    //             .addClass("slick-slide")
+    //             .css("top",0)
+    //             .css("left",0)
+    //             .insertAfter(droppedOn);
+    //             $('.ingredients-slider').slick('setPosition'); 
+    //         }
+    //     }
+    // });
+    // $(".type-your-name").droppable({
+    //     accept: ".stack-area-5-ingredient",
+    //     tolerance: "touch",
+    //     greedy: "true",
+    //     drop: function( event, ui ) {
+    //         ui.draggable.draggable( 'option', 'revert', true );
+    //     }
+    // })
      //draggables
      $( ".draggable" ).draggable({ 
         revert: "invalid",
@@ -168,11 +179,11 @@ $( document ).ready(function() {
             }else{
                 $("#stack-area-3").droppable('option', 'accept', '.stack-area-3-ingredient');            
             }
-            if($( ".step-5.case-cover>div" ).length == 8){//disable any more childs
-                $(".step-5.case-cover").droppable('option', 'accept', 'nothing');                
-            }else{
-                $(".step-5.case-cover").droppable('option', 'accept', '.stack-area-5-ingredient');            
-            }
+            // if($( ".step-5.case-cover>div" ).length == 8){//disable any more childs
+            //     $(".step-5.case-cover").droppable('option', 'accept', 'nothing');                
+            // }else{
+            //     $(".step-5.case-cover").droppable('option', 'accept', '.stack-area-5-ingredient');            
+            // }
             if(active_step == 5){
                 $(this).css("position","relative");
             }
