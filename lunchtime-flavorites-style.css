@@ -282,6 +282,17 @@ th {
   }
 }
 
+@media screen and (max-width: 370px) {
+  .puzzle-background {
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    background-size: 225px;
+    background-position: center 25px;
+  }
+}
+
 .stack-area {
   position: absolute;
   top: 142px;
@@ -447,6 +458,12 @@ th {
   }
 }
 
+@media screen and (max-width: 370px) {
+  .ingredient-title {
+    font-size: 8px;
+  }
+}
+
 @media screen and (max-width: 470px) {
   .ingredient-title {
     font-size: 9px;
@@ -580,6 +597,10 @@ th {
 
 #stack-area-2 .peppers.stacked:first-child:not(.ui-draggable-dragging) {
   top: 4% !important;
+}
+
+#stack-area-2 .peppers.stacked:nth-child(2):not(.ui-draggable-dragging) {
+  top: 77% !important;
 }
 
 #stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging) {
@@ -852,6 +873,13 @@ th {
 
 @media screen and (max-width: 470px) {
   .game-container {
+    width: 352px;
+    height: 352px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .game-container {
     width: 315px;
     height: 315px;
   }
@@ -953,6 +981,11 @@ th {
   }
 }
 
+.step-title sup {
+  font-size: 42%;
+  top: -1.2em;
+}
+
 .ui-draggable-dragging .ingredient-title {
   display: none;
 }
@@ -981,7 +1014,7 @@ th {
   background-color: #0492a6;
   width: 68%;
   height: 42%;
-  border-radius: 20px;
+  border-radius: 31px;
 }
 
 @media screen and (max-width: 600px) {
@@ -1140,6 +1173,26 @@ th {
 }
 
 @media screen and (max-width: 470px) {
+  .how-to-play-wrapper img {
+    height: 96px;
+    margin-top: 37px;
+  }
+  .how-to-play-wrapper .how-to-play-container h2 {
+    font-size: 14.4px !important;
+    margin-top: 14px !important;
+  }
+  .how-to-play-wrapper .how-to-play-container p {
+    font-size: 10.8px;
+    display: inline-block;
+    width: 75%;
+  }
+  .how-to-play-wrapper .how-to-play-container .start-game-button {
+    padding: 7px 17px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 370px) {
   .how-to-play-wrapper img {
     height: 76px;
     margin-top: 37px;

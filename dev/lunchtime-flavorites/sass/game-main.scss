@@ -40,6 +40,14 @@
         background-size: 225px;
         background-position: center 25px;
     }
+    @media screen and (max-width: 370px) {
+        top: 12px;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        background-size: 225px;
+        background-position: center 25px;
+    }
 }
 .stack-area{
     position: absolute;
@@ -61,7 +69,7 @@
     left: 100px;
     @media screen and (max-width: 600px){
         width: 108px;
-      left: 64px;
+        left: 64px;
     }
     @media screen and (max-width: 470px) {   
         width: 85px;
@@ -174,6 +182,9 @@
     @media screen and (max-width: 600px){
         bottom: -14px;
     }
+    @media screen and (max-width: 370px){
+        font-size: 8px;
+    }
     @media screen and (max-width: 470px){
         font-size: 9px;
     }
@@ -279,6 +290,9 @@
     }
     .peppers.stacked:first-child:not(.ui-draggable-dragging){
         top: 4%!important;
+    }
+    .peppers.stacked:nth-child(2):not(.ui-draggable-dragging){
+        top: 77%!important;
     }
     .stacked:nth-child(2):not(.ui-draggable-dragging){
         top: 70%!important;
@@ -474,6 +488,10 @@
         height: 450px;
     }
     @media screen and (max-width: 470px) {
+        width: 352px;
+        height: 352px;
+    }
+    @media screen and (max-width: 360px){
         width: 315px;
         height: 315px;
     }
@@ -543,6 +561,10 @@
         font-size: 13px;
         padding-top: 0;
     }
+    sup{
+        font-size: 42%;
+        top: -1.2em;
+    }
 }
 .ui-draggable-dragging .ingredient-title{
     display: none;
@@ -563,7 +585,7 @@
     background-color: #0492a6;
     width: 68%;
     height: 42%;
-    border-radius: 20px;
+    border-radius: 31px;
     
     @media screen and (max-width: 600px){
         width: 71%;

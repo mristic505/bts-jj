@@ -58,9 +58,6 @@ $( document ).ready(function() {
             var droppedOn = $(this);
             var dropped = ui.draggable;
 
-            console.log(ui.offset.left - parentOffset.left + 15);
-            console.log(ui.offset.top - parentOffset.top + 5);
-            console.log("dropped on case cover");
             $(dropped)
             .detach()
             .removeClass("slick-slide").removeClass("slick-active")
@@ -72,7 +69,6 @@ $( document ).ready(function() {
             })
             if($(dropped).hasClass('sticked')){
                 console.log("dropping sticked");
-
                 $(dropped).css({
                     'left' : ui.position.left,
                     'top' : ui.position.top

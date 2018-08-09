@@ -74,6 +74,25 @@
     }
     @media screen and (max-width: 470px) {
         img{
+            height: 96px;
+            margin-top: 37px;
+        }
+        .how-to-play-container h2{
+            font-size: 14.4px!important;
+            margin-top: 14px!important;
+        }
+        .how-to-play-container p{
+            font-size: 10.8px;
+            display: inline-block;
+            width: 75%;
+        }
+        .how-to-play-container .start-game-button{
+            padding: 7px 17px;
+            font-size:14px;
+        }
+    }
+    @media screen and (max-width: 370px) {
+        img{
             height: 76px;
             margin-top: 37px;
         }
