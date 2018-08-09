@@ -556,7 +556,7 @@ th {
 
 @media screen and (max-width: 600px) {
   .step-5 .slick-track {
-    padding-top: 9px;
+    padding-top: 16px;
   }
 }
 
@@ -606,7 +606,7 @@ th {
 
 @media screen and (max-width: 470px) {
   .slick-prev {
-    left: -40px;
+    left: -46px;
   }
 }
 
@@ -616,7 +616,7 @@ th {
 
 @media screen and (max-width: 470px) {
   .slick-next {
-    right: -40px;
+    right: -46px;
   }
 }
 
@@ -666,27 +666,28 @@ th {
 
 .step-5 .sticked {
   display: block;
-  left: 0;
-  top: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
 }
 
 .step-5 .sticked img {
   object-fit: contain;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
 }
 
 .step-5 .ui-draggable-dragging img {
+  object-fit: contain;
   height: 65px !important;
+  width: 80px !important;
 }
 
 @media screen and (max-width: 470px) {
   .step-5 .ui-draggable-dragging img {
     height: 38px !important;
+    width: 38px !important;
   }
 }
 

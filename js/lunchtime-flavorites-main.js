@@ -56,7 +56,12 @@ $( document ).ready(function() {
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).css({"top":0,"left":0}).addClass("sticked");
+            if($(this).children().length == 1){
+                ui.draggable.draggable( 'option', 'revert', true );
+            }else{
+                $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).css({"top":0,"left":0}).addClass("sticked").droppable('disable');
+                $('.step-1.ingredients-slider').slick('slickRemove',dropped);
+        }
         }
 
     })
@@ -116,6 +121,15 @@ $( document ).ready(function() {
             var dropped = ui.draggable;
             dropped.find('img').attr('src',"assets/lunchtime_flavorites/juices/"+dropped.find('img').attr('fruit-filename'));
             $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn).droppable( "option", "disabled", false );
+            $('.ingredients-slider').slick('setPosition'); 
+        }
+    });
+    $( ".step-5.ingredients-slider .slick-slide" ).droppable({
+        accept: ".stack-area-5-ingredient.sticked",
+        drop: function( event, ui ) {
+            var droppedOn = $(this);
+            var dropped = ui.draggable;
+            $(dropped).detach().removeClass("sticked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn).droppable( "option", "disabled", false );
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
