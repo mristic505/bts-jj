@@ -1066,7 +1066,7 @@
 
 @media screen and (max-width: 810px) {
   .game-end-wrapper .you-did-it-title {
-    margin-top: 8px;
+    margin-top: 17px;
     width: 50%;
   }
 }
@@ -1097,7 +1097,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 60px;
+  bottom: 73px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1116,7 +1116,7 @@
 @media screen and (max-width: 810px) {
   .game-end-wrapper .end_ctas {
     top: auto;
-    bottom: 14px;
+    bottom: 32px;
   }
   .game-end-wrapper .end_ctas .play_again, .game-end-wrapper .end_ctas .spin_again, .game-end-wrapper .end_ctas .get_coupon_btn {
     font-size: 10px;

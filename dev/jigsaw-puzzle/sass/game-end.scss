@@ -16,7 +16,7 @@
             width:50%;
         }
         @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
-            margin-top:8px;
+            margin-top:17px;
             width:50%;
         }
         
@@ -42,7 +42,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 60px;
+        bottom: 73px;
         @media screen and (max-width: $puzzle-container-first-responsive-breakpoint) {
             bottom: 41px;
             .play_again, .spin_again, .get_coupon_btn {
@@ -55,7 +55,7 @@
         }
         @media screen and (max-width: $puzzle-container-second-responsive-breakpoint) {
             top: auto;
-            bottom: 14px;
+            bottom: 32px;
             .play_again, .spin_again, .get_coupon_btn {
                 font-size: 10px;
             }   
