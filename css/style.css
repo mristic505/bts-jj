@@ -81,6 +81,13 @@
          url('../fonts/HelveticaNeueMed.ttf') format('truetype'),
          url('../fonts/HelveticaNeueMed.svg#HelveticaNeueMed') format('svg');
 }
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../HelveticaNeueRegular.woff2') format('woff2'),
+        url('../HelveticaNeueRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
 
 html {
     min-height: 100%;
@@ -114,7 +121,12 @@ body {
     margin-bottom: 10px;
     padding-top: 10px;
 }
-
+.yellow-glow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
 .container {
     position: relative;
     width: 592px;
@@ -442,8 +454,11 @@ footer {
     font-size: 10px;
     line-height: 12px;
     color: #000;
-    text-align: center;
-    font-family: 'HelveticaNeueMed';
+    text-align: center;    
+    font-family: 'HelveticaNeue';
+}
+.npn {
+    font-family: 'HelveticaNeueBd';
 }
 .ll1 a {
     padding: 0 14px;
@@ -546,7 +561,7 @@ label[for="age"] {
 
 #register input[type="submit"],
 #prize_form input[type="submit"] {
-    background-color: #65a621;
+    background-color: #1a5632;
     color: #fff;
     border: none;
     outline: none;
@@ -1468,7 +1483,9 @@ main {
 .coupon_btn {
     margin-bottom: 10px;
 }
-
+body.page-spin, body.page-register {
+    background-image: url(../img/BTS-Background-4.jpg);
+}
 /** STICK FOOTER TO THE BOTTOM HACK **/
 
 @media screen and (min-width: 769px) {
@@ -1557,6 +1574,9 @@ main {
     body.page-prize-claim-form, 
     body.page-register, body {
         background-position: 50% 0;
+    }
+    body.page-spin, body.page-register {
+        background-image: url(../img/BTS-Background-4-mobile.jpg)
     }
 }
 
@@ -1841,6 +1861,18 @@ main {
     #register input[type="submit"] {
         font-size: 10px;
         padding: 7px 25px;
+    }
+    .mathching_numbers_htp .holder {
+        width: 99%;
+        margin: auto;
+        position: relative;
+        top: -19px;
+    }
+    .mathching_numbers_htp img {
+        height: 70px;
+    }
+    .mathching_numbers_htp .instructions {
+        max-width: 150px;
     }
 }
 @media (max-width: 475px) and (-ms-high-contrast:none) {

@@ -13,10 +13,11 @@
 <div class="spin_holder registered">
 	<div class="intro">
 		<img class="logo" src="img/jj-flavor-logo.png">
+		<!-- <img class="yellow-glow" src="img/yellow-glow.png"> -->
 		<div class="desktop">
 			<h2 class="heading">Take a Spin with Your Kids</h2>
 			<div class="intro_lead">Enjoy flavor-filled fun with games, puzzles and activities your kids will love.</div>
-			<div class="intro_lead">Plus, you could win a juicy prize!</div>
+			<div class="intro_lead">PLUS, you could win a juicy prize!</div>
 			<button  id="spin_btn_1" class="spin"><span>CLICK TO SPIN</span></button>
 			<?php if (!$show_prize_message) : ?>
 				<div class="parn">Today’s prize has already been awarded. You can still enjoy playing Flavor Discovery games now and come back tomorrow for a chance to win.</div>

@@ -90,7 +90,7 @@
                     <img src="img/fruity_match_game_title.png">
                     <h3>HOW TO PLAY</h3>
                     <div class="instructions">
-                        Drag the numbers to match with the fruits.
+                        Drag the numbers to match with the items.
                     </div>
                     <button class="start-game-button">PLAY</button>
                 </div>
