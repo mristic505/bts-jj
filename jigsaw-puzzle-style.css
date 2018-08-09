@@ -1095,7 +1095,7 @@
 
 .game-end-wrapper .end_ctas {
   position: absolute;
-  left: 0;
+  left: 17px;
   right: 0;
   bottom: 73px;
 }
@@ -1116,7 +1116,7 @@
 @media screen and (max-width: 810px) {
   .game-end-wrapper .end_ctas {
     top: auto;
-    bottom: 32px;
+    bottom: 50px;
   }
   .game-end-wrapper .end_ctas .play_again, .game-end-wrapper .end_ctas .spin_again, .game-end-wrapper .end_ctas .get_coupon_btn {
     font-size: 10px;
@@ -1176,8 +1176,8 @@
 
 @media screen and (max-width: 810px) {
   .game-end-wrapper .game-end-message-container p {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 9px;
+    line-height: 11px;
   }
 }
 
