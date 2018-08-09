@@ -18,7 +18,8 @@
 			<div class="intro_lead_small">Explore more about our 16 fun flavors here <span style="font-size: 12px;" class="glyphicon glyphicon-play" aria-hidden="true"></span></div>
 		</div>
 	</div>
-	<div class="roulette_holder">       
+	<div class="roulette_holder">  
+		<img class="leaf" src="img/leaf.png">     
 	    <div class="container">         
 	        <div class="prize_info"><span></span></div>
 	        <div class="ghost"></div>
