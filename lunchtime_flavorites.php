@@ -121,23 +121,8 @@
                 <div class="done-button" style="display: none">DONE</div>
             </div>
 
-            <!-- game end -->
-            <!-- <div class="game-end-wrapper">
-                <img class="you-did-it-title" src="assets/lunchtime_flavorites/game_end/you_are_a_super_finder.png">
-                <h2 class="you-did-it-subtitle">You’ve discovered all of the hidden fruits.</h2>
-                <div class="game-end-message-container">
-                    <div class="fun-fruity-fact-title">Fun fruity fact</div>
-                    <p><?=$message_box_message?></p>
-                </div>
-                <?=$message_box_image?>
-                <div class="bottom-cta-container">
-                        <a href="index.php" class="play-again cta">PLAY AGAIN <img src="assets/lunchtime_flavorites/game_end/arrow.png"></a>
-                        <a class="spin cta" href="">SPIN <img src="assets/lunchtime_flavorites/game_end/arrow.png"></a>
-                        <a href="" class="get-coupon-button">GET COUPON</a>
-                </div>
-            </div> -->
+   
         <div class="game-end-wrapper">
-            <!-- <img class="you-did-it-title" src="assets/lunchtime_flavorites/game_end/you_are_a_super_finder.png"> -->
             <?=$game_title?>
             <h2 class="you-did-it-subtitle"><?=$game_subtitle?></h2>
             <div class="game-end-message-container">
@@ -145,11 +130,6 @@
                 <p><?=$message_box_message?></p>
             </div>
             <?=$message_box_image?>
-            <!-- <div class="bottom-cta-container">
-                    <a href="" class="play-again cta">PLAY AGAIN <img src="assets/hidden_pictures/game_end/arrow.png"></a>
-                    <a class="cta" href="?page=spin">SPIN <img src="assets/hidden_pictures/game_end/arrow.png"></a>
-                    <a href="?page=coupon" class="get-coupon-button">GET COUPON</a>
-            </div> -->
             <div class="end_ctas"><a class="play_again" href="javascript:void(0);" onclick="window.location.reload()">PLAY AGAIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a><a class="spin_again" href="?page=spin">SPIN <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a><br><a class="get_coupon_btn" target="_blank" href="?page=coupon">GET COUPON</a></div>
         </div>
         

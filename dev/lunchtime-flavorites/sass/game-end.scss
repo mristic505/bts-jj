@@ -38,7 +38,18 @@
             height: 33px;
         }
         .you-did-it-subtitle{
-            margin-top: 0px;
+            margin-top: 8px;
+            font-size: 11px;
+            line-height: 11px;
+        }
+    }  
+    @media screen and (max-width: 370px) {
+        .you-did-it-title{
+            margin-top: 15px;
+            height: 33px;
+        }
+        .you-did-it-subtitle{
+            margin-top: 6px;
             font-size: 11px;
             line-height: 11px;
         }
@@ -80,9 +91,20 @@
                 font-size: 18px;
             }
             p{
+                line-height: 14px;
                 font-size: 11px;
-                padding-left: 61px;
-                padding-right: 61px
+                padding-left: 53px;
+                padding-right: 53px
+            }
+        }
+        @media screen and (max-width: 370px) {
+            .fun-fruity-fact-title{
+                font-size: 18px;
+            }
+            p{
+                padding-left: 56px;
+               padding-right: 53px;
+               font-size: 10px;
             }
         }
     }
@@ -95,16 +117,19 @@
         bottom: 54px;
             
         @media screen and (max-width: 600px) {
-            bottom: 39px;
+            bottom: 76px;
         }        
         @media screen and (max-width: 470px) {
             top: auto;
-            bottom: 15px;
+            bottom: 50px;
             margin-top: 10px;
             
-            .play_again{
-                padding-left: 30px;
-            }
+        }   
+        @media screen and (max-width: 370px) {
+            top: auto;
+            bottom: 32px;
+            margin-top: 10px;
+            
         }
     }
     // .bottom-cta-container{

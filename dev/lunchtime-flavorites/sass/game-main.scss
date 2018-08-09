@@ -37,10 +37,10 @@
         bottom: 12px;
         left: 12px;
         right: 12px;
-        background-size: 225px;
-        background-position: center 25px;
+        background-size: 246px;
+        background-position: center 34px;
     }
-    @media screen and (max-width: 370px) {
+    @media screen and (max-width: 361px) {
         top: 12px;
         bottom: 12px;
         left: 12px;
@@ -60,6 +60,10 @@
         height: 163px;
     }
     @media screen and (max-width: 470px) {
+        top: 84px;
+        height: 131px;
+    }
+    @media screen and (max-width: 361px) {
         top: 70px;
         height: 120px;
     }
@@ -71,7 +75,12 @@
         width: 108px;
         left: 64px;
     }
+
     @media screen and (max-width: 470px) {   
+        width: 85px;
+        left: 54px;
+    }
+    @media screen and (max-width: 361px) {   
         width: 85px;
         left: 44px;
     }
@@ -84,6 +93,10 @@
         left: 179px;
     }
     @media screen and (max-width: 470px) {
+        width: 63px;
+      left: 144px;
+    }
+    @media screen and (max-width: 361px) {
         width: 55px;
       left: 133px;
     }
@@ -96,6 +109,10 @@
         left: 267px;
     }
     @media screen and (max-width: 470px) {
+        width: 63px;
+        left: 212px;
+    }
+    @media screen and (max-width: 361px) {
         width: 55px;
         left: 192px;
     }
@@ -114,6 +131,12 @@
         padding-right: 60px
     }
     @media screen and (max-width: 470px){
+        height: 60px;
+        bottom: 33px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and (max-width: 361px){
         height: 60px;
         bottom: 25px;
         padding-left: 36px;
@@ -182,7 +205,7 @@
     @media screen and (max-width: 600px){
         bottom: -14px;
     }
-    @media screen and (max-width: 370px){
+    @media screen and (max-width: 361px){
         font-size: 8px;
     }
     @media screen and (max-width: 470px){
@@ -230,12 +253,15 @@
     }
 }
 .step-5 .slick-track{
-    padding-top: 20px;  
+    padding-top: 17px;  
     @media screen and (max-width: 600px){
         padding-top: 9px;
     }
     @media screen and (max-width: 470px){
-        padding-top: 3px;
+        padding-top: 11px;
+    }
+    @media screen and (max-width: 361px){
+        padding-top: 11px;
     }
 }
 .slick-arrow{
@@ -320,6 +346,10 @@
     .sticked,.ui-draggable-dragging{
         img{
             height: 65px!important;
+            
+            @media screen and (max-width: 470px) {
+                height: 38px!important;
+            }
         }
     }
     .stacked:nth-child(2):not(.ui-draggable-dragging){
@@ -512,11 +542,17 @@
     @media screen and (max-width: 600px){
         font-size: 10px;
         line-height: 27px;
-        bottom: 2px;
+        bottom: 4px;
     }
     @media screen and (max-width: 470px) {
         font-size: 9px;
         line-height: 20px;
+        bottom: 6px;
+    }
+    @media screen and (max-width: 361px) {
+        font-size: 9px;
+        line-height: 20px;
+        bottom: 2px;
     }
 }
 
@@ -558,6 +594,10 @@
        font-size: 22px;
     }
     @media screen and (max-width: 470px){
+        font-size: 15px;
+        padding-top: 2px;
+    }
+    @media screen and (max-width: 361px){
         font-size: 13px;
         padding-top: 0;
     }
@@ -593,6 +633,8 @@
     }
     @media screen and (max-width: 470px){
 
+        width: 71%;
+        height: 43%;
     }
 }
 
@@ -609,12 +651,18 @@
         width: 304px;
         height: 366px;
     }
-    @media screen and (max-width: 470px){
-        top: -141px;
-        left: 39px;
-        width: 212px;
-        height: 257px;
-    }
+  @media screen and (max-width: 470px){
+    top: -157px;
+    left: 47px;
+    width: 234px;
+    height: 283px;
+  }
+  @media screen and (max-width: 361px){
+      top: -141px;
+      left: 39px;
+      width: 212px;
+      height: 257px;
+  }
 }
 .debug .case-cover{
     

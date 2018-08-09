@@ -277,12 +277,12 @@ th {
     bottom: 12px;
     left: 12px;
     right: 12px;
-    background-size: 225px;
-    background-position: center 25px;
+    background-size: 246px;
+    background-position: center 34px;
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 361px) {
   .puzzle-background {
     top: 12px;
     bottom: 12px;
@@ -310,6 +310,13 @@ th {
 
 @media screen and (max-width: 470px) {
   .stack-area {
+    top: 84px;
+    height: 131px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .stack-area {
     top: 70px;
     height: 120px;
   }
@@ -330,6 +337,13 @@ th {
 @media screen and (max-width: 470px) {
   #stack-area-1 {
     width: 85px;
+    left: 54px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  #stack-area-1 {
+    width: 85px;
     left: 44px;
   }
 }
@@ -347,6 +361,13 @@ th {
 }
 
 @media screen and (max-width: 470px) {
+  #stack-area-2 {
+    width: 63px;
+    left: 144px;
+  }
+}
+
+@media screen and (max-width: 361px) {
   #stack-area-2 {
     width: 55px;
     left: 133px;
@@ -366,6 +387,13 @@ th {
 }
 
 @media screen and (max-width: 470px) {
+  #stack-area-3 {
+    width: 63px;
+    left: 212px;
+  }
+}
+
+@media screen and (max-width: 361px) {
   #stack-area-3 {
     width: 55px;
     left: 192px;
@@ -391,6 +419,15 @@ th {
 }
 
 @media screen and (max-width: 470px) {
+  .ingredients-slider-container {
+    height: 60px;
+    bottom: 33px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 361px) {
   .ingredients-slider-container {
     height: 60px;
     bottom: 25px;
@@ -458,7 +495,7 @@ th {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 361px) {
   .ingredient-title {
     font-size: 8px;
   }
@@ -514,7 +551,7 @@ th {
 }
 
 .step-5 .slick-track {
-  padding-top: 20px;
+  padding-top: 17px;
 }
 
 @media screen and (max-width: 600px) {
@@ -525,7 +562,13 @@ th {
 
 @media screen and (max-width: 470px) {
   .step-5 .slick-track {
-    padding-top: 3px;
+    padding-top: 11px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .step-5 .slick-track {
+    padding-top: 11px;
   }
 }
 
@@ -627,6 +670,12 @@ th {
 
 .step-5 .sticked img, .step-5 .ui-draggable-dragging img {
   height: 65px !important;
+}
+
+@media screen and (max-width: 470px) {
+  .step-5 .sticked img, .step-5 .ui-draggable-dragging img {
+    height: 38px !important;
+  }
 }
 
 .step-5 .stacked:nth-child(2):not(.ui-draggable-dragging) {
@@ -904,7 +953,7 @@ th {
   .next-button, .done-button {
     font-size: 10px;
     line-height: 27px;
-    bottom: 2px;
+    bottom: 4px;
   }
 }
 
@@ -912,6 +961,15 @@ th {
   .next-button, .done-button {
     font-size: 9px;
     line-height: 20px;
+    bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .next-button, .done-button {
+    font-size: 9px;
+    line-height: 20px;
+    bottom: 2px;
   }
 }
 
@@ -976,6 +1034,13 @@ th {
 
 @media screen and (max-width: 470px) {
   .step-title {
+    font-size: 15px;
+    padding-top: 2px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .step-title {
     font-size: 13px;
     padding-top: 0;
   }
@@ -1024,6 +1089,13 @@ th {
   }
 }
 
+@media screen and (max-width: 470px) {
+  .case-cover {
+    width: 71%;
+    height: 43%;
+  }
+}
+
 .case-cover-container {
   position: absolute;
   top: -347px;
@@ -1043,6 +1115,15 @@ th {
 }
 
 @media screen and (max-width: 470px) {
+  .case-cover-container {
+    top: -157px;
+    left: 47px;
+    width: 234px;
+    height: 283px;
+  }
+}
+
+@media screen and (max-width: 361px) {
   .case-cover-container {
     top: -141px;
     left: 39px;
@@ -1257,7 +1338,19 @@ th {
     height: 33px;
   }
   .game-end-wrapper .you-did-it-subtitle {
-    margin-top: 0px;
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 11px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .game-end-wrapper .you-did-it-title {
+    margin-top: 15px;
+    height: 33px;
+  }
+  .game-end-wrapper .you-did-it-subtitle {
+    margin-top: 6px;
     font-size: 11px;
     line-height: 11px;
   }
@@ -1304,9 +1397,21 @@ th {
     font-size: 18px;
   }
   .game-end-wrapper .game-end-message-container p {
+    line-height: 14px;
     font-size: 11px;
-    padding-left: 61px;
-    padding-right: 61px;
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .game-end-wrapper .game-end-message-container .fun-fruity-fact-title {
+    font-size: 18px;
+  }
+  .game-end-wrapper .game-end-message-container p {
+    padding-left: 56px;
+    padding-right: 53px;
+    font-size: 10px;
   }
 }
 
@@ -1319,18 +1424,23 @@ th {
 
 @media screen and (max-width: 600px) {
   .game-end-wrapper .end_ctas {
-    bottom: 39px;
+    bottom: 76px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .game-end-wrapper .end_ctas {
     top: auto;
-    bottom: 15px;
+    bottom: 50px;
     margin-top: 10px;
   }
-  .game-end-wrapper .end_ctas .play_again {
-    padding-left: 30px;
+}
+
+@media screen and (max-width: 370px) {
+  .game-end-wrapper .end_ctas {
+    top: auto;
+    bottom: 32px;
+    margin-top: 10px;
   }
 }
 

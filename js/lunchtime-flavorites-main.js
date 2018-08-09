@@ -149,7 +149,7 @@ $( document ).ready(function() {
         },
         start: function(event, ui){
             $(".ingredients-slider").addClass("show-overlay");
-            if($(this).hasClass('stacked')){
+            if($(this).hasClass('sticked')){
                 $(".step-5.case-cover").css("z-index",9);
                 $(".step-5.type-your-name").css("z-index",9);
 
@@ -247,7 +247,8 @@ $( document ).ready(function() {
         else if(active_step == 3){
             $(this).fadeOut();
 
-            $('.step-3.ingredients-slider').hide();            
+            $('.step-3.ingredients-slider').hide();
+            $('.ingredients-slider-container').css("background-color","transparent");
             $(".slick-list").css("z-index", 99);
             $(".slick-arrow").css("z-index", 100);
             $('.ingredients-slider').slick('setPosition');
@@ -263,6 +264,8 @@ $( document ).ready(function() {
              }, 1000);
 
             setTimeout(function(){
+            $('.ingredients-slider-container').css("background-color","white");
+            // $('.ingredients-slider-container').css("visibility","visible");
                 $(".slick-list").css("z-index", "initial");
                 $(".slick-arrow").css("z-index", 1);
                 $('.step-3').hide();
