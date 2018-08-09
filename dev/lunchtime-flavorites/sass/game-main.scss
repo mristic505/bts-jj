@@ -138,9 +138,9 @@
     
     // height: 63px;
     
-    height: 80px;
+    // height: 80px;
     @media screen and (max-width: 600px){
-        height: 55px;
+        // height: 55px;
     }
     @media screen and (max-width: 470px){
 
@@ -219,7 +219,7 @@
     }
 }
 .step-5 .slick-track{
-    padding-top: 12px;  
+    padding-top: 20px;  
     @media screen and (max-width: 600px){
         padding-top: 9px;
     }
@@ -255,7 +255,7 @@
     }
 }
 .slick-next{
-    right: -70px;
+    right: -72px;
     @media screen and (max-width: 470px){
         right: -40px;
     }
@@ -298,7 +298,15 @@
 }
 .step-5{
     .stacked,.stacked,.stacked:not(.whatever){
-        width: 60px!important;
+        height: 65px!important;
+    }
+    .sticked{
+        float:left;
+    }
+    .sticked,.ui-draggable-dragging{
+        img{
+            height: 65px!important;
+        }
     }
     .stacked:nth-child(2):not(.ui-draggable-dragging){
         top: 22% !important;
@@ -520,6 +528,9 @@
         font-size: 15px;
     }
 }
+.debug .type-your-name{
+    border: 1px solid red;
+}
 .step-title{
     font-family: "CabritoNorExB";
     color: #1a5632;
@@ -550,8 +561,8 @@
 }
 .case-cover{
     background-color: #0492a6;
-    width: 66%;
-    height: 38%;
+    width: 68%;
+    height: 42%;
     border-radius: 20px;
     
     @media screen and (max-width: 600px){
@@ -583,6 +594,10 @@
         height: 257px;
     }
 }
+.debug .case-cover{
+    
+    border: 1px solid red;
+}
 #case-cover{
     height: 100%;
     .front-lf{
@@ -607,4 +622,8 @@
 }
 .stacked.ui-draggable-dragging{
     z-index: 99;
+}
+
+.debug .stack-area-5-ingredient{
+    border: 1px solid red;
 }

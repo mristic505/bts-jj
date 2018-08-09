@@ -41,9 +41,7 @@ g
 
 
 html {
-
 	font-family: "CabritoNorBol";
-
 }
 
 button {
@@ -431,7 +429,58 @@ button {
 	
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 470px) {
+   
+    .mySlides,
+    .slideshow-container {
+        height: 352px;
+        width: 352px;
+    }    
+    .rwd-line {
+        display: block;
+    }
+    .slide1TextContainer {
+        top: 186px;
+    }
+    #introParagraph {
+        padding-bottom: 10px;
+    }    
+    #startJokesBtn {
+        height: 27px;
+        width: 100px;
+        font-size: 11px;
+    }    
+    .slide2TextContainer {
+        top: 116px;
+    }    
+    .joke {
+        font-size: 15px;
+        max-width: 200px;
+    }    
+    .answerBtn {
+        font-size: 12px;
+        max-width: 200px;
+    }
+    .slide3TextContainer {
+        top: 82px;
+    }
+    #lastSlideText {
+        padding-bottom: 16px;
+    }
+
+    #fruityFact {
+        font-size: 11px;
+        max-width: 150px;
+    }
+    .strawBan-text-wrap {
+        max-width: 115px !important;
+    }    
+    #slide3-BtnGroup {
+        top: 134px;    
+    }
+
+}
+@media screen and (max-width: 320px){
 
 	.slideshow-container {
 	    width: 300px;
@@ -527,12 +576,6 @@ button {
     .strawBan-text-wrap {
         max-width: 92px !important;
     }
-
-    .rwd-line {
-        display: block;
-    }
-
-
 
 }
 

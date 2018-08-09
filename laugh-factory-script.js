@@ -200,33 +200,9 @@ $(".prev, .next").click(function(){
 var randomJokesGenerated = randomJokes(10); 
 console.log(randomJokesGenerated);
 
-// ORANGE SECTION
-if (play == 'orange') {
-
-    startJokes("orangeBg", randomJokesGenerated);
-
-    nextJoke("orange", orangeFruitFact, "orangeImg", randomJokesGenerated);
-
-    prevJoke(randomJokesGenerated);
-
-    resetJokes("orangeImg", randomJokesGenerated);
 
 
-}
-
-// APPLE SECTION
-if (play == 'apple') {
-
-    startJokes("appleBg", randomJokesGenerated);
-
-    nextJoke("green", appleFruitFact, "appleImg", randomJokesGenerated);
-
-    prevJoke(randomJokesGenerated);
-
-    resetJokes("appleImg", randomJokesGenerated);
-
-
-}// Dragonfruit Section
+// Dragonfruit Section
 if (play == 'dragonFruit') {
 
     startJokes("appleBg", randomJokesGenerated);
@@ -246,6 +222,8 @@ if (play == 'strawberryBanana') {
     startJokes("strawBanBg", randomJokesGenerated);
 
     nextJoke("yellow", strawBanFruitFact, "strawBanImg", randomJokesGenerated);
+
+    prevJoke(randomJokesGenerated);
 
     resetJokes("strawBanImg", randomJokesGenerated);
 

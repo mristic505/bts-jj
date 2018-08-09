@@ -417,16 +417,6 @@ th {
   }
 }
 
-.step-5 .slick-slide img {
-  height: 80px;
-}
-
-@media screen and (max-width: 600px) {
-  .step-5 .slick-slide img {
-    height: 55px;
-  }
-}
-
 .ingredients-slider:after {
   display: none;
   position: absolute;
@@ -507,7 +497,7 @@ th {
 }
 
 .step-5 .slick-track {
-  padding-top: 12px;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -561,7 +551,7 @@ th {
 }
 
 .slick-next {
-  right: -70px;
+  right: -72px;
 }
 
 @media screen and (max-width: 470px) {
@@ -607,7 +597,15 @@ th {
 }
 
 .step-5 .stacked, .step-5 .stacked, .step-5 .stacked:not(.whatever) {
-  width: 60px !important;
+  height: 65px !important;
+}
+
+.step-5 .sticked {
+  float: left;
+}
+
+.step-5 .sticked img, .step-5 .ui-draggable-dragging img {
+  height: 65px !important;
 }
 
 .step-5 .stacked:nth-child(2):not(.ui-draggable-dragging) {
@@ -931,6 +929,10 @@ th {
   }
 }
 
+.debug .type-your-name {
+  border: 1px solid red;
+}
+
 .step-title {
   font-family: "CabritoNorExB";
   color: #1a5632;
@@ -977,8 +979,8 @@ th {
 
 .case-cover {
   background-color: #0492a6;
-  width: 66%;
-  height: 38%;
+  width: 68%;
+  height: 42%;
   border-radius: 20px;
 }
 
@@ -1016,6 +1018,10 @@ th {
   }
 }
 
+.debug .case-cover {
+  border: 1px solid red;
+}
+
 #case-cover {
   height: 100%;
 }
@@ -1040,6 +1046,10 @@ th {
 
 .stacked.ui-draggable-dragging {
   z-index: 99;
+}
+
+.debug .stack-area-5-ingredient {
+  border: 1px solid red;
 }
 
 .how-to-play-wrapper {

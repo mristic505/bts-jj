@@ -31,13 +31,11 @@ $( document ).ready(function() {
     });
     $( "#stack-area-2" ).droppable({
         accept: ".stack-area-2-ingredient",
-        drop: function( event, ui ) {//should acccept only two children
+        drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
-            $('.ingredients-slider').slick('setPosition'); 
+            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked").droppable('disable');
             $('.step-2.ingredients-slider').slick('slickRemove',dropped);
-            
         }
     });
     $( "#stack-area-3" ).droppable({
@@ -45,7 +43,7 @@ $( document ).ready(function() {
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
+            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked").droppable('disable');
             dropped.find('img').attr('src',"assets/lunchtime_flavorites/juices/stacked/"+dropped.find('img').attr('fruit-filename'));
             $('.ingredients-slider').slick('setPosition'); 
             $('.step-3.ingredients-slider').slick('slickRemove',dropped);
@@ -53,29 +51,34 @@ $( document ).ready(function() {
     });
     $( ".case-cover" ).droppable({
         accept: ".stack-area-5-ingredient",
+        tolerance: "fit",
+        greedy: true,
         drop: function( event, ui ) {
             var parentOffset = $('.case-cover').offset();
             var droppedOn = $(this);
             var dropped = ui.draggable;
 
-            $(dropped).detach().removeClass("slick-slide").removeClass("slick-active").appendTo(droppedOn).addClass("stacked");
-            // .css({
-            //     'position': 'absolute',
-            //     'left': (ui.offset.left - parentOffset.left + 15) + 'px',
-            //     'top': (ui.offset.top - parentOffset.top + 5) + 'px'
-            // })
-            console.log(parentOffset);
-            console.log(ui.position);
-            console.log(ui.offset);
-            // var off = $(ui.draggable).clone().offset();
-            // $(this).append($(ui.draggable).clone().addClass("dropped").draggable().css({
-            //     'position': 'absolute',
-            //     'left': (ui.position.left - parentOffset.left) + 'px',
-            //     'top': (ui.position.top - parentOffset.top) + 'px'})
-            // );
-    
-    
-    
+            console.log(ui.offset.left - parentOffset.left + 15);
+            console.log(ui.offset.top - parentOffset.top + 5);
+            console.log("dropped on case cover");
+            $(dropped)
+            .detach()
+            .removeClass("slick-slide").removeClass("slick-active")
+            .appendTo(droppedOn)
+            .css({
+                'position': 'absolute',
+                'left': (ui.offset.left - parentOffset.left + 15) + 'px',
+                'top': (ui.offset.top - parentOffset.top + 5) + 'px'
+            })
+            if($(dropped).hasClass('sticked')){
+                console.log("dropping sticked");
+
+                $(dropped).css({
+                    'left' : ui.position.left,
+                    'top' : ui.position.top
+                });
+            }
+            $(dropped).addClass("sticked");
             $('.ingredients-slider').slick('setPosition'); 
             $('.step-5.ingredients-slider').slick('slickRemove',dropped);
         }
@@ -85,7 +88,7 @@ $( document ).ready(function() {
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn).droppable( "option", "disabled", false );;
+            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn).droppable( "option", "disabled", false );
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
@@ -95,7 +98,7 @@ $( document ).ready(function() {
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn);
+            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn).droppable( "option", "disabled", false );
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
@@ -105,28 +108,42 @@ $( document ).ready(function() {
             var droppedOn = $(this);
             var dropped = ui.draggable;
             dropped.find('img').attr('src',"assets/lunchtime_flavorites/juices/"+dropped.find('img').attr('fruit-filename'));
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn);
+            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn).droppable( "option", "disabled", false );
             $('.ingredients-slider').slick('setPosition'); 
         }
     });
-    $( ".step-5.ingredients-slider .slick-slide" ).droppable({
-        accept: ".stack-area-5-ingredient.stacked",
+    $( ".stack-area-5-ingredient" ).droppable({
+        accept: ".stack-area-5-ingredient",
+        tolerance: "touch",
+        greedy: "true",
         drop: function( event, ui ) {
             var droppedOn = $(this);
             var dropped = ui.draggable;
-            $(dropped).detach().removeClass("stacked").addClass("slick-active").addClass("slick-slide").css("top",0).css("left",0).insertAfter(droppedOn);
-            $('.ingredients-slider').slick('setPosition'); 
+            if($(this).hasClass('sticked')){
+                console.log('dropped on sticked');
+                ui.draggable.draggable( 'option', 'revert', true );
+            }else{
+                console.log("returning to slider");
+                $(dropped)
+                .detach()
+                .removeClass("sticked")
+                .addClass("slick-active")
+                .addClass("slick-slide")
+                .css("top",0)
+                .css("left",0)
+                .insertAfter(droppedOn);
+                $('.ingredients-slider').slick('setPosition'); 
+            }
         }
     });
-    // $( ".slick-slide" ).droppable({
-    //     accept: ".stack-area-1-ingredient",
-    //     drop: function( event, ui ) {
-    //         var droppedOn = $(this);
-    //         var dropped = ui.draggable;
-    //         $(dropped).detach().removeClass("stacked").addClass("slick-active").removeClass("stacked");
-    //         $('.ingredients-slider').slick('setPosition'); 
-    //     }
-    // });
+    $(".type-your-name").droppable({
+        accept: ".stack-area-5-ingredient",
+        tolerance: "touch",
+        greedy: "true",
+        drop: function( event, ui ) {
+            ui.draggable.draggable( 'option', 'revert', true );
+        }
+    })
      //draggables
      $( ".draggable" ).draggable({ 
         revert: "invalid",
@@ -163,12 +180,12 @@ $( document ).ready(function() {
             if(active_step == 5){
                 $(this).css("position","relative");
             }
-            console.log('ingredients added: '+$( "#stack-area-1>div" ).length);
-            console.log('snacks added: '+$( "#stack-area-2>div" ).length);
-            console.log('juices added: '+$( "#stack-area-3>div" ).length);
-            console.log('stickers added: '+$( ".step-5.case-cover>div" ).length);
-            console.log('characters typed in name field: '+$(".type-your-name").val().length);
-            console.log('-------------');
+            // console.log('ingredients added: '+$( "#stack-area-1>div" ).length);
+            // console.log('snacks added: '+$( "#stack-area-2>div" ).length);
+            // console.log('juices added: '+$( "#stack-area-3>div" ).length);
+            // console.log('stickers added: '+$( ".step-5.case-cover>div" ).length);
+            // console.log('characters typed in name field: '+$(".type-your-name").val().length);
+            // console.log('-------------');
         },
         stop: function( event, ui ) {
             if(active_step == 1){
@@ -195,23 +212,23 @@ $( document ).ready(function() {
                 // }
             }
             if(active_step == 5){
-                console.log("checking");
+                // console.log("checking");
                 $(".step-5.case-cover").css("z-index",'s');
                 $(".step-5.type-your-name").css("z-index",'s');
                 if($( ".step-5.case-cover>div" ).length > 0 && $(".type-your-name").val().length > 0){//disable any more childs
-                    console.log("show");
+                    // console.log("show");
                     // $('.done-button').fadeIn();
                 }else{
-                    console.log("hide");
+                    // console.log("hide");
                     // $('.done-button').fadeOut();
                 }
             }
-            console.log('ingredients added: '+$( "#stack-area-1>div" ).length);
-            console.log('snacks added: '+$( "#stack-area-2>div" ).length);
-            console.log('juices added: '+$( "#stack-area-3>div" ).length);
-            console.log('stickers added: '+$( ".step-5.case-cover>div" ).length);
-            console.log('characters typed in name field: '+$(".type-your-name").val().length);
-            console.log('-------------');
+            // console.log('ingredients added: '+$( "#stack-area-1>div" ).length);
+            // console.log('snacks added: '+$( "#stack-area-2>div" ).length);
+            // console.log('juices added: '+$( "#stack-area-3>div" ).length);
+            // console.log('stickers added: '+$( ".step-5.case-cover>div" ).length);
+            // console.log('characters typed in name field: '+$(".type-your-name").val().length);
+            // console.log('-------------');
         }
     });
     
@@ -223,8 +240,7 @@ $( document ).ready(function() {
             $('.step-2').show();
             active_step = 2;
             $('.ingredients-slider').slick('setPosition'); 
-            $('.bread').clone().appendTo( "#stack-area-1" ); 
-
+            $('.bread').clone().appendTo( "#stack-area-1" );
         }
         else if(active_step == 2){
             $('.step-2').hide();
@@ -284,57 +300,7 @@ $( document ).ready(function() {
             $('.game-spin-restart-buttons-container').show();
          });
     })
-    $('.fruit-container').on( "mousedown touchstart", function(){
-        $(this).addClass("clicked")
-        .delay( 100 )
-        .queue(function(next){
-            $(this).addClass('found');
-            next();
-        })
-        .delay( 500 )
-        .queue(function(next){
-            $(this).addClass('found-home-location');
-            next();
-        })
-        .delay( 1000 )
-        .queue(function(next){
-            // update_solved_fruits(this.attr('fruit-id'));
-            solved_fruits[$(this).attr('fruit-id')] = 1;
-            check_if_all_fruits_are_found();
-            next();
-        });
-    })
-    // $( "#sortable1, #sortable2" ).sortable({
-    //     connectWith: ".connectedSortable"
-    //   }).disableSelection();
     $( "slick-track" ).sortable();
 
 });
 
-
-function game_start(){    
-  
-}
-
-
-function check_if_all_fruits_are_found(){
-    if(solved_fruits.indexOf(0) == -1){
-        $(".game-end-wrapper").show();
-    }
-}
-
-// $( window ).resize(function() {
-//     configure_responsive();
-// });
-// function configure_responsive(){ //why js solution?? :(
-//     window_height = $(window).height();
-//     window_width  = $(window).width();    
-//     if(window_width < mobile_breakpoint){
-//         // console.log("test");
-//         $(".game-container").addClass("responsive");
-//     }else{
-//         // console.log("test2");
-//         $(".game-container").removeClass("responsive");
-        
-//     }
-// };
