@@ -1003,7 +1003,7 @@
 
 @media screen and (max-width: 810px) {
   .how-to-play-wrapper .how-to-play-container h2 {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -1023,7 +1023,7 @@
 
 .how-to-play-wrapper .how-to-play-container .start-game-button {
   font-family: "CabritoNorExB";
-  margin-top: 20px;
+  margin-top: 5px;
   padding: 10px 53px;
   color: #ffffff;
   font-size: 18px;
