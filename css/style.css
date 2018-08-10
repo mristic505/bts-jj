@@ -166,6 +166,13 @@ img {
     left: 0;
     top: 0;        
 }
+.page-prize-claim-form .spin_btn {
+    background-color: #1a5632 !important;
+    font-family: 'CabritoNorExB';
+}
+.page-prize-claim-form h1 {
+    color: #1a5632 !important;
+}
 
 .wheel_color .roulette {
     background-image: url('../img/wheel-3.png');  
@@ -1307,8 +1314,9 @@ main {
 }
 .thank_you_prize_claim {
     position: absolute;
-    top: 0;    
+    top: 155px;    
 }
+
 #prize_form, .thank_you_prize_claim, .visible_off {
     -webkit-transition: opacity 0.7s;
     transition: opacity 0.7s;
@@ -1503,7 +1511,11 @@ body.page-spin, body.page-register {
     }
     .coupon_text_holder {
         float: right;
-    }    
+    } 
+    .thank_you_prize_claim {
+        padding-right: 80px;
+    }
+   
 }
 @media screen and (max-width: 1025px) {
     .prc_holder .h1_title {
