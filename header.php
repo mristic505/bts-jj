@@ -15,6 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/jquery.fortune.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/js.cookie.min.js"></script>
 <script src="js/subprices-ccw.js?ver=2.1.0"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- Global site tag (gtag.js) - Google AdWords: 837587168 -->

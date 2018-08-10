@@ -223,10 +223,19 @@ jQuery(document).ready(function($) {
                 var form = '<form id="safety" action="?page=spin" method="POST"><input type="hidden" name="dsid" id="dsid" value="' + data.email + '"></form>';
                 $('body').append(form);
                 $('#safety').submit();
+
+                // Create Already Played Cookie
+                Cookies.set('already_played', 'yes');
             }
         });
         event.preventDefault();
     });
+    
+    // Show different message to returning users if cookie exists
+    if(Cookies.get('already_played') === 'yes') {
+        // console.log('cookie exists');
+        $('#form_intro label').html('Parents, For More Spins,<br>Please Re-enter Your Email');
+    }
 
     /***************** PRIZE CLAIM FORM ******************/
 
@@ -306,12 +315,12 @@ jQuery(document).ready(function($) {
                 $('#prize_form').removeClass('visible_on');
                 $('html, body').animate({
                     scrollTop: $(".logo-2").offset().top
-                }, 500);
+                }, 500);                
 
             }
         });
         event.preventDefault();
-    });
+    });    
 
     $('.rules_link').click(function(){
         window.location.href = '?page=official-rules';
