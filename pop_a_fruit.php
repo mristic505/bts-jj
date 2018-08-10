@@ -64,7 +64,7 @@
                 <div class="how-to-play-container">
                     <img class="how-to-play-title" src="assets/pop-a-fruit/game_start/game_title.png">
                     <h2 class="how-to-play-subtitle">HOW TO PLAY</h2>
-                    <p>Click on the fruit before<br/> it disappears. How many can<br/>you pop in 30 seconds?</p>
+                    <p><span class="mobile_action">Click</span> on the fruit before<br/> it disappears. How many can<br/>you pop in 30 seconds?</p>
                     <button class="start-game-button">PLAY</button>
                 </div>
             </div>

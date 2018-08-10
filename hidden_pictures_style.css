@@ -906,8 +906,8 @@ th {
     margin-top: 90px;
   }
   .how-to-play-wrapper .how-to-play-container p {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 23px;
+    padding-right: 21px;
   }
 }
 
@@ -1013,7 +1013,7 @@ th {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 54px;
+  bottom: 100px;
 }
 
 @media screen and (max-width: 600px) {

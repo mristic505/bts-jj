@@ -11,5 +11,5 @@
 	<h2>We're awarding<br>a juicy prize every day!</h2>
 	<p>YOU COULD WIN A</p>
 	<img class="prepaidCard" src="img/prepaid-card.png">
-	<p style="max-width: 445px;margin:auto;">Perfect for sending your child back to school with items that help them discover a world of flavor—especially the 16 great-tasting flavors of Juicy Juice<sup>&reg;</sup>!</p>
+	<p style="max-width: 445px;margin:auto;font-family: 'CabritoNorBol';">Perfect for sending your child back to school with items that help them discover a world of flavor—especially the 16 great-tasting flavors of Juicy Juice<sup>&reg;</sup>!</p>
 </div>

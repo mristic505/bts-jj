@@ -561,7 +561,7 @@ label[for="age"] {
 
 #register input[type="submit"],
 #prize_form input[type="submit"] {
-    background-color: #1a5632;
+    background-color: #65a621;
     color: #fff;
     border: none;
     outline: none;
@@ -1549,6 +1549,7 @@ body.page-spin, body.page-register {
     }    
     .logo {
         max-width: 207px;
+        margin-bottom: 23px;
     }
 
     .girl-big {
