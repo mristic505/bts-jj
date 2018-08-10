@@ -223,10 +223,19 @@ jQuery(document).ready(function($) {
                 var form = '<form id="safety" action="?page=spin" method="POST"><input type="hidden" name="dsid" id="dsid" value="' + data.email + '"></form>';
                 $('body').append(form);
                 $('#safety').submit();
+
+                // Create Already Played Cookie
+                Cookies.set('already_played', 'yes');
             }
         });
         event.preventDefault();
     });
+    
+    // Show different message to returning users if cookie exists
+    if(Cookies.get('already_played') === 'yes') {
+        // console.log('cookie exists');
+        $('#form_intro label').html('Parents, For More Spins,<br>Please Re-enter Your Email');
+    }
 
     /***************** PRIZE CLAIM FORM ******************/
 
@@ -306,12 +315,12 @@ jQuery(document).ready(function($) {
                 $('#prize_form').removeClass('visible_on');
                 $('html, body').animate({
                     scrollTop: $(".logo-2").offset().top
-                }, 500);
+                }, 500);                
 
             }
         });
         event.preventDefault();
-    });
+    });    
 
     $('.rules_link').click(function(){
         window.location.href = '?page=official-rules';
@@ -345,7 +354,7 @@ jQuery(document).ready(function($) {
         end_fruit = 'kiwi_str';
     }
     if (play == 'pcf') {
-        $('#roulette').prepend('<div style="z-index: 99999;" id="register"> <div class="clearfix prc_holder"> <h1 class="h1_title">Congratulations!</h1> <img class="prc_boy_big" src="img/boy_big.png"> <div class="prc_wheel_copy"> <div class="prc1">You are a potential prizewinner.</div><div class="prc2">As soon as we receive your prize claim form and verify your compliance with the Official Rules and game play validation, you will be named an OFFICIAL WINNER! <br><br>To get started, please complete: </div><a class="spin_btn prc_btn" href="?page=prize-claim-form">PRIZE CLAIM FORM</a> </div></div><div class="ghost"></div></div>');
+        $('#roulette').prepend('<div style="z-index: 99999;" id="register"> <div class="clearfix prc_holder"> <h1 class="h1_title">Congratulations!</h1> <img class="prc_boy_big" src="img/boy_big.png"> <div class="prc_wheel_copy"> <div class="prc1">You are a potential prize winner.</div><div class="prc2">As soon as we receive your prize claim form and verify your compliance with the Official Rules and game play validation, you will be named an OFFICIAL WINNER! <br><br>To get started, please complete: </div><a class="spin_btn prc_btn" href="?page=prize-claim-form">PRIZE CLAIM FORM</a> </div></div><div class="ghost"></div></div>');
         $('.spin_holder').after('<div  class="overlay"></div>');
         $('#roulette .spinner').hide();
     }
