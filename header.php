@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" media="all" href="css/style.css?ver=2.3.9"></link>
+<link type="text/css" rel="stylesheet" media="all" href="css/style.css?ver=2.4.0"></link>
 <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
 <![endif]-->
@@ -44,21 +44,21 @@
 </head>
 <body class="page-<?php echo $page.' '.$body_class; ?>">
 <!--
-Start of DoubleClick Floodlight Tag: Please do not remove
-Activity name of this tag: Flavor Discover Game
-URL of the webpage where the tag is expected to be placed: http://www.juicyjuice.com/flavordiscovery
+Start of Floodlight Tag: Please do not remove
+Activity name of this tag: Flavor Discovery BTS Game - Page Visit
+URL of the webpage where the tag is expected to be placed: https://juicyjuice.com/flavordiscovery
 This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
-Creation Date: 01/31/2018
+Creation Date: 08/02/2018
 -->
 <script type="text/javascript">
 var axel = Math.random() + "";
 var a = axel * 10000000000000;
-document.write('<iframe src="https://8096545.fls.doubleclick.net/activityi;src=8096545;type=flavo0;cat=flavo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+document.write('<iframe src="https://8096545.fls.doubleclick.net/activityi;src=8096545;type=flavo00;cat=flavo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
 </script>
 <noscript>
-<iframe src="https://8096545.fls.doubleclick.net/activityi;src=8096545;type=flavo0;cat=flavo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+<iframe src="https://8096545.fls.doubleclick.net/activityi;src=8096545;type=flavo00;cat=flavo0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
 </noscript>
-<!-- End of DoubleClick Floodlight Tag: Please do not remove -->	
+<!-- End of Floodlight Tag: Please do not remove -->
 <header>
 	<!-- nav -->
 	<div class="nav-holder">
