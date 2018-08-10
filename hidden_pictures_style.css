@@ -1018,11 +1018,7 @@ th {
   position: absolute;
   left: 0;
   right: 0;
-<<<<<<< HEAD
   bottom: 100px;
-=======
-  bottom: 91px;
->>>>>>> 686bf5f479d9bb025d849b263abba6c2b07012da
 }
 
 @media screen and (max-width: 600px) {
