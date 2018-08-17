@@ -601,7 +601,7 @@ th {
 }
 
 .slick-prev {
-  left: -70px;
+  left: -74px;
 }
 
 @media screen and (max-width: 470px) {
@@ -611,7 +611,7 @@ th {
 }
 
 .slick-next {
-  right: -72px;
+  right: -74px;
 }
 
 @media screen and (max-width: 470px) {
@@ -621,16 +621,16 @@ th {
 }
 
 #stack-area-2 .stacked:first-child:not(.ui-draggable-dragging) {
-  top: 20% !important;
+  top: 6% !important;
   -ms-transform: translateX(-50%) !important;
       transform: translateX(-50%) !important;
 }
 
-#stack-area-2 .stacked:first-child:not(.ui-draggable-dragging).granola-bar img, #stack-area-2 .stacked:first-child:not(.ui-draggable-dragging).celery img {
+#stack-area-2 .stacked:first-child:not(.ui-draggable-dragging).granola-bar img {
   width: 100% !important;
 }
 
-#stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging).granola-bar img, #stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging).celery img {
+#stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging).granola-bar img {
   width: 100% !important;
 }
 
@@ -647,7 +647,7 @@ th {
 }
 
 #stack-area-2 .stacked:nth-child(2):not(.ui-draggable-dragging) {
-  top: 70% !important;
+  top: 74% !important;
 }
 
 #stack-area-3 .stacked:not(.ui-draggable-dragging) {
