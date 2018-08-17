@@ -793,7 +793,7 @@ main {
     }
     #register input[type="submit"] {
         font-size: 12px;
-        padding: 9px 35px;
+        padding: 5px 19px;
         position: relative;
         bottom: 8px;
     }
